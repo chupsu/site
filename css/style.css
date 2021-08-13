@@ -2201,6 +2201,7 @@ body {
 .btn {
   display: inline-block;
   padding: 31px 63px;
+  white-space: nowrap;
   text-transform: uppercase;
   text-align: center;
   font-size: 20px;
