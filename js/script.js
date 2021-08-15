@@ -31090,6 +31090,18 @@ window.onload = function () {
       document.querySelector('.auth__info').style.display = 'none';
       document.querySelector('.auth .popup__close').style.color = '#1D2E3E';
     }
+    //---------- Order add comment
+    if (targetElement.classList.contains('order-form__comment-show')) {
+      const commentShow = () => {
+        const commentBox = document.querySelectorAll('.order-form__comment');
+        const commentBtn = document.querySelectorAll('.order-form__comment-show');
+        commentBtn.forEach((el) => {
+          el.style.display = 'none';
+          el.nextElementSibling.style.display = 'flex';
+        });
+      };
+      commentShow();
+    }
   }
   window.addEventListener('scroll', () => {
     const headerFixed = document.querySelector('.header__main');
