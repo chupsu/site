@@ -3744,7 +3744,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 580px;
+  width: 580px;
   background-color: #fff;
 }
 
@@ -10419,7 +10419,7 @@ body {
   }
 
   .location-popup {
-    min-width: 395px;
+    width: 395px;
   }
 
   .location-popup__title,
@@ -12391,10 +12391,6 @@ body {
     margin-bottom: 25px;
   }
 
-  .location-popup__search-title {
-    margin-bottom: 10px;
-  }
-
   .download-popup {
     width: 368px;
   }
@@ -13669,7 +13665,7 @@ body {
   }
 
   .location-popup {
-    min-width: 345px;
+    width: 345px;
   }
 
   .location-popup__title,
@@ -15191,7 +15187,7 @@ body {
   }
 
   .location-popup {
-    min-width: 230px;
+    width: 280px;
   }
 
   .location-popup__title,
@@ -15206,16 +15202,16 @@ body {
   }
 
   .location-popup__list {
-    max-height: 170px;
+    max-height: 244px;
     margin: 8px 10px 8px 0;
   }
 
   .location-popup__name {
-    padding: 5px 5px 5px 10px;
+    padding: 10px;
   }
 
   .location-popup__search {
-    padding: 10px;
+    padding: 15px 10px;
   }
 
   .download-popup {
