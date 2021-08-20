@@ -85,6 +85,7 @@ body,
 .filter-collection__first-prev,
 .filter-collection__first-next,
 .filter-collection__first-checkbox,
+.filter-collection__checkbox-img,
 .filter-collection__checkbox-img--all,
 .collection-gallery__close,
 .collection-gallery__prev,
@@ -13554,7 +13555,7 @@ body {
   }
 
   .popup__btn {
-    height: 40px;
+    height: 44px;
     font-size: 10px;
     line-height: 12px;
   }
@@ -15092,10 +15093,6 @@ body {
     max-width: 145px;
     margin-right: auto;
     margin-left: auto;
-  }
-
-  .popup__btn {
-    height: 30px;
   }
 
   .popup__input {
