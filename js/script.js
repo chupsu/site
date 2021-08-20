@@ -22352,6 +22352,27 @@ if (document.querySelector('.product-slider')) {
       },
     }
   });
+}
+//---------- PROJECTS
+if (document.querySelector('.projects-filter')) {
+  let projectsFilter = new Swiper('.projects-filter', {
+    slidesPerView: 'auto',
+    freeMode: true,
+    spaceBetween: 20,
+    mousewheel: {
+      invert: false,
+    },
+    wrapperClass: 'projects-filter__items',
+    slideClass: 'projects-filter__item',
+    scrollbar: {
+      el: '.projects-filter__scrollbar',
+    },
+    breakpoints: {
+      1301: {
+        spaceBetween: 30,
+      },
+    }
+  });
 };
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
@@ -31066,15 +31087,8 @@ window.onload = function () {
       };
       filters();
     }
-    //---------- Show password
-    if (targetElement.closest('.popup__pass-btn1')) {
-      showPassword1();
-    }
-    if (targetElement.closest('.popup__pass-btn2')) {
-      showPassword2();
-    }
     //---------- Login Register
-    if (targetElement.closest('.auth__sing-up')) {
+    if (targetElement.closest('.auth__sign-up')) {
       e.preventDefault();
       document.querySelector('.auth__login').style.display = 'none';
       document.querySelector('.auth__reg').style.display = 'block';
@@ -31089,6 +31103,16 @@ window.onload = function () {
       document.querySelector('.auth__login').style.display = 'block';
       document.querySelector('.auth__info').style.display = 'none';
       document.querySelector('.auth .popup__close').style.color = '#1D2E3E';
+    }
+    if (targetElement.closest('.lc-auth__sign-up')) {
+      e.preventDefault();
+      document.querySelector('.lc-auth__login').style.display = 'none';
+      document.querySelector('.lc-auth__reg').style.display = 'block';
+    }
+    if (targetElement.closest('.lc-auth__btn--back')) {
+      e.preventDefault();
+      document.querySelector('.lc-auth__login').style.display = 'block';
+      document.querySelector('.lc-auth__reg').style.display = 'none';
     }
     //---------- Order add comment
     if (targetElement.classList.contains('order-form__comment-show')) {
@@ -31157,31 +31181,7 @@ if (document.querySelector('.filter-collection')) {
     }
   });
 }
-//---------- Show password
-const eyePass1 = document.querySelector('.popup__pass-btn1');
-const eyePass2 = document.querySelector('.popup__pass-btn2');
-function showPassword1(target){
-  let inputPass1 = document.querySelector('.popup__input--pass1');
-  if (inputPass1.getAttribute('type') == 'password') {
-    eyePass1.classList.add('view');
-    inputPass1.setAttribute('type', 'text');
-  } else  {
-    eyePass1.classList.remove('view');
-    inputPass1.setAttribute('type', 'password');
-  }
-  return false;
-}
-function showPassword2(target){
-  let inputPass2 = document.querySelector('.popup__input--pass2');
-  if (inputPass2.getAttribute('type') == 'password') {
-    eyePass2.classList.add('view');
-    inputPass2.setAttribute('type', 'text');
-  } else  {
-    eyePass2.classList.remove('view');
-    inputPass2.setAttribute('type', 'password');
-  }
-  return false;
-}
+//---------- Page-up
 const anchors = document.querySelectorAll('.scroll-up');
 for (let anchor of anchors) {
   anchor.addEventListener('click', (e) => {
@@ -31242,7 +31242,20 @@ inputTo.on("change", function () {
     });
     $(this).prop("value", val);
 });
-//---------- Catalog sorting select
+
 $(function(){
+  //---------- Select styles
   $('.sorting__select, .product-calc__num, .product-calc__input, .order-options__w-select').styler();
+  //---------- Show password
+  let passShow = $('.form__pass-btn');
+  passShow.on('click', function() {
+    let passInput = $(this).siblings('input[name*="password"]');
+    if (passInput.attr('type') == "password") {
+        passInput.attr('type','text');
+        $(this).addClass('view');
+    } else {
+        passInput.attr('type','password');
+        $(this).removeClass('view');
+    }
+  });
 });
