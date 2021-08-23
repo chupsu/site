@@ -22007,7 +22007,6 @@ return jQuery;
 ;
 //---------- HOME Offer
 if (document.querySelector('.main-slider')) {
-  //---------- Offer
   let mainSlider = new Swiper('.main-slider__wrapper', {
     slidesPerView: 1,
     autoplay: {
@@ -22023,7 +22022,9 @@ if (document.querySelector('.main-slider')) {
       clickable: true,
     },
   });
-  //---------- Service < 1300px
+}
+//---------- Service-card < 1300px
+if (document.querySelector('.card-service')) {
   const serviceCardSlider = document.querySelector('.card-service');
   let serviceSlider;
   function serviceMobile() {
@@ -22063,7 +22064,9 @@ if (document.querySelector('.main-slider')) {
   window.addEventListener('resize', () => {
     serviceMobile();
   });
-  //---------- HOME News < 1024px
+}
+//---------- HOME News < 1024px
+if (document.querySelector('.card-news')) {
   const newsCardSlider = document.querySelector('.card-news');
   let newsSlider;
   function newsMobile() {
@@ -22103,7 +22106,9 @@ if (document.querySelector('.main-slider')) {
   window.addEventListener('resize', () => {
     newsMobile();
   });
-  //---------- Project < 767px
+}
+//---------- HOME Project < 767px
+if (document.querySelector('.project__wrapper')) {
   const projectCardSlider = document.querySelector('.project__wrapper');
   let projectSlider;
   function projectMobile() {
