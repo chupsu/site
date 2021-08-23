@@ -20020,6 +20020,10 @@ body {
     color: #2062AF;
   }
 
+  .tile-grid--use .tile-grid__link:hover {
+    color: #2062AF;
+  }
+
   .tile-grid__link:hover .tile-grid__link-name {
     color: #2062AF;
   }
