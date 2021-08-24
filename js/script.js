@@ -31186,6 +31186,24 @@ if (document.querySelector('.filter-collection')) {
     }
   });
 }
+//---------- About clients tabs
+if (document.querySelector('.our-clients__action')) {
+  document.querySelectorAll('.our-clients__tab').forEach((item) =>
+    item.addEventListener('click', function (e) {
+      e.preventDefault();
+      const tabId = e.target.getAttribute('href').replace('#', '');
+      document.querySelectorAll('.our-clients__tab').forEach(
+        (child) => child.classList.remove('_active')
+      );
+      document.querySelectorAll('.our-clients__list').forEach(
+        (child) => child.classList.remove('_active')
+      );
+      item.classList.add('_active');
+      document.getElementById(tabId).classList.add('_active');
+    })
+  );
+  document.querySelector('.our-clients__tab').click();
+}
 //---------- Page-up
 const anchors = document.querySelectorAll('.scroll-up');
 for (let anchor of anchors) {
