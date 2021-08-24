@@ -9709,6 +9709,7 @@ body {
   margin-top: 70px;
   text-decoration: underline;
   text-transform: uppercase;
+  white-space: nowrap;
   letter-spacing: 0.07em;
   font-size: 20px;
   color: #2062AF;
@@ -18233,7 +18234,7 @@ body {
   }
 
   .aboutus__blockquote::before {
-    left: -4px;
+    left: 8px;
   }
 
   .aboutus__blockquote::after {
