@@ -2639,14 +2639,14 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  gap: 10px;
 }
 
 .pay-cards__item {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   height: 20px;
-}
-
-.pay-cards__item:not(:last-child) {
-  margin-right: 10px;
 }
 
 .pay-cards__img {
@@ -7241,7 +7241,7 @@ body {
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 0.07em;
-  color: yellow;
+  color: #2062AF;
   border-bottom: 1px dashed #2062AF;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -11154,12 +11154,12 @@ body {
     margin-right: 30px;
   }
 
-  .pay-cards__item {
-    height: 16px;
+  .pay-cards {
+    gap: 7px 5px;
   }
 
-  .pay-cards__item:not(:last-child) {
-    margin-right: 5px;
+  .pay-cards__item {
+    height: 16px;
   }
 
   .req__err,
@@ -16756,10 +16756,6 @@ body {
 
   .personal-info__body .person-types {
     margin: 20px 0;
-  }
-
-  .pay-cards__item:not(:last-child) {
-    margin-bottom: 7px;
   }
 
   .header__body {
