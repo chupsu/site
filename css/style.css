@@ -2643,9 +2643,6 @@ body {
 }
 
 .pay-cards__item {
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
   height: 20px;
 }
 
@@ -9837,7 +9834,7 @@ body {
 }
 
 .our-partners__scrollbar .swiper-scrollbar-drag {
-  background-color: #1D2E3E;
+  background-color: #fff;
 }
 
 .our-clients__action {
@@ -14925,6 +14922,15 @@ body {
     padding-bottom: 40px;
   }
 
+  .our-partners {
+    margin-bottom: 40px;
+  }
+
+  .our-partners__item {
+    height: 100px;
+    padding: 25px 40px;
+  }
+
   .our-partners__prev,
   .our-partners__next {
     width: 30px;
@@ -16635,6 +16641,11 @@ body {
     grid-template-columns: repeat(4, 180px);
     -ms-grid-rows: 104px;
     grid-template-rows: 104px;
+  }
+
+  .our-partners__item {
+    height: 74px;
+    padding: 20px 25px;
   }
 
   .our-partners__prev,
@@ -18438,7 +18449,15 @@ body {
 
   .our-partners__bg-box {
     width: 100%;
-    height: 430px;
+    max-width: 746px;
+    height: 140px;
+    padding: 0 15px;
+    margin: 40px auto 0;
+  }
+
+  .our-partners__item {
+    height: 50px;
+    padding: 13px 50px;
   }
 
   .our-partners__scrollbar {
@@ -18839,8 +18858,8 @@ body {
     grid-template-rows: 130px 130px;
   }
 
-  .our-partners__bg-box {
-    height: 300px;
+  .our-partners__item {
+    padding: 13px 30px;
   }
 }
 
@@ -19396,6 +19415,10 @@ body {
     grid-template-rows: 110px 110px;
   }
 
+  .our-partners__bg-box {
+    height: 120px;
+  }
+
   .our-clients__list {
     padding-bottom: 60px;
   }
@@ -19610,6 +19633,10 @@ body {
 
   .contact__desc-text {
     max-width: 492px;
+  }
+
+  .our-partners {
+    margin-bottom: 55px;
   }
 
   .filter {

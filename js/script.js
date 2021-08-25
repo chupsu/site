@@ -22378,7 +22378,7 @@ if (document.querySelector('.projects-filter')) {
 //---------- About partners
 if (document.querySelector('.our-partners')) {
   let partnerSlider = new Swiper('.our-partners__slider', {
-    slidesPerView: 4,
+    slidesPerView: 2,
     spaceBetween: 20,
     wrapperClass: 'our-partners__items',
     slideClass: 'our-partners__item',
@@ -22390,9 +22390,17 @@ if (document.querySelector('.our-partners')) {
       el: '.our-partners__scrollbar',
     },
     breakpoints: {
+      531: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 4,
+      },
       1025: {
-        spaceBetween: 30,
         loop: true,
+      },
+      1301: {
+        spaceBetween: 30,
       },
     }
   });
