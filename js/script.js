@@ -22273,10 +22273,6 @@ if (document.querySelector('.collection')) {
     scrollbar: {
       el: '.filter-collection__first-scrollbar',
     },
-    breakpoints: {
-      1025: {
-      },
-    }
   });
   //---------- Second filters
   const collectionFilterSliders = document.querySelectorAll('.filter-collection__slider');
@@ -22374,6 +22370,27 @@ if (document.querySelector('.projects-filter')) {
     },
     breakpoints: {
       1301: {
+        spaceBetween: 30,
+      },
+    }
+  });
+}
+//---------- About partners
+if (document.querySelector('.our-partners')) {
+  let partnerSlider = new Swiper('.our-partners__slider', {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    wrapperClass: 'our-partners__items',
+    slideClass: 'our-partners__item',
+    navigation: {
+      nextEl: '.our-partners__next',
+      prevEl: '.our-partners__prev',
+    },
+    scrollbar: {
+      el: '.our-partners__scrollbar',
+    },
+    breakpoints: {
+      1025: {
         spaceBetween: 30,
       },
     }
