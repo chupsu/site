@@ -22392,6 +22392,7 @@ if (document.querySelector('.our-partners')) {
     breakpoints: {
       1025: {
         spaceBetween: 30,
+        loop: true,
       },
     }
   });
