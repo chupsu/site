@@ -2641,7 +2641,6 @@ body {
 }
 
 .pay-cards__item {
-  width: auto;
   height: 20px;
 }
 
@@ -11109,7 +11108,7 @@ body {
   }
 
   .pay-cards {
-    gap: 5px;
+    gap: 7px 5px;
   }
 
   .pay-cards__item {
