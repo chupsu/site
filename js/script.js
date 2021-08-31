@@ -26204,6 +26204,15 @@ for (let anchor of anchors) {
     });
   });
 }
+//---------- Article-grid
+if (document.querySelector('.article__incl')) {
+  const inclBox = document.querySelectorAll('.article__incl');
+  inclBox.forEach((el) => {
+    const text = el.querySelector('p');
+    const img = el.querySelector('.article__img-wrap--incl');
+    img.style.marginTop = text.offsetHeight / 2 + 'px';
+  });
+}
 //---------- Price range 
 let priceRange = $(".filter-price__range-input");
 let inputFrom = $(".filter-price__input-from");
