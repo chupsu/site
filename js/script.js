@@ -26205,7 +26205,8 @@ for (let anchor of anchors) {
   });
 }
 //---------- Article-grid
-if (document.querySelector('.article__incl')) {
+if (document.querySelector('.article__incl') &&
+    window.innerWidth > 768) {
   const inclBox = document.querySelectorAll('.article__incl');
   inclBox.forEach((el) => {
     const text = el.querySelector('p');
