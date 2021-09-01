@@ -10151,10 +10151,13 @@ body {
 .article blockquote {
   grid-column: 1 / -1;
   width: 100%;
-  margin-top: 60px;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.1em;
+}
+
+.article blockquote:not(:first-child) {
+  margin-top: 60px;
 }
 
 .article blockquote:not(:last-child) {
@@ -13829,8 +13832,11 @@ body {
   }
 
   .article blockquote {
-    margin-top: 50px;
     font-size: 18px;
+  }
+
+  .article blockquote:not(:first-child) {
+    margin-top: 50px;
   }
 
   .article blockquote:not(:last-child) {
@@ -15430,8 +15436,11 @@ body {
   }
 
   .article blockquote {
-    margin-top: 40px;
     font-size: 14px;
+  }
+
+  .article blockquote:not(:first-child) {
+    margin-top: 40px;
   }
 
   .article blockquote:not(:last-child) {
@@ -17231,7 +17240,7 @@ body {
     grid-template-columns: 1fr 471px;
   }
 
-  .article blockquote {
+  .article blockquote:not(:first-child) {
     margin-top: 30px;
   }
 

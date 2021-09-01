@@ -22198,6 +22198,18 @@ if (document.querySelector('.cards__img-slider')) {
       scrollbar: {
         el: el.querySelector('.cards__img-scrollbar'),
       },
+      autoplay: false,
+      on: {
+        init: function (){
+          const sliderWrap = el.parentNode;
+          const card = sliderWrap.parentNode;
+          card.onmouseover = () => {
+            this.autoplay.start();
+            this.params.autoplay.delay = 1000;
+          };
+          card.onmouseout = () => this.autoplay.stop();
+        },
+      },
       breakpoints: {
         768: {
           loop: true,
@@ -26117,7 +26129,6 @@ window.onload = function () {
     //---------- Order add comment
     if (targetElement.classList.contains('order-form__comment-show')) {
       const commentShow = () => {
-        const commentBox = document.querySelectorAll('.order-form__comment');
         const commentBtn = document.querySelectorAll('.order-form__comment-show');
         commentBtn.forEach((el) => {
           el.style.display = 'none';
@@ -26207,11 +26218,25 @@ for (let anchor of anchors) {
 //---------- Article-grid
 if (document.querySelector('.article__incl') &&
     window.innerWidth > 768) {
-  const inclBox = document.querySelectorAll('.article__incl');
-  inclBox.forEach((el) => {
-    const text = el.querySelector('p');
-    const img = el.querySelector('.article__img-wrap--incl');
-    img.style.marginTop = text.offsetHeight / 2 + 'px';
+  const imgMg = () => {
+    const inclBox = document.querySelectorAll('.article__incl');
+    if (window.innerWidth > 768) {
+      inclBox.forEach((el) => {
+        const text = el.querySelector('p');
+        const img = el.querySelector('.article__img-wrap--incl');
+        img.style.marginTop = text.offsetHeight / 2 + 'px';
+      });
+    } else {
+      inclBox.forEach((el) => {
+        const text = el.querySelector('p');
+        const img = el.querySelector('.article__img-wrap--incl');
+        img.style.marginTop = '';
+      });
+    }
+  };
+  imgMg();
+  window.addEventListener('resize', () => {
+    imgMg();
   });
 }
 //---------- Price range 
