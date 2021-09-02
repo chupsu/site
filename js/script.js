@@ -26220,19 +26220,15 @@ if (document.querySelector('.article__incl') &&
     window.innerWidth > 768) {
   const imgMg = () => {
     const inclBox = document.querySelectorAll('.article__incl');
-    if (window.innerWidth > 768) {
-      inclBox.forEach((el) => {
-        const text = el.querySelector('p');
-        const img = el.querySelector('.article__img-wrap--incl');
+    inclBox.forEach((el) => {
+      const text = el.querySelector('p');
+      const img = el.querySelector('.article__img-wrap--incl');
+      if (window.innerWidth > 768) {
         img.style.marginTop = text.offsetHeight / 2 + 'px';
-      });
-    } else {
-      inclBox.forEach((el) => {
-        const text = el.querySelector('p');
-        const img = el.querySelector('.article__img-wrap--incl');
+      } else {
         img.style.marginTop = '';
-      });
-    }
+      }
+    });
   };
   imgMg();
   window.addEventListener('resize', () => {
