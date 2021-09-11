@@ -10095,8 +10095,8 @@ window.onload = function () {
   }
   //---------- About slider
   let about = new Swiper('.slider-about', {
-    slidesPerView: 2,
-    spaceBetween: 125,
+    slidesPerView: 1,
+    loop: true,
     simulateTouch: false,
     wrapperClass: 'slider-about__items',
     slideClass: 'slider-about__item',
@@ -10104,11 +10104,18 @@ window.onload = function () {
       prevEl: '.slider-about__prev',
       nextEl: '.slider-about__next',
     },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 125,
+        loop: false,
+      },
+    }
   });
   //---------- Services slider
   let services = new Swiper('.slider-services', {
-    slidesPerView: 2,
-    spaceBetween: 2,
+    slidesPerView: 1,
+    loop: true,
     simulateTouch: false,
     wrapperClass: 'slider-services__items',
     slideClass: 'slider-services__item',
@@ -10116,6 +10123,42 @@ window.onload = function () {
       prevEl: '.slider-services__prev',
       nextEl: '.slider-services__next',
     },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 2,
+        loop: false,
+      },
+    }
+  });
+  //---------- Action slider
+  const actionSlider = document.querySelector('.slider-action');
+  let action;
+  function serviceMobile() {
+    if (window.innerWidth <= 767 && actionSlider.dataset.mobile == 'false') {
+      action = new Swiper('.slider-action', {
+        slidesPerView: 1,
+        spaceBetween: 22,
+        loop: true,
+        wrapperClass: 'slider-action__items',
+        slideClass: 'slider-action__item',
+        navigation: {
+          prevEl: '.slider-action__prev',
+          nextEl: '.slider-action__next',
+        },
+      });
+      actionSlider.dataset.mobile = 'true';
+    }
+    if (window.innerWidth > 767) {
+      actionSlider.dataset.mobile = 'false';
+      if (actionSlider.classList.contains('swiper-container-initialized')) {
+        action.destroy();
+      }
+    }
+  }
+  serviceMobile();
+  window.addEventListener('resize', () => {
+    serviceMobile();
   });
   //---------- Masterss slider
   let masters = new Swiper('.slider-masters', {
