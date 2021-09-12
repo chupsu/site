@@ -10177,10 +10177,10 @@ window.onload = function () {
       nextEl: '.slider-masters__next',
     },
   });
-  //---------- Services slider
+  //---------- Reviews slider
   let reviews = new Swiper('.slider-review', {
-    slidesPerView: 2,
-    spaceBetween: 80,
+    slidesPerView: 1,
+    spaceBetween: 22,
     loop: true,
     simulateTouch: false,
     wrapperClass: 'slider-review__items',
@@ -10189,5 +10189,15 @@ window.onload = function () {
       prevEl: '.slider-review__prev',
       nextEl: '.slider-review__next',
     },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 60,
+      },
+      992: {
+        slidesPerView: 2,
+        spaceBetween: 80,
+      },
+    }
   });
 };
