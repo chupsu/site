@@ -541,7 +541,6 @@ body {
      -moz-appearance: initial;
           appearance: initial;
   visibility: visible;
-  margin: 0;
 }
 
 .popup__body {
@@ -1493,6 +1492,11 @@ body {
 
 .contacts__map {
   height: calc(330px + 370 * ((100vw - 320px) / 1600));
+}
+
+.contacts__map iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .contacts__bg-img {
