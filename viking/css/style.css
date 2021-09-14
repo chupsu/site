@@ -541,6 +541,7 @@ body {
      -moz-appearance: initial;
           appearance: initial;
   visibility: visible;
+  margin: 0;
 }
 
 .popup__body {
