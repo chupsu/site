@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Caveat', cursive;
+  background-color: #3b3535;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.item:active {
+  cursor: grabbing;
+}
+
+.action {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 200px 200px;
+  width: 320px;
+  margin: 0 auto;
+}
+.action__item {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.action__item--start {
+  grid-column: span 2;
+  background-image: url(./11.jpg);
+}
+.action__item--film {
+  background-image: url(./22.jpg);
+}
+.action__item--horror {
+  background-image: url(./33.jpg);
+}
+.action__item--ice {
+  background-image: url(./44.jpg);
+}
+.action__item--romantic {
+  background-image: url(./55.jpg);
+}
+.action__hero {
+  width: 100%;
+  height: 100%;
+  background-image: url(./1.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  cursor: grab;
+}
+.hovered {
+  box-shadow: 0px 3px 10px 0px rgb(170, 166, 157);
+}
+.action__desc {
+  display: block;
+  position: absolute;
+  padding: 4px 8px;
+  font-size: 16px;
+  line-height: 110%;
+  color: #f5bd23;
+  background-color: #fff;
+  border-radius: 10px;
+  opacity: 1;
+}
+.action__desc:only-child {
+  display: none;
+}
+.action__desc::after,
+.action__desc::before {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.action__desc::after {
+  width: 6px;
+  height: 6px;
+}
+.action__desc::before {
+  width: 3px;
+  height: 3px;
+}
+.action__placeholder {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 70px;
+  height: 70px;
+}
+.action__placeholder--start {
+  right: 0;
+  left: 70px;
+}
+.action__placeholder--start .action__desc {
+  top: -55px;
+  right: -100px;
+}
+.action__placeholder--start .action__desc::after {
+  left: -5px;
+  bottom: -7px;
+}
+.action__placeholder--start .action__desc::before {
+  left: -12px;
+  bottom: -10px;
+}
+.action__placeholder--start .action__hero {
+}
+.action__placeholder--film .action__hero {
+  background-image: url(./2.png);
+}
+.action__placeholder--film .action__desc {
+  top: -30px;
+  left: -75px;
+}
+.action__placeholder--film .action__desc::after {
+  right: 3px;
+  bottom: -9px;
+}
+.action__placeholder--film .action__desc::before {
+  right: -2px;
+  bottom: -12px;
+}
+.action__placeholder--horror .action__hero {
+  background-image: url(./3.png);
+}
+.action__placeholder--horror .action__desc {
+  top: -40px;
+  left: -75px;
+}
+.action__placeholder--horror .action__desc::after {
+  right: 3px;
+  bottom: -9px;
+}
+.action__placeholder--horror .action__desc::before {
+  right: -2px;
+  bottom: -12px;
+}
+.action__placeholder--ice .action__hero {
+  background-image: url(./4.png);
+}
+.action__placeholder--ice .action__desc {
+  top: -40px;
+  left: -75px;
+}
+.action__placeholder--ice .action__desc::after {
+  right: 9px;
+  bottom: -9px;
+}
+.action__placeholder--ice .action__desc::before {
+  right: 4px;
+  bottom: -12px;
+}
+.action__placeholder--romantic .action__hero {
+  background-image: url(./5.png);
+}
+.action__placeholder--romantic .action__desc {
+  top: -65px;
+  left: 10px;
+}
+.action__placeholder--romantic .action__desc::after {
+  right: 11px;
+  bottom: -9px;
+}
+.action__placeholder--romantic .action__desc::before {
+  right: 20px;
+  bottom: -14px;
+}
+.hold {
+  background-image: url(./6.png) !important;
+}
