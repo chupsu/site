@@ -26007,6 +26007,98 @@ if (document.querySelector('.our-partners')) {
 }));;
 
 window.onload = function () {
+  //---------- Order option
+  const typesOption = () => {
+    const typesBtnFl = document.querySelector('.person-types__var-fl'),
+          typesBtnUr = document.querySelector('.person-types__var-ur'),
+          typesFL = document.querySelectorAll('.order-form__fl'),
+          typesUR = document.querySelectorAll('.order-form__ur');
+
+    if (typesBtnFl.checked) {
+      typesFL.forEach((fl) => {
+        fl.style.display = 'block';
+      });
+      typesUR.forEach((ur) => {
+        ur.style.display = 'none';
+      });
+    } else if (typesBtnUr.checked) {
+      typesFL.forEach((fl) => {
+        fl.style.display = 'none';
+      });
+      typesUR.forEach((ur) => {
+        ur.style.display = 'block';
+      });
+    }
+  };
+  const deliveOption = () => {
+    const deliveTypeBtn = document.querySelectorAll('.order-form__var-btn'),
+          deliveType1 = document.querySelector('.order-options__s-post'),
+          deliveType2 = document.querySelector('.order-options__work'),
+          deliveType3 = document.querySelector('.order-options__post');
+
+    if (deliveTypeBtn[0].checked) {
+      deliveType1.style.display = 'block';
+      deliveType2.style.display = 'none';
+      deliveType3.style.display = 'none';
+    } else if (deliveTypeBtn[1].checked) {
+      deliveType1.style.display = 'none';
+      deliveType2.style.display = 'flex';
+      deliveType3.style.display = 'none';
+    } else if (deliveTypeBtn[2].checked) {
+      deliveType1.style.display = 'none';
+      deliveType2.style.display = 'none';
+      deliveType3.style.display = 'flex';
+    }
+  };
+  const workOption = () => {
+    const workBtn = document.querySelector(".order-options__w-input"),
+          workOption = document.querySelector(".order-options__w-content");
+
+    workBtn.addEventListener('change', function() {
+      if (this.checked) {
+        workOption.style.display = 'block';
+      } else {
+        workOption.style.display = '';
+      }
+    });
+  };
+
+  if (document.querySelector('.order')) {
+    typesOption();
+    deliveOption();
+    workOption();
+
+    document.querySelector('.order').addEventListener("click", (e) => {
+      const targetElement = e.target;
+      const stepOption = document.querySelectorAll('.order-form__step');
+
+      if (targetElement.classList.contains('person-types__var-btn')) {
+        typesOption();
+      }
+      if (targetElement.classList.contains('order-form__var-btn')) {
+        deliveOption();
+      }
+      if (targetElement.classList.contains('order-form__btn')) {
+        removeClasses(stepOption, '_active');
+        if (targetElement.getAttribute('data-step') === 'step-1') {
+          stepOption[1].classList.add('_active');
+        }
+        if (targetElement.getAttribute('data-step') === 'step-2') {
+          stepOption[2].classList.add('_active');
+        }
+      }
+      if (targetElement.classList.contains('order-form__back-step')) {
+        e.preventDefault();
+        removeClasses(stepOption, '_active');
+        if (targetElement.getAttribute('href') === 'step-1') {
+          stepOption[0].classList.add('_active');
+        }
+        if (targetElement.getAttribute('href') === 'step-2') {
+          stepOption[1].classList.add('_active');
+        }
+      }
+    });
+  }
   //---------- При клике
   document.addEventListener("click", documentActions);
   function documentActions(e) {

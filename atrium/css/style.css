@@ -7959,6 +7959,10 @@ body {
           align-items: flex-start;
 }
 
+.order-options__w-content {
+  display: none;
+}
+
 .order-options__w-var {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20006,11 +20010,11 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    min-height: 140px;
+    min-height: 120px;
   }
 
   .info__thumb {
-    width: 130px;
+    width: 100px;
     height: 100%;
   }
 
