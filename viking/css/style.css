@@ -1497,6 +1497,7 @@ body {
 .contacts__map iframe {
   width: 100%;
   height: 100%;
+  border: none;
 }
 
 .contacts__bg-img {
