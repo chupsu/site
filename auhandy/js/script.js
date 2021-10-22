@@ -185,7 +185,7 @@ const mask = (selector) => {
     });
 
     if (event.type === 'blur') {
-      if (this.value.length == 2) {
+      if (this.value.length == 2 || this.value.length < 18) {
         this.value = '';
       }
     } else {
