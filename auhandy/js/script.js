@@ -153,6 +153,54 @@ DynamicAdapt.prototype.arraySort = function (arr) {
 
 const da = new DynamicAdapt("max");
 da.init();;
+const mask = (selector) => {
+
+  let setCursorPosition = (pos, elem) => {
+    elem.focus();
+
+    if (elem.setSelectionRange) {
+      elem.setSelectionRange(pos, pos);
+    } else if (elem.createTextRange) {
+      let range = elem.createTextRange();
+
+      range.collapse(true);
+      range.moveEnd('character', pos);
+      range.moveStart('character', pos);
+      range.select();
+    }
+  };
+
+  function createMask(event) {
+    let matrix = '+7 (___) ___ __ __',
+      i = 0,
+      def = matrix.replace(/\D/g, ''),
+      val = this.value.replace(/\D/g, '');
+
+    if (def.length >= val.length) {
+      val = def;
+    }
+
+    this.value = matrix.replace(/./g, function (a) {
+      return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? '' : a;
+    });
+
+    if (event.type === 'blur') {
+      if (this.value.length == 2) {
+        this.value = '';
+      }
+    } else {
+      setCursorPosition(this.value.length, this);
+    }
+  }
+
+  let inputs = document.querySelectorAll(selector);
+
+  inputs.forEach(input => {
+    input.addEventListener('input', createMask);
+    input.addEventListener('focus', createMask);
+    input.addEventListener('blur', createMask);
+  });
+};;
 /**
  * Swiper 6.8.4
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -10085,7 +10133,7 @@ if (document.querySelector('.services__slider')) {
     },
     breakpoints: {
       400: {
-        slidesPerView: 1.9,
+        slidesPerView: 1.7,
       },
       500: {
         slidesPerView: 2.5,
@@ -20799,24 +20847,71 @@ window.onload = function () {
         menuBtn.classList.remove('active');
       }
     }
-  }
-  //---------- Без клика
-  if (document.querySelector('.projects__items')) {
-    let mixer = mixitup('.projects__items');
-  }
-  const anchors = document.querySelectorAll('.anchor');
-  for (let anchor of anchors) {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const blockID = anchor.getAttribute('href').substr(1);
-      document.getElementById(blockID).scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+    if (targetElement.closest('.contacts-form__btn')) {
+      formValidate();
+    }
+    //---------- Без клика
+    if (document.querySelector('.projects__items')) {
+      let mixer = mixitup('.projects__items');
+    }
+    const anchors = document.querySelectorAll('.anchor');
+    for (let anchor of anchors) {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const blockID = anchor.getAttribute('href').substr(1);
+        document.getElementById(blockID).scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
       });
-    });
+    }
+
+    mask('[name="phone"]');
+    checkTextInput('[name="name"]');
   }
 };
 
-// $(function () {
+const checkTextInput = (selector) => {
+  const textInput = document.querySelectorAll(selector);
 
-// });
+  textInput.forEach(input => {
+    input.addEventListener('keypress', function (e) {
+      if (e.key.match(/[^а-яё a-z]/ig)) {
+        e.preventDefault();
+      }
+    });
+  });
+};
+
+const form = document.querySelector('.contacts-form');
+function formValidate(form) {
+  let formReq = document.querySelectorAll('.req');
+
+  for (let index = 0; index < formReq.length; index++) {
+    const input = formReq[index];
+    formRemoveError(input);
+
+    if (input.classList.contains('email')) {
+      if (emailTest(input)) {
+        formAddError(input);
+      }
+    } else if (input.classList.contains('phone')) {
+      if (input.value.length < 18) {
+        formAddError(input);
+      }
+    } else {
+      if (input.value === '') {
+        formAddError(input);
+      }
+    }
+  }
+  function formAddError(input) {
+    input.classList.add('error');
+  }
+  function formRemoveError(input) {
+    input.classList.remove('error');
+  }
+  function emailTest(input) {
+    return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
+  }
+}
