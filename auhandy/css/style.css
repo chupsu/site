@@ -507,7 +507,6 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  display: none;
 }
 
 .menu__dropdown::before {
@@ -1783,6 +1782,10 @@ body {
 
   .menu__item+.menu__item {
     margin: 20px 0 0 0;
+  }
+
+  .menu__dropdown {
+    display: none;
   }
 
   .search__btn {
