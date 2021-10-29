@@ -1422,7 +1422,7 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .services__pagi {
     display: none;
   }
@@ -2064,7 +2064,7 @@ body {
 
 }
 
- @media (min-width: 1200px){
+ @media (min-width: 1400px){
 
 @supports (-webkit-appearance:none){
 
