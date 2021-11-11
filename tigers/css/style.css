@@ -365,7 +365,7 @@ body {
 .title {
   text-align: center;
   font-size: 72px;
-  line-height: 120px;
+  line-height: 150%;
   color: #fff;
 }
 
@@ -615,7 +615,8 @@ body {
 
 .road {
   position: relative;
-  padding: 280px 0 526px;
+  padding-top: 280px;
+  padding-bottom: 526px;
   background: url(./../img/content/road/bg.jpg) center/cover no-repeat;
 }
 
@@ -648,6 +649,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-bottom: 144px;
 }
 
@@ -659,7 +662,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 110px 0 160px;
 }
 
 .road__item {
@@ -745,6 +747,10 @@ body {
 }
 
 @media (min-width: 1722px) {
+  .road__items {
+    padding: 0 110px 0 160px;
+  }
+
   .road__item:nth-child(odd) {
     -ms-flex-item-align: start;
         align-self: flex-start;
@@ -773,6 +779,10 @@ body {
 }
 
 @media (max-width: 1710px) {
+  .title {
+    font-size: calc(20px + 52 * ((100vw - 320px) / 1390));
+  }
+
   .header__logo {
     width: calc(54px + 274 * ((100vw - 320px) / 1390));
   }
@@ -851,6 +861,30 @@ body {
 
   .timer__name {
     font-size: calc(6px + 18 * ((100vw - 320px) / 1390));
+  }
+
+  .road {
+    padding-top: calc(100px + 180 * ((100vw - 320px) / 1390));
+  }
+
+  .road {
+    padding-bottom: calc(100px + 426 * ((100vw - 320px) / 1390));
+  }
+
+  .road__title {
+    margin-left: calc(200px + -200 * ((100vw - 320px) / 1390));
+  }
+
+  .road__title {
+    margin-right: calc(200px + -200 * ((100vw - 320px) / 1390));
+  }
+
+  .road__title {
+    margin-bottom: calc(60px + 84 * ((100vw - 320px) / 1390));
+  }
+
+  .road__item+.road__item {
+    margin-top: calc(20px + 160 * ((100vw - 320px) / 1390));
   }
 }
 @supports (-webkit-appearance:none){
