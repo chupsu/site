@@ -10102,52 +10102,7 @@ if (document.querySelector('.rarity-slider')) {
       }
     });
   });
-}
-// if (document.querySelector('.card-news')) {
-//   const newsCardSlider = document.querySelector('.card-news');
-//   let newsSlider;
-//   function newsMobile() {
-//     if (window.innerWidth <= 1024 && newsCardSlider.dataset.mobile == 'false') {
-//       newsSlider = new Swiper(newsCardSlider, {
-//         slidesPerView: 1.6,
-//         spaceBetween: 15,
-//         wrapperClass: 'card-news__items',
-//         slideClass: 'card-news__item',
-//         scrollbar: {
-//           el: '.card-news__scrollbar',
-//           draggable: true,
-//         },
-//         keyboard: {
-//           enable: true,
-//           onlyInViewport: true,
-//         },
-//         breakpoints: {
-//           460: {
-//             slidesPerView: 2.4,
-//           },
-//           581: {
-//             slidesPerView: 3,
-//           },
-//           767: {
-//             slidesPerView: 2,
-//             spaceBetween: 20,
-//           },
-//         }
-//       });
-//       newsCardSlider.dataset.mobile = 'true';
-//     }
-//     if (window.innerWidth > 1024) {
-//       newsCardSlider.dataset.mobile = 'false';
-//       if (newsCardSlider.classList.contains('swiper-container-initialized')) {
-//         newsSlider.destroy();
-//       }
-//     }
-//   }
-//   newsMobile();
-//   window.addEventListener('resize', () => {
-//     newsMobile();
-//   });
-// };
+};
 /*!
  * OverlayScrollbars
  * https://github.com/KingSora/OverlayScrollbars
