@@ -4,7 +4,8 @@ body {
 }
 
 .offer__btn,
-.rarity__btn {
+.rarity__btn,
+.footer__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -926,14 +927,13 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 640px;
-  margin-top: 200px;
 }
 
 .rarity__btn {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   width: 340px;
-  height: 15px;
+  height: 90px;
   font-size: 24px;
   color: #fff;
   background-color: rgba(0,0,0,0.4);
@@ -1187,6 +1187,35 @@ body {
 .faq__text {
   font-size: 24px;
   line-height: 160%;
+}
+
+.footer {
+  background-color: #341B13;
+  border-top: 8px solid #23110B;
+  border-width: 8px;
+}
+
+.footer__body {
+  height: 320px;
+}
+
+.footer__link {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.footer__link+.footer__link {
+  margin-left: 210px;
+}
+
+.footer__link svg {
+  width: 113px;
+  height: 113px;
+}
+
+.footer__link path {
+  fill: #fff;
 }
 
 @media (min-width: 1722px) {
@@ -1495,7 +1524,7 @@ body {
   }
 
   .faq__body {
-    padding-bottom: calc(100px + 300 * ((100vw - 320px) / 1390));
+    padding-bottom: calc(50px + 350 * ((100vw - 320px) / 1390));
   }
 
   .faq__title {
@@ -1577,6 +1606,26 @@ body {
 
   .faq__text {
     font-size: calc(5px + 19 * ((100vw - 320px) / 1390));
+  }
+
+  .footer {
+    border-width: calc(2px + 6 * ((100vw - 320px) / 1390));
+  }
+
+  .footer__body {
+    height: calc(70px + 250 * ((100vw - 320px) / 1390));
+  }
+
+  .footer__link+.footer__link {
+    margin-left: calc(40px + 170 * ((100vw - 320px) / 1390));
+  }
+
+  .footer__link svg {
+    width: calc(30px + 83 * ((100vw - 320px) / 1390));
+  }
+
+  .footer__link svg {
+    height: calc(30px + 83 * ((100vw - 320px) / 1390));
   }
 }
 
@@ -1691,6 +1740,12 @@ body {
             transform: translate(40px, 0px);
   }
 }
+
+@media (any-hover: hover) {
+  .footer__link path:hover {
+    fill: #E3C148;
+  }
+}
 @supports (-webkit-appearance:none){
 .offer{background:url(./../img/content/offer.jpg) center/cover no-repeat}
 .offer::after{background:url(./../img/content/earth.png) center/cover no-repeat}
@@ -1771,6 +1826,14 @@ body {
 }
 
  @media (max-width: 767.98px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (any-hover: hover){
 
 @supports (-webkit-appearance:none){
 
