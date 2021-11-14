@@ -10125,7 +10125,8 @@ if (document.querySelector('.person__slider')) {
 if (document.querySelector('.rarity__filter')) {
   var filterBtns = new Swiper('.rarity__filter', {
     slidesPerView: 6,
-    spaceBetween: 20,
+    // spaceBetween: 20,
+    spaceBetween: 3,
     direction: 'vertical',
     slidesPerView: 'auto',
     freeMode: true,

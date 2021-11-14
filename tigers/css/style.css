@@ -926,13 +926,14 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 640px;
+  margin-top: 200px;
 }
 
 .rarity__btn {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   width: 340px;
-  height: 90px;
+  height: 15px;
   font-size: 24px;
   color: #fff;
   background-color: rgba(0,0,0,0.4);
@@ -1514,7 +1515,7 @@ body {
   }
 
   .faq__item::after {
-    height: calc(8px + 16 * ((100vw - 320px) / 1390));
+    height: calc(6px + 18 * ((100vw - 320px) / 1390));
   }
 
   .faq__name {
