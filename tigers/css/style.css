@@ -456,7 +456,7 @@ body {
 .offer {
   position: relative;
   width: 100%;
-  height: 1850px;
+  height: 1880px;
   padding-top: 386px;
   background: url(./../img/content/offer.jpg) center/cover no-repeat;
 }
@@ -1274,7 +1274,7 @@ body {
   }
 
   .offer {
-    height: calc(560px + 1290 * ((100vw - 320px) / 1390));
+    height: calc(510px + 1370 * ((100vw - 320px) / 1390));
   }
 
   .offer {
@@ -1282,7 +1282,7 @@ body {
   }
 
   .offer__suptitle {
-    font-size: calc(8px + 6 * ((100vw - 320px) / 1390));
+    font-size: calc(5px + 9 * ((100vw - 320px) / 1390));
   }
 
   .offer__title {
@@ -1298,11 +1298,11 @@ body {
   }
 
   .offer__timer {
-    margin-bottom: calc(30px + 56 * ((100vw - 320px) / 1390));
+    margin-bottom: calc(20px + 66 * ((100vw - 320px) / 1390));
   }
 
   .offer__btn {
-    width: calc(140px + 94 * ((100vw - 320px) / 1390));
+    width: calc(120px + 114 * ((100vw - 320px) / 1390));
   }
 
   .offer__btn {
@@ -1313,12 +1313,16 @@ body {
     font-size: calc(10px + 12 * ((100vw - 320px) / 1390));
   }
 
+  .timer__block+.timer__block {
+    margin-left: calc(10px + 12 * ((100vw - 320px) / 1390));
+  }
+
   .timer__num {
-    font-size: calc(8px + 28 * ((100vw - 320px) / 1390));
+    font-size: calc(10px + 26 * ((100vw - 320px) / 1390));
   }
 
   .timer__name {
-    font-size: calc(6px + 18 * ((100vw - 320px) / 1390));
+    font-size: calc(7px + 17 * ((100vw - 320px) / 1390));
   }
 
   .offer-person {
@@ -1326,7 +1330,7 @@ body {
   }
 
   .offer-person {
-    margin-top: calc(40px + -260 * ((100vw - 320px) / 1390));
+    margin-top: calc(20px + -240 * ((100vw - 320px) / 1390));
   }
 
   .offer-person__left .offer-person__name {
