@@ -10103,18 +10103,20 @@ if (document.querySelector('.rarity-slider')) {
 }
 if (document.querySelector('.person__slider')) {
   let personSlider = new Swiper('.person__slider', {
-    slidesPerView: 2.2,
     slidesPerColumn: 2,
-    spaceBetween: 70,
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    freeMode: true,
     wrapperClass: 'person__items',
     slideClass: 'person__item',
     breakpoints: {
-      1200: {
-        slidesPerView: 2.6,
-        spaceBetween: 90,
+      600: {
+        spaceBetween: 40,
+      },
+      900: {
+        spaceBetween: 70,
       },
       1400: {
-        slidesPerView: 3,
         spaceBetween: 100,
       },
     },

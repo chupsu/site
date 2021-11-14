@@ -653,8 +653,8 @@ body {
 }
 
 .person {
-  padding-top: 430px;
-  padding-bottom: 380px;
+  padding-top: 380px;
+  padding-bottom: 440px;
   padding: 430px 0 380px;
   background: url(./../img/content/person/bg.jpg) center/cover no-repeat;
   overflow: hidden;
@@ -672,6 +672,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 1172px;
@@ -681,8 +684,9 @@ body {
   position: relative;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  width: 100%;
-  height: 536px;
+  width: 480px;
+  height: 46%;
+  margin-top: 0 !important;
 }
 
 .person__item::after {
@@ -705,7 +709,7 @@ body {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 200px;
+  width: 40%;
   height: 28px;
   background-color: #E3C148;
 }
@@ -780,6 +784,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-right: 110px;
+  padding-left: 160px;
 }
 
 .road__item {
@@ -787,23 +793,13 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 894px;
-  height: 358px;
+  width: 890px;
   background-color: #EFEEE8;
 }
 
 .road__item::after {
   position: absolute;
   top: 50%;
-}
-
-.road__item:nth-child(5) .road__text {
-  font-size: 16px;
-  line-height: 26px;
-}
-
-.road__item:nth-child(7) .road__text {
-  font-size: 25px;
 }
 
 .road__item+.road__item {
@@ -830,7 +826,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 32px 90px;
+  padding-top: 32px;
+  padding-right: 90px;
+  padding-bottom: 64px;
+  padding-left: 90px;
   width: 100%;
   height: 100%;
 }
@@ -839,29 +838,36 @@ body {
 .road__content::after {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  width: 30px;
+  height: 80%;
 }
 
 .road__content::before {
-  content: url(./../img/content/road/line.png);
-  left: 36px;
+  content: '';
+  background: url(./../img/content/road/line.png) center/contain no-repeat;
+  left: 0;
+  -webkit-transform: translate(100%, -50%);
+      -ms-transform: translate(100%, -50%);
+          transform: translate(100%, -50%);
 }
 
 .road__content::after {
-  content: url(./../img/content/road/dots.png);
-  right: 42px;
+  content: '';
+  background: url(./../img/content/road/dots.png) center/contain no-repeat;
+  right: 0;
+  -webkit-transform: translate(-100%, -50%);
+      -ms-transform: translate(-100%, -50%);
+          transform: translate(-100%, -50%);
 }
 
 .road__num {
   margin-bottom: 30px;
-  font-size: 36px;
+  font-size: 30px;
 }
 
 .road__text {
-  font-size: 30px;
-  line-height: 50px;
+  font-size: 26px;
+  line-height: 160%;
 }
 
 .rarity {
@@ -1095,7 +1101,7 @@ body {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 322px;
-  height: 30px;
+  height: 24px;
   background-color: #E3C148;
 }
 
@@ -1108,7 +1114,7 @@ body {
   padding-bottom: 60px;
   padding-left: 60px;
   margin-bottom: -10px;
-  font-size: 37px;
+  font-size: 32px;
   line-height: 150%;
   color: #fff;
   background-color: #341B13;
@@ -1173,12 +1179,12 @@ body {
       -ms-transform: translate(-50%, 70%);
           transform: translate(-50%, 70%);
   width: 322px;
-  height: 30px;
+  height: 24px;
   background-color: #E3C148;
 }
 
 .faq__text {
-  font-size: 30px;
+  font-size: 24px;
   line-height: 160%;
 }
 
@@ -1196,10 +1202,6 @@ body {
   .road::before {
     background: url(./../img/content/stone.png) repeat;
     height: 680px;
-  }
-
-  .road__items {
-    padding: 0 110px 0 160px;
   }
 
   .road__item:nth-child(odd) {
@@ -1359,19 +1361,31 @@ body {
   }
 
   .person {
-    padding-top: calc(80px + 350 * ((100vw - 320px) / 1390));
+    padding-top: calc(60px + 320 * ((100vw - 320px) / 1390));
   }
 
   .person {
-    padding-bottom: calc(100px + 280 * ((100vw - 320px) / 1390));
+    padding-bottom: calc(80px + 360 * ((100vw - 320px) / 1390));
+  }
+
+  .person__items {
+    height: calc(340px + 832 * ((100vw - 320px) / 1390));
+  }
+
+  .person__item {
+    width: calc(140px + 340 * ((100vw - 320px) / 1390));
+  }
+
+  .person__item::before {
+    height: calc(12px + 16 * ((100vw - 320px) / 1390));
   }
 
   .road {
-    padding-top: calc(100px + 180 * ((100vw - 320px) / 1390));
+    padding-top: calc(60px + 220 * ((100vw - 320px) / 1390));
   }
 
   .road {
-    padding-bottom: calc(100px + 426 * ((100vw - 320px) / 1390));
+    padding-bottom: calc(90px + 436 * ((100vw - 320px) / 1390));
   }
 
   .road__title {
@@ -1383,11 +1397,64 @@ body {
   }
 
   .road__title {
-    margin-bottom: calc(60px + 84 * ((100vw - 320px) / 1390));
+    margin-bottom: calc(40px + 104 * ((100vw - 320px) / 1390));
+  }
+
+  .road__items {
+    padding-right: calc(0px + 110 * ((100vw - 320px) / 1390));
+  }
+
+  .road__items {
+    padding-left: calc(0px + 160 * ((100vw - 320px) / 1390));
+  }
+
+  .road__item {
+    width: calc(260px + 630 * ((100vw - 320px) / 1390));
   }
 
   .road__item+.road__item {
-    margin-top: calc(20px + 160 * ((100vw - 320px) / 1390));
+    margin-top: calc(30px + 150 * ((100vw - 320px) / 1390));
+  }
+
+  .road__item::before {
+    right: calc(-6px + -24 * ((100vw - 320px) / 1390));
+  }
+
+  .road__item::before {
+    bottom: calc(-8px + -30 * ((100vw - 320px) / 1390));
+  }
+
+  .road__content {
+    padding-top: calc(10px + 22 * ((100vw - 320px) / 1390));
+  }
+
+  .road__content {
+    padding-right: calc(24px + 66 * ((100vw - 320px) / 1390));
+  }
+
+  .road__content {
+    padding-bottom: calc(20px + 44 * ((100vw - 320px) / 1390));
+  }
+
+  .road__content {
+    padding-left: calc(24px + 66 * ((100vw - 320px) / 1390));
+  }
+
+  .road__content::before,
+  .road__content::after {
+    width: calc(8px + 22 * ((100vw - 320px) / 1390));
+  }
+
+  .road__num {
+    margin-bottom: calc(10px + 20 * ((100vw - 320px) / 1390));
+  }
+
+  .road__num {
+    font-size: calc(10px + 20 * ((100vw - 320px) / 1390));
+  }
+
+  .road__text {
+    font-size: calc(7px + 19 * ((100vw - 320px) / 1390));
   }
 
   .rarity__body {
@@ -1447,7 +1514,7 @@ body {
   }
 
   .faq__item::after {
-    height: calc(8px + 22 * ((100vw - 320px) / 1390));
+    height: calc(8px + 16 * ((100vw - 320px) / 1390));
   }
 
   .faq__name {
@@ -1467,7 +1534,7 @@ body {
   }
 
   .faq__name {
-    font-size: calc(6px + 31 * ((100vw - 320px) / 1390));
+    font-size: calc(6px + 26 * ((100vw - 320px) / 1390));
   }
 
   .faq__name {
@@ -1504,11 +1571,11 @@ body {
   }
 
   .faq__answer::after {
-    height: calc(8px + 22 * ((100vw - 320px) / 1390));
+    height: calc(8px + 16 * ((100vw - 320px) / 1390));
   }
 
   .faq__text {
-    font-size: calc(5px + 25 * ((100vw - 320px) / 1390));
+    font-size: calc(5px + 19 * ((100vw - 320px) / 1390));
   }
 }
 
@@ -1548,11 +1615,24 @@ body {
         -ms-transform: translate(-70px, 0px);
             transform: translate(-70px, 0px);
   }
+
+  .road__title {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 }
 
 @media (max-width: 991.98px) and (max-width: 1710px) {
   .offer {
     padding-top: calc(80px + 206 * ((100vw - 320px) / 1390));
+  }
+
+  .road__title {
+    margin-left: calc(30px + 70 * ((100vw - 320px) / 1390));
+  }
+
+  .road__title {
+    margin-right: calc(30px + 70 * ((100vw - 320px) / 1390));
   }
 }
 
@@ -1618,6 +1698,8 @@ body {
 .road{background:url(./../img/content/road/bg.jpg) center/cover no-repeat}
 .road::after{background:url(./../img/content/stone.png) center/cover no-repeat}
 .road::before{background:url(./../img/content/stone.png) center/cover no-repeat}
+.road__content::before{background:url(./../img/content/road/line.png) center/contain no-repeat}
+.road__content::after{background:url(./../img/content/road/dots.png) center/contain no-repeat}
 .faq{background:url(./../img/content/road/bg.jpg) center/cover no-repeat}
 }
 
