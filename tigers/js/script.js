@@ -10076,31 +10076,6 @@ for (let anchor of anchors) {
 })));
 //# sourceMappingURL=swiper-bundle.js.map
 ;
-if (document.querySelector('.rarity-slider')) {
-  const raritySliders = document.querySelectorAll('.rarity-slider');
-  raritySliders.forEach((el) => {
-    let raritySlider = new Swiper(el, {
-      slidesPerView: 1.4,
-      spaceBetween: 50,
-      wrapperClass: 'rarity-slider__items',
-      slideClass: 'rarity-slider__item',
-      breakpoints: {
-        1100: {
-          slidesPerView: 1.6,
-          spaceBetween: 70,
-        },
-        1330: {
-          slidesPerView: 1.8,
-          spaceBetween: 90,
-        },
-        1600: {
-          slidesPerView: 2,
-          spaceBetween: 114,
-        },
-      }
-    });
-  });
-}
 if (document.querySelector('.person__slider')) {
   let personSlider = new Swiper('.person__slider', {
     slidesPerColumn: 2,
@@ -10124,8 +10099,9 @@ if (document.querySelector('.person__slider')) {
 }
 if (document.querySelector('.rarity__filter')) {
   var filterBtns = new Swiper('.rarity__filter', {
-    slidesPerView: 6,
-    spaceBetween: 20,
+    slidesPerView: 'auto',
+    spaceBetween: 8,
+    freeMode: true,
     direction: 'vertical',
     slidesPerView: 'auto',
     freeMode: true,
@@ -10136,6 +10112,40 @@ if (document.querySelector('.rarity__filter')) {
       draggable: true,
     },
     mousewheel: true,
+    breakpoints: {
+      800: {
+        spaceBetween: 20,
+      },
+    },
+  });
+}
+if (document.querySelector('.rarity-slider')) {
+  const raritySliders = document.querySelectorAll('.rarity-slider');
+  raritySliders.forEach((el) => {
+    let raritySlider = new Swiper(el, {
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+      freeMode: true,
+      wrapperClass: 'rarity-slider__items',
+      slideClass: 'rarity-slider__item',
+      breakpoints: {
+        440: {
+          spaceBetween: 30,
+        },
+        600: {
+          spaceBetween: 45,
+        },
+        860: {
+          spaceBetween: 60,
+        },
+        1100: {
+          spaceBetween: 80,
+        },
+        1400: {
+          spaceBetween: 110,
+        },
+      },
+    });
   });
 };
 
