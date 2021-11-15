@@ -1483,7 +1483,7 @@ body {
   }
 
   .road__item::after {
-    width: calc(200px + 220 * ((100vw - 320px) / 1390));
+    width: calc(180px + 240 * ((100vw - 320px) / 1390));
   }
 
   .road__item::after {
