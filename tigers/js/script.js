@@ -10082,6 +10082,7 @@ if (document.querySelector('.person__slider')) {
     slidesPerView: 'auto',
     spaceBetween: 20,
     freeMode: true,
+    grabCursor: true,
     wrapperClass: 'person__items',
     slideClass: 'person__item',
     breakpoints: {
@@ -10126,6 +10127,7 @@ if (document.querySelector('.rarity-slider')) {
       slidesPerView: 'auto',
       spaceBetween: 20,
       freeMode: true,
+      grabCursor: true,
       wrapperClass: 'rarity-slider__items',
       slideClass: 'rarity-slider__item',
       breakpoints: {

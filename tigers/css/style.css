@@ -458,7 +458,7 @@ body {
   position: relative;
   width: 100%;
   height: 1880px;
-  padding-top: 386px;
+  padding-top: 310px;
   background: url(./../img/content/offer.jpg) center/cover no-repeat;
 }
 
@@ -920,10 +920,6 @@ body {
 
 .rarity__filter {
   overflow: hidden;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
   height: 640px;
 }
 
@@ -947,11 +943,6 @@ body {
   color: #fff;
   background-color: rgba(0,0,0,0.4);
   cursor: pointer;
-}
-
-.rarity__btn:active,
-.rarity__btn:focus {
-  background-color: transparent;
 }
 
 .rarity__scrollbar {
@@ -1072,11 +1063,11 @@ body {
 }
 
 .rarity-slider__name {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
   margin-top: 20px;
   text-align: center;
-  font-size: 32px;
+  font-size: 24px;
   line-height: 140%;
 }
 
@@ -1145,6 +1136,7 @@ body {
   background-color: #341B13;
   border: 12px solid #23110B;
   border-width: 8px;
+  cursor: pointer;
 }
 
 .faq__name::before,
@@ -1223,12 +1215,6 @@ body {
   height: 320px;
 }
 
-.footer__link {
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
 .footer__link+.footer__link {
   margin-left: 210px;
 }
@@ -1240,6 +1226,9 @@ body {
 
 .footer__link path {
   fill: #fff;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 @media (min-width: 767.98px) {
@@ -1355,7 +1344,7 @@ body {
   }
 
   .offer {
-    padding-top: calc(0px + 386 * ((100vw - 320px) / 1390));
+    padding-top: calc(0px + 310 * ((100vw - 320px) / 1390));
   }
 
   .offer__suptitle {
@@ -1648,11 +1637,11 @@ body {
   }
 
   .rarity-slider__name {
-    padding-right: calc(5px + 15 * ((100vw - 320px) / 1390));
+    padding-right: calc(4px + 6 * ((100vw - 320px) / 1390));
   }
 
   .rarity-slider__name {
-    padding-left: calc(5px + 15 * ((100vw - 320px) / 1390));
+    padding-left: calc(4px + 6 * ((100vw - 320px) / 1390));
   }
 
   .rarity-slider__name {
@@ -1660,7 +1649,7 @@ body {
   }
 
   .rarity-slider__name {
-    font-size: calc(5px + 27 * ((100vw - 320px) / 1390));
+    font-size: calc(4px + 20 * ((100vw - 320px) / 1390));
   }
 
   .faq__body {
@@ -1865,7 +1854,15 @@ body {
 }
 
 @media (any-hover: hover) {
-  .footer__link path:hover {
+  .header {
+    opacity: 0;
+  }
+
+  .header:hover {
+    opacity: 1;
+  }
+
+  .footer__link:hover path {
     fill: #E3C148;
   }
 }
