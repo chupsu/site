@@ -311,6 +311,7 @@ body {
 }
 
 .offer__btn {
+  font-size: 33px;
   margin-top: 40px;
 }
 
@@ -513,6 +514,10 @@ body {
 
   .offer__text--big {
     max-width: calc(290px + 553 * ((100vw - 320px) / 1430));
+  }
+
+  .offer__btn {
+    font-size: calc(14px + 19 * ((100vw - 320px) / 1430));
   }
 
   .offer__btn {
