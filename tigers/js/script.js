@@ -10087,13 +10087,13 @@ if (document.querySelector('.person__slider')) {
     slideClass: 'person__item',
     breakpoints: {
       600: {
-        spaceBetween: 40,
+        spaceBetween: 30,
       },
       900: {
-        spaceBetween: 70,
+        spaceBetween: 50,
       },
       1400: {
-        spaceBetween: 100,
+        spaceBetween: 70,
       },
     },
   });
@@ -10115,7 +10115,7 @@ if (document.querySelector('.rarity__filter')) {
     mousewheel: true,
     breakpoints: {
       800: {
-        spaceBetween: 20,
+        spaceBetween: 13,
       },
     },
   });
@@ -10131,20 +10131,17 @@ if (document.querySelector('.rarity-slider')) {
       wrapperClass: 'rarity-slider__items',
       slideClass: 'rarity-slider__item',
       breakpoints: {
-        440: {
+        450: {
           spaceBetween: 30,
         },
         600: {
-          spaceBetween: 45,
+          spaceBetween: 40,
         },
-        860: {
+        900: {
           spaceBetween: 60,
         },
-        1100: {
-          spaceBetween: 80,
-        },
         1400: {
-          spaceBetween: 110,
+          spaceBetween: 80,
         },
       },
     });
@@ -10153,6 +10150,16 @@ if (document.querySelector('.rarity-slider')) {
 
 window.addEventListener('DOMContentLoaded', () => {
   new WOW().init();
+  //---------- Header
+
+  window.addEventListener('scroll', () => {
+    const header = document.querySelector('.header');
+    if (window.scrollY > header.offsetHeight) {
+      header.classList.add('hide');
+    } else if (window.scrollY < header.offsetHeight) {
+      header.classList.remove('hide');
+    }
+  });
   //---------- Tabs
   const tabs = document.querySelectorAll('.rarity__btn'),
     tabsContent = document.querySelectorAll('.rarity-slider'),
