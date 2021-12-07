@@ -359,6 +359,7 @@ body {
   opacity: 1;
 }
 
+.main,
 .sliders {
   position: relative;
 }
