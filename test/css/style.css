@@ -553,6 +553,7 @@ body {
   color: #fff;
   background-color: rgba(0,0,0,0.15);
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .slider-thumb__item.swiper-slide-thumb-active {
