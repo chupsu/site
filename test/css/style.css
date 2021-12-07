@@ -705,8 +705,8 @@ body {
 
 @media (min-width: 767.98px) and (max-width: 991.98px) {
   .slider-main__img {
-    -o-object-position: 40% 50%;
-       object-position: 40% 50%;
+    -o-object-position: 38% 50%;
+       object-position: 38% 50%;
   }
 }
 
