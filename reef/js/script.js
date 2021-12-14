@@ -10002,17 +10002,38 @@ for (let anchor of anchors) {
 //   });
 // }
 const offerSlider = new Swiper('.slider-offer__body', {
-  initialSlide: 2,
-  wrapperClass: 'slider-offer__items',
-  slideClass: 'slider-offer__item',
-
   slidesPerView: 'auto',
   spaceBetween: 30,
+  initialSlide: 2,
   loop: true,
   speed: 5000,
   autoplay: {
     delay: 0,
     disableOnInteraction: false,
+  },
+  wrapperClass: 'slider-offer__items',
+  slideClass: 'slider-offer__item',
+  breakpoints: {
+    // 460: {
+    //   slidesPerView: 2.4,
+    // },
+    // 581: {
+    //   slidesPerView: 3,
+    // },
+    // 767: {
+    //   slidesPerView: 4,
+    //   spaceBetween: 30,
+    // },
+  }
+});
+const expertSlider = new Swiper('.slider-lore', {
+  slidesPerView: 'auto',
+  spaceBetween: 35,
+  wrapperClass: 'slider-lore__items',
+  slideClass: 'slider-lore__item',
+  navigation: {
+    nextEl: '.slider-lore__next',
+    prevEl: '.slider-lore__prev',
   },
   breakpoints: {
     // 460: {
