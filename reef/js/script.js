@@ -10164,7 +10164,7 @@ for (let anchor of anchors) {
 // }
 const offerSlider = new Swiper('.slider-offer__body', {
   slidesPerView: 'auto',
-  spaceBetween: 30,
+  spaceBetween: 12,
   initialSlide: 2,
   loop: true,
   speed: 5000,
@@ -10175,6 +10175,14 @@ const offerSlider = new Swiper('.slider-offer__body', {
   allowTouchMove: false,
   wrapperClass: 'slider-offer__items',
   slideClass: 'slider-offer__item',
+  breakpoints: {
+    577: {
+      spaceBetween: 20,
+    },
+    992: {
+      spaceBetween: 30,
+    },
+  }
 });
 const expertSlider = new Swiper('.slider-lore', {
   slidesPerView: 'auto',
@@ -10223,7 +10231,7 @@ window.onload = function () {
     const targetElement = e.target;
     if (targetElement.closest('.menu__btn')) {
       const menuBtn = document.querySelector('.menu__btn');
-      const menuList = document.querySelector('.menu__list');
+      const menuList = document.querySelector('.menu__list--header');
       if (targetElement.closest('.menu__btn')) {
         menuList.classList.toggle('_active');
         menuBtn.classList.toggle('_active');
