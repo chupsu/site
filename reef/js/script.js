@@ -10188,10 +10188,32 @@ const expertSlider = new Swiper('.slider-lore', {
   },
 });
 const teamSlider = new Swiper('.slider-team', {
-  slidesPerView: 4,
-  spaceBetween: 30,
+  slidesPerView: 'auto',
+  spaceBetween: 25,
   wrapperClass: 'slider-team__items',
   slideClass: 'slider-team__item',
+  pagination: {
+    el: '.slider-team__pagi',
+    type: 'bullets',
+    clickable: true,
+  },
+  breakpoints: {
+    577: {
+      slidesPerView: 1.87,
+      spaceBetween: 25,
+    },
+    768: {
+      slidesPerView: 2.5,
+      spaceBetween: 25,
+    },
+    992: {
+      slidesPerView: 3.3,
+      spaceBetween: 30,
+    },
+    1183: {
+      slidesPerView: 4,
+    },
+  }
 });;
 
 window.onload = function () {
