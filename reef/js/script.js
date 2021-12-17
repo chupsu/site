@@ -10186,7 +10186,7 @@ const offerSlider = new Swiper('.slider-offer__body', {
 });
 const expertSlider = new Swiper('.slider-lore', {
   slidesPerView: 'auto',
-  spaceBetween: 35,
+  spaceBetween: 20,
   loop: true,
   wrapperClass: 'slider-lore__items',
   slideClass: 'slider-lore__item',
@@ -10194,6 +10194,14 @@ const expertSlider = new Swiper('.slider-lore', {
     nextEl: '.slider-lore__next',
     prevEl: '.slider-lore__prev',
   },
+  breakpoints: {
+    768: {
+      spaceBetween: 30,
+    },
+    992: {
+      spaceBetween: 35,
+    },
+  }
 });
 const teamSlider = new Swiper('.slider-team', {
   slidesPerView: 'auto',
