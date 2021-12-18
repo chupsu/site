@@ -1,7 +1,19 @@
 "use strict";
 
-// include('module/type-device.js');
-// include('module/test-webp.js');
+function testWebP(callback) {
+  var webP = new Image();
+  webP.onload = webP.onerror = function () {
+  callback(webP.height == 2);
+  };
+  webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
+  }
+  testWebP(function (support) {
+  if (support == true) {
+  document.querySelector('body').classList.add('webp');
+  }else{
+  document.querySelector('body').classList.add('no-webp');
+  }
+});;
 const spollersArray = document.querySelectorAll('[data-spollers');
 if (spollersArray.length > 0) {
 	const spollersRegular = Array.from(spollersArray).filter(function (item, index, self) {
@@ -164,7 +176,6 @@ let _slideToggle = (target, duration = 500) => {
 		return _slideUp(target, duration);
 	}
 };
-// include('module/dynamic-adaptive.js');
 const anchors = document.querySelectorAll('.anchor');
 for (let anchor of anchors) {
   anchor.addEventListener('click', function (e) {
@@ -177,7 +188,6 @@ for (let anchor of anchors) {
   });
 };
 
-// include('../../node_modules/jquery/dist/jquery.js');
 /**
  * Swiper 6.8.4
  * Most modern mobile touch slider and framework with hardware accelerated transitions

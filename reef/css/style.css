@@ -2226,26 +2226,26 @@ body {
   }
 }
 @supports (-webkit-appearance:none){
-.wrapper{background:url(./../img/content/footer/bg.png) center bottom/100% auto no-repeat,-webkit-gradient(linear, left top, left bottom, color-stop(10.51%, #B4E8EF), color-stop(34.28%, #6EB9CA), color-stop(56.19%, #559BAD), color-stop(77.63%, #2D698D), to(#132C50))}
-.wrapper{background:url(./../img/content/footer/bg.png) center bottom/100% auto no-repeat,-o-linear-gradient(top, #B4E8EF 10.51%, #6EB9CA 34.28%, #559BAD 56.19%, #2D698D 77.63%, #132C50 100%)}
-.wrapper{background:url(./../img/content/footer/bg.png) center bottom/100% auto no-repeat,linear-gradient(180deg, #B4E8EF 10.51%, #6EB9CA 34.28%, #559BAD 56.19%, #2D698D 77.63%, #132C50 100%)}
-.offer__box{background:url(./../img/content/offer/bg.jpg) center/cover no-repeat}
-.offer__title::before{background:url(./../img/content/offer/title-bg.png) center/contain no-repeat}
+.wrapper{background:url(./../img/content/footer/bg.webp) center bottom/100% auto no-repeat,-webkit-gradient(linear, left top, left bottom, color-stop(10.51%, #B4E8EF), color-stop(34.28%, #6EB9CA), color-stop(56.19%, #559BAD), color-stop(77.63%, #2D698D), to(#132C50))}
+.wrapper{background:url(./../img/content/footer/bg.webp) center bottom/100% auto no-repeat,-o-linear-gradient(top, #B4E8EF 10.51%, #6EB9CA 34.28%, #559BAD 56.19%, #2D698D 77.63%, #132C50 100%)}
+.wrapper{background:url(./../img/content/footer/bg.webp) center bottom/100% auto no-repeat,linear-gradient(180deg, #B4E8EF 10.51%, #6EB9CA 34.28%, #559BAD 56.19%, #2D698D 77.63%, #132C50 100%)}
+.offer__box{background:url(./../img/content/offer/bg.webp) center/cover no-repeat}
+.offer__title::before{background:url(./../img/content/offer/title-bg.webp) center/contain no-repeat}
 .slider-offer::before{background-image:url(./../img/content/offer/waves.svg)}
 .lore__item--first,.lore__item--second{background-image:url(./../img/content/lore/cards/card-s.svg)}
 .lore__item--first::after,.lore__item--second::after{background-image:url(./../img/content/lore/cards/frame-s.svg)}
 .lore__item--third,.lore__item--fourth{background-image:url(./../img/content/lore/cards/card-b.svg)}
 .lore__item--third::after,.lore__item--fourth::after{background-image:url(./../img/content/lore/cards/frame-b.svg)}
 .slider-lore__content{background:url(./../img/content/lore/slider/bg.svg) center/100% 100% no-repeat}
-.roadmap::after{background-image:url(./../img/content/roadmap/bg.png)}
-.roadmap__body::after{background:url(./../img/content/roadmap/fish.png) center/contain no-repeat}
-.roadmap__babble{background:url(./../img/content/roadmap/babble.png) center/contain no-repeat}
+.roadmap::after{background-image:url(./../img/content/roadmap/bg.webp)}
+.roadmap__body::after{background:url(./../img/content/roadmap/fish.webp) center/contain no-repeat}
+.roadmap__babble{background:url(./../img/content/roadmap/babble.webp) center/contain no-repeat}
 .team{background-image:url(./../img/content/team/bg.svg)}
-.slider-team__item:nth-child(1)::after{background-image:url(./../img/content/team/decor-1.png)}
-.slider-team__item:nth-child(2)::after{background-image:url(./../img/content/team/decor-2.png)}
-.slider-team__item:nth-child(3)::after{background-image:url(./../img/content/team/decor-3.png)}
-.slider-team__item:nth-child(4)::after{background-image:url(./../img/content/team/decor-4.png)}
-.slider-team__pagi .swiper-pagination-bullet{background:url(./../img/content/roadmap/babble.png) center/contain no-repeat}
+.slider-team__item:nth-child(1)::after{background-image:url(./../img/content/team/decor-1.webp)}
+.slider-team__item:nth-child(2)::after{background-image:url(./../img/content/team/decor-2.webp)}
+.slider-team__item:nth-child(3)::after{background-image:url(./../img/content/team/decor-3.webp)}
+.slider-team__item:nth-child(4)::after{background-image:url(./../img/content/team/decor-4.webp)}
+.slider-team__pagi .swiper-pagination-bullet{background:url(./../img/content/roadmap/babble.webp) center/contain no-repeat}
 .faq__name::after{background:url(./../img/icons/arrow.svg) center/contain no-repeat}
 .footer::after,.footer::before{background:url(./../img/content/footer/seaweed.svg) center/contain no-repeat}
 .footer__wrap{background-image:url(./../img/content/footer/sand.svg)}
@@ -2279,9 +2279,9 @@ body {
  @media (max-width: 1600px){
 
 @supports (-webkit-appearance:none){
-.wrapper{background:url(./../img/content/footer/bg.png) center bottom/auto 1400px no-repeat,-webkit-gradient(linear, left top, left bottom, color-stop(10.51%, #B4E8EF), color-stop(34.28%, #6EB9CA), color-stop(56.19%, #559BAD), color-stop(77.63%, #2D698D), to(#132C50))}
-.wrapper{background:url(./../img/content/footer/bg.png) center bottom/auto 1400px no-repeat,-o-linear-gradient(top, #B4E8EF 10.51%, #6EB9CA 34.28%, #559BAD 56.19%, #2D698D 77.63%, #132C50 100%)}
-.wrapper{background:url(./../img/content/footer/bg.png) center bottom/auto 1400px no-repeat,linear-gradient(180deg, #B4E8EF 10.51%, #6EB9CA 34.28%, #559BAD 56.19%, #2D698D 77.63%, #132C50 100%)}
+.wrapper{background:url(./../img/content/footer/bg.webp) center bottom/auto 1400px no-repeat,-webkit-gradient(linear, left top, left bottom, color-stop(10.51%, #B4E8EF), color-stop(34.28%, #6EB9CA), color-stop(56.19%, #559BAD), color-stop(77.63%, #2D698D), to(#132C50))}
+.wrapper{background:url(./../img/content/footer/bg.webp) center bottom/auto 1400px no-repeat,-o-linear-gradient(top, #B4E8EF 10.51%, #6EB9CA 34.28%, #559BAD 56.19%, #2D698D 77.63%, #132C50 100%)}
+.wrapper{background:url(./../img/content/footer/bg.webp) center bottom/auto 1400px no-repeat,linear-gradient(180deg, #B4E8EF 10.51%, #6EB9CA 34.28%, #559BAD 56.19%, #2D698D 77.63%, #132C50 100%)}
 }
 
 }
@@ -2305,10 +2305,10 @@ body {
  @media (max-width: 991.98px){
 
 @supports (-webkit-appearance:none){
-.header .menu__list{background:#E2FCFF url(./../img/content/menu-bg.png) center right/auto 100% no-repeat}
+.header .menu__list{background:#E2FCFF url(./../img/content/menu-bg.webp) center right/auto 100% no-repeat}
 .lore__item--first,.lore__item--second{background-image:url(./../img/content/lore/cards/card-b.svg)}
 .lore__item--first::after,.lore__item--second::after{background-image:url(./../img/content/lore/cards/frame-b.svg)}
-.roadmap::after{background-image:url(./../img/content/roadmap/bg-s.png)}
+.roadmap::after{background-image:url(./../img/content/roadmap/bg-s.webp)}
 }
 
 }
