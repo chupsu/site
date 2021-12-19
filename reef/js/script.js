@@ -10266,18 +10266,40 @@ window.onload = function () {
   // bubbles
   const board = document.querySelector('.offer__bubbles');
   function createBubble() {
-    for (let i = 0; i < 20; i++) {
+    let minSpeed, maxSpeed, minSize, maxSize, amount;
+    if (window.innerWidth >= 1400) {
+      minSpeed = 10,
+        maxSpeed = 24,
+        minSize = 18,
+        maxSize = 65,
+        amount = 18;
+    } else if (window.innerWidth >= 768) {
+      minSpeed = 8,
+        maxSpeed = 19,
+        minSize = 14,
+        maxSize = 50,
+        amount = 13;
+    } else {
+      minSpeed = 6,
+        maxSpeed = 14,
+        minSize = 10,
+        maxSize = 35,
+        amount = 8;
+    }
+
+    for (let i = 0; i < amount; i++) {
       const bubble = document.createElement('div');
-      const size = getRandomNumber(18, 60);
       const { width, height } = board.getBoundingClientRect();
+
+      const speed = getRandomNumber(minSpeed, maxSpeed);
+      const size = getRandomNumber(minSize, maxSize);
       const x = getRandomNumber(0, width - size);
       const y = getRandomNumber(0, height - size);
-      const speed = getRandomNumber(6, 30);
 
       bubble.classList.add('bubble');
       bubble.style.width = `${size}px`;
       bubble.style.height = `${size}px`;
-      bubble.style.bottom = `${Math.round(y - height)}px`; // bottom 0
+      bubble.style.bottom = `${Math.round(y - height)}px`;
       bubble.style.left = `${x}px`;
       board.append(bubble);
 
