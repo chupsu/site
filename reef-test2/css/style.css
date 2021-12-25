@@ -2225,6 +2225,10 @@ body {
     left: -160px;
   }
 
+  .slider-team__item {
+    width: 280px !important;
+  }
+
   .faq__item {
     padding: 15px 20px;
     border-width: 4px;
