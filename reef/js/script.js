@@ -10147,7 +10147,7 @@ if (window.innerWidth < 1183) {
       clickable: true,
     },
     breakpoints: {
-      577: {
+      576: {
         slidesPerView: 1.87,
         spaceBetween: 25,
       },

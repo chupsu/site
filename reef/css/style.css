@@ -1232,6 +1232,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 
 .slider-team__item {
@@ -2222,6 +2223,10 @@ body {
 
   .roadmap__agla {
     left: -160px;
+  }
+
+  .slider-team__item {
+    width: 262px !important;
   }
 
   .faq__item {
