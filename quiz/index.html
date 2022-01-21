@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz time</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+  <script src="./js/script.min.js" defer></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+  <div class="header__body">
+    <a class="header__logo" href="/">
+      <img class="logo__img" src="./img/logo.svg" alt="logo">
+    </a>
+    <h1 class="header__title">Quiz time</h1>
+  </div>
+</header>
+    <main class="quiz">
+      <div class="quiz__box">
+        <h2 class="quiz__title">
+          Выберите Quiz
+        </h2>
+        <div class="quiz__body">
+          <div class="selection">
+            <ul class="selection__list">
+              <li class="selection__item">
+                <button class="selection__theme">Финансовая грамотность</button>
+              </li>
+              <li class="selection__item">
+                <button class="selection__theme">Фронтенд разработка</button>
+                <div class="selection__result">
+                  <span class="selection__result-ratio">7/10</span>
+                  <span class="selection__result-text">Последний результат</span>
+                </div>
+              </li>
+              <li class="selection__item">
+                <button class="selection__theme">Бэкенд разработка</button>
+              </li>
+              <li class="selection__item">
+                <button class="selection__theme">Личные инвестиции</button>
+              </li>
+              <li class="selection__item">
+                <button class="selection__theme">Нутрициология</button>
+              </li>
+              <li class="selection__item">
+                <button class="selection__theme">Свободная тема</button>
+              </li>
+              <li class="selection__item">
+                <button class="selection__theme">Свободная тема</button>
+              </li>
+              <li class="selection__item">
+                <button class="selection__theme">Свободная тема</button>
+              </li>
+              <li class="selection__item">
+                <button class="selection__theme">Свободная тема</button>
+              </li>
+            </ul>
+          </div>
+          <div class="question">
+            <h3 class="quiz__subtitle">
+              Какие типы input корректны?
+            </h3>
+            <form class="question__form">
+              <label class="question__label">
+                <input class="question__checkbox" type="checkbox">
+                <span class="question__checkbox-f"></span>
+                <span class="question__text">text</span>
+              </label>
+              <label class="question__label">
+                <input class="question__checkbox" type="checkbox">
+                <span class="question__checkbox-f"></span>
+                <span class="question__text">color</span>
+              </label>
+              <label class="question__label">
+                <input class="question__checkbox" type="checkbox">
+                <span class="question__checkbox-f"></span>
+                <span class="question__text">week</span>
+              </label>
+              <label class="question__label">
+                <input class="question__checkbox" type="checkbox">
+                <span class="question__checkbox-f"></span>
+                <span class="question__text">day</span>
+              </label>
+              <button class="quiz__btn">Подтвердить</button>
+            </form>
+          </div>
+          <div class="question">
+            <h3 class="quiz__subtitle">
+              Какая столица является родиной демократии?
+            </h3>
+            <form class="question__form">
+              <label class="question__label">
+                <input class="question__radio" type="radio" name="radio">
+                <span class="question__radio-f"></span>
+                <span class="question__text">Рим</span>
+              </label>
+              <label class="question__label">
+                <input class="question__radio" type="radio" name="radio">
+                <span class="question__radio-f"></span>
+                <span class="question__text">Амстердам</span>
+              </label>
+              <label class="question__label">
+                <input class="question__radio" type="radio" name="radio">
+                <span class="question__radio-f"></span>
+                <span class="question__text">Афины</span>
+              </label>
+              <label class="question__label">
+                <input class="question__radio" type="radio" name="radio">
+                <span class="question__radio-f"></span>
+                <span class="question__text">Вашингтон</span>
+              </label>
+              <button class="quiz__btn">Подтвердить</button>
+            </form>
+          </div>
+          <div class="result">
+            <h3 class="quiz__subtitle">
+              Ваш результат
+            </h3>
+            <div class="result__body">
+              <div class="result__score">
+                <span>10\10</span>
+              </div>
+              <p class="result__desc">
+                Отличный результат!
+              </p>
+            </div>
+            <button class="quiz__btn">К списку квизов</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
