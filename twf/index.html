@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trees With Faces</title>
   <link rel="stylesheet" href="./css/style.min.css">
+  <script src="./js/script.min.js" defer></script>
 </head>
 
 <body>
@@ -33,27 +34,57 @@
               <span></span>
             </i>
           </button>
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a class="menu__link" href="#">menu</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">menu</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">menu</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">menu</a>
-            </li>
-          </ul>
+          <div class="menu__body">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#welcome">Welcome</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#about">About</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#roadmap">Roadmap</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#comic">TWF! Comic!</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#team">Team</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#faq">FAQ</a>
+              </li>
+            </ul>
+            <ul class="social">
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <img class="social__img" src="./img/icons/opensea.svg" alt="opensea">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <img class="social__img" src="./img/icons/instagram.svg" alt="instagram">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <img class="social__img" src="./img/icons/discord.svg" alt="discord">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <img class="social__img" src="./img/icons/twitter.svg" alt="twitter">
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </div>
   </div>
 </header>
     <main class="page">
-      <section class="offer">
+      <section class="offer section" id="">
         <div class="container">
           <div class="offer__body">
             <div class="offer__content">
@@ -61,8 +92,47 @@
                 Mint your<br>
                 Trees With Face
               </h1>
-              <div class="offer__btn-box">
-                <a class="offer__btn btn" href="#">Mint</a>
+              <div class="offer__action">
+                <div class="offer__timer timer">
+                  <div class="timer__block">
+                    <span class="timer__num" id="days">12</span>
+                    <span class="timer__name">days</span>
+                  </div>
+                  <div class="timer__block">
+                    <span class="timer__num" id="hours">20</span>
+                    <span class="timer__name">hours</span>
+                  </div>
+                  <div class="timer__block">
+                    <span class="timer__num" id="minutes">56</span>
+                    <span class="timer__name">minutes</span>
+                  </div>
+                  <div class="timer__block">
+                    <span class="timer__num" id="seconds">20</span>
+                    <span class="timer__name">seconds</span>
+                  </div>
+                </div>
+
+                <div class="offer__mint mint">
+                  <p class="mint__text">
+                    Please connect wallet first
+                  </p>
+                  <p class="mint__price">
+                    0.15 ETH/NFT
+                  </p>
+                  <form class="mint__action">
+                    <div class="mint__quantity">
+                      <div class="quantity">
+                        <button type="button" class="quantity__button quantity__button_minus">–</button>
+                        <div class="quantity__input-box">
+                          <input class="quantity__input" type="text" value="1">
+                        </div>
+                        <button type="button" class="quantity__button quantity__button_plus">+</button>
+                      </div>
+                      <span class="mint__desc">10 max per wallet</span>
+                    </div>
+                    <button class="mint__btn btn" type="submit">Mint</button>
+                  </form>
+                </div>
               </div>
             </div>
             <div class="offer__preview">
@@ -82,7 +152,7 @@
           </div>
         </div>
       </section>
-      <section class="welcome">
+      <section class="welcome section" id="">
         <div class="container">
           <div class="welcome__body">
             <div class="welcome__content">
@@ -98,7 +168,7 @@
                 </p>
               </div>
               <p class="welcome__text">
-                Trees With Faces, TWF!, is a community-driven NFT collection of 9,999 programmatically generated
+                Trees With Faces, TWF!, is a community-driven NFT collection of 9,999 programmatically generated
                 freaking cool trees seeded and living as NFTs on the Ethereum Blockchain.
               </p>
               <p class="welcome__text">
@@ -141,7 +211,7 @@
           </div>
         </div>
       </section>
-      <section class="about">
+      <section class="about section" id="">
         <div class="container">
           <div class="about__body">
             <div class="about__content">
@@ -154,8 +224,182 @@
                 be part of the future of TWF! : the community is the heart of the project.
               </p>
             </div>
-            <div class="about__cards">
-              <h3>TWF! OWNERS WILL HAVE ACCESS TO:</h3>
+            <div class="about-cards">
+              <h3 class="about-cards__title">TWF! OWNERS WILL HAVE ACCESS TO:</h3>
+              <div class="about-cards__items">
+                <div class="about-cards__item about-cards__item--first">
+                  <h4 class="about-cards__name">
+                    COMMUNITY VAULT
+                  </h4>
+                  <p class="about-cards__text">
+                    We are launching a Community Vault as the treasury to support our community. We will reserve 20%
+                    of all the minting funds raised to revert to the community in the form of giveaways, passive
+                    rewards, a comic series, and giving the chance to choose where the roadmap takes us to!
+                  </p>
+                  <div class="about-cards__decor">
+                    <div class="about-cards__leaves about-cards__leaves--l">
+                      <img class="about-cards__leaves-img" src="./img/content/about/leaves-1.svg" alt="leaves">
+                    </div>
+                    <div class="about-cards__leaves about-cards__leaves--m">
+                      <img class="about-cards__leaves-img" src="./img/content/about/leaves-1.svg" alt="leaves">
+                    </div>
+                    <div class="about-cards__leaves about-cards__leaves--s">
+                      <img class="about-cards__leaves-img" src="./img/content/about/leaves-2.svg" alt="leaves">
+                    </div>
+                  </div>
+                </div>
+                <div class="about-cards__item about-cards__item--second">
+                  <h4 class="about-cards__name">
+                    $TREES and LIQUIDITY POOL
+                  </h4>
+                  <p class="about-cards__text">
+                    We will provide an anti-paper hands system: Never sell below floor price thanks to our liquidity
+                    pool. Prices will be stabilised and even they may rise steadily in this way too.
+                  </p>
+                  <p class="about-cards__text">
+                    Additionally, if you deposit your TWF! NFT into the pool, you will earn our token $TREES. Earn fees
+                    by providing liquidity, and rewards by staking your $TREES+ETH LP Tokens. More info will come will
+                    come soon.
+                  </p>
+                  <div class="about-cards__decor">
+
+                    <div class="about-cards__leaves about-cards__leaves--l">
+                      <img class="about-cards__leaves-img" src="./img/content/about/leaves-1.svg" alt="leaves">
+                    </div>
+                    <div class="about-cards__leaves about-cards__leaves--m">
+                      <img class="about-cards__leaves-img" src="./img/content/about/leaves-1.svg" alt="leaves">
+                    </div>
+                    <div class="about-cards__leaves about-cards__leaves--s">
+                      <img class="about-cards__leaves-img" src="./img/content/about/leaves-2.svg" alt="leaves">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="comic section">
+        <div class="container">
+          <div class="comic__body">
+            <div class="comic__content">
+              <h2 class="comic__title title">
+                Meet your Tree With Face on the TWF! Comic!
+              </h2>
+              <p class="comic__text">
+                Your Tree With Face is not only a collectible stored as a ERC–721 token on the Ethereum network.
+                It is also going to be part of the animated Comic series to be delivered on a monthly basis after
+                minting. Each month, different TWF! characters with certain traits will appear.
+              </p>
+              <p class="comic__text">
+                Trees won’t be the only characters: in the future other characters will join the series, with potential
+                crossovers from other collections.
+              </p>
+            </div>
+            <div class="comic__items">
+              <div class="comic__item">
+                <picture><source srcset="./img/content/comic/1.webp" type="image/webp"><img class="comic__img" src="./img/content/comic/1.jpg" alt="comic"></picture>
+              </div>
+              <div class="comic__item">
+                <picture><source srcset="./img/content/comic/1.webp" type="image/webp"><img class="comic__img" src="./img/content/comic/1.jpg" alt="comic"></picture>
+              </div>
+              <div class="comic__item">
+                <picture><source srcset="./img/content/comic/1.webp" type="image/webp"><img class="comic__img" src="./img/content/comic/1.jpg" alt="comic"></picture>
+              </div>
+              <div class="comic__item">
+                <picture><source srcset="./img/content/comic/1.webp" type="image/webp"><img class="comic__img" src="./img/content/comic/1.jpg" alt="comic"></picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="team section">
+        <div class="container">
+          <div class="team__body">
+            <h2 class="team__title title">
+              Team
+            </h2>
+            <div class="team__slider">
+              <div class="team__items">
+                <div class="team__item">
+                  <div class="team__img-box">
+                    <picture><source srcset="./img/content/team/1.webp" type="image/webp"><img class="team__img" src="./img/content/team/1.png" alt="person"></picture>
+                  </div>
+                  <h3 class="team__name">
+                    XT-TWF!
+                  </h3>
+                  <p class="team__desc">
+                    Co-Founder of TWF!. Operations Manager. Jack of all trades and NFT Collector.
+                  </p>
+                </div>
+                <div class="team__item">
+                  <div class="team__img-box">
+                    <picture><source srcset="./img/content/team/2.webp" type="image/webp"><img class="team__img" src="./img/content/team/2.png" alt="person"></picture>
+                  </div>
+                  <h3 class="team__name">
+                    AL-TWF!
+                  </h3>
+                  <p class="team__desc">
+                    Co-Founder of TWF!. Lead Developer. Nobody connects the blockchain to the real-world better than
+                    him.
+                  </p>
+                </div>
+                <div class="team__item">
+                  <div class="team__img-box">
+                    <picture><source srcset="./img/content/team/3.webp" type="image/webp"><img class="team__img" src="./img/content/team/3.png" alt="person"></picture>
+                  </div>
+                  <h3 class="team__name">
+                    CO-TWF!
+                  </h3>
+                  <p class="team__desc">
+                    Co-Founder of TWF!. Business Development Manager. Master trader.
+                  </p>
+                </div>
+                <div class="team__item">
+                  <div class="team__img-box">
+                    <picture><source srcset="./img/content/team/4.webp" type="image/webp"><img class="team__img" src="./img/content/team/4.png" alt="person"></picture>
+                  </div>
+                  <h3 class="team__name">
+                    EV-TWF!
+                  </h3>
+                  <p class="team__desc">
+                    Co-Founder of TWF!. Positions Manager. A machine gun of ideas.
+                  </p>
+                </div>
+                <div class="team__item">
+                  <div class="team__img-box">
+                    <picture><source srcset="./img/content/team/5.webp" type="image/webp"><img class="team__img" src="./img/content/team/5.png" alt="person"></picture>
+                  </div>
+                  <h3 class="team__name">
+                    MI-TWF!
+                  </h3>
+                  <p class="team__desc">
+                    Co-Founder of TWF!. The Artist. Senior Designer.
+                  </p>
+                </div>
+                <div class="team__item">
+                  <div class="team__img-box">
+                    <picture><source srcset="./img/content/team/6.webp" type="image/webp"><img class="team__img" src="./img/content/team/6.png" alt="person"></picture>
+                  </div>
+                  <h3 class="team__name">
+                    EL-TWF!
+                  </h3>
+                  <p class="team__desc">
+                    Community Manager.
+                  </p>
+                </div>
+                <div class="team__item">
+                  <div class="team__img-box">
+                    <picture><source srcset="./img/content/team/7.webp" type="image/webp"><img class="team__img" src="./img/content/team/7.png" alt="person"></picture>
+                  </div>
+                  <h3 class="team__name">
+                    FO-TWF!
+                  </h3>
+                  <p class="team__desc">
+                    Advisor. NFT Connoisseur and Collector. Senior Trader.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -166,6 +410,5 @@
 </footer>
   </div>
 </body>
-<script src="./js/script.min.js"></script>
 
 </html>
