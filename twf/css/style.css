@@ -1275,7 +1275,7 @@ body {
 
 .about-cards__item--second {
   padding-bottom: 50px;
-  background-size: 276px 64px;
+  background-size: 276px 65px;
 }
 
 .about-cards__name {
@@ -1486,6 +1486,106 @@ body {
 .team__name {
   margin-bottom: 20px;
   font-size: 28px;
+}
+
+.faq {
+  background-color: #DFEBF7;
+}
+
+.faq__title {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.faq__title::after {
+  bottom: -11px;
+  left: 50%;
+  -webkit-transform: translateX(calc(-50% - 14px));
+      -ms-transform: translateX(calc(-50% - 14px));
+          transform: translateX(calc(-50% - 14px));
+  width: 956px;
+  height: 90px;
+  background-image: url(./../img/content/faq/title-bg.svg);
+}
+
+.faq__item {
+  background-color: #fff;
+  border: 4px solid #18063C;
+  border-radius: 21px;
+}
+
+.faq__item + .faq__item {
+  margin-top: 20px;
+}
+
+.faq__name {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 50px 30px 60px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.faq__name::after {
+  content: "";
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 24px;
+  height: 24px;
+  margin-left: 66px;
+  background-image: url(./../img/icons/open.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.faq__name._spoller-active {
+  padding-bottom: 20px;
+}
+
+.faq__name._spoller-active::after {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.faq__text {
+  padding: 0 140px 30px 60px;
+}
+
+.footer {
+  background-color: #fff;
+}
+
+.footer__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 38px 0;
+}
+
+.footer__copy {
+  font-size: 14px;
+  color: #4A3674;
 }
 
 @media (any-hover: hover) {
