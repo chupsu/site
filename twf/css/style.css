@@ -678,6 +678,8 @@ body {
 }
 
 .menu__btn {
+  position: relative;
+  z-index: 3;
   width: 40px;
   height: 40px;
   background-color: transparent;
@@ -764,9 +766,9 @@ body {
   -webkit-transform: translateY(-300%);
       -ms-transform: translateY(-300%);
           transform: translateY(-300%);
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -1017,7 +1019,7 @@ body {
 }
 
 .mint__slogan {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-size: 24px;
 }
 
@@ -1064,9 +1066,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 66px;
-  border: 1px solid #6A4331;
-  border-radius: 152px;
-  overflow: hidden;
 }
 
 .quantity__button {
@@ -1075,7 +1074,8 @@ body {
   font-size: 32px;
   color: #fff;
   background-color: #A28070;
-  border: none;
+  border-style: solid;
+  border-color: #6A4331;
   -webkit-transition: background-color 0.3s ease 0s;
   -o-transition: background-color 0.3s ease 0s;
   transition: background-color 0.3s ease 0s;
@@ -1088,10 +1088,16 @@ body {
 
 .quantity__button_plus {
   padding-right: 3px;
+  border-width: 1px 1px 1px 0;
+  border-top-right-radius: 152px;
+  border-bottom-right-radius: 152px;
 }
 
 .quantity__button_minus {
   padding-left: 3px;
+  border-width: 1px 0 1px 1px;
+  border-top-left-radius: 152px;
+  border-bottom-left-radius: 152px;
 }
 
 .quantity__input-box {
@@ -1105,7 +1111,9 @@ body {
   padding: 2px 0 0 0;
   text-align: center;
   font-size: 20px;
-  border: none;
+  border-width: 1px 0 1px 0;
+  border-style: solid;
+  border-color: #6A4331;
   outline: none;
 }
 
@@ -1748,11 +1756,13 @@ body {
   }
 }
 
-@media (min-width: 1210px) {
+@media (min-width: 991.98px) {
   .title {
     line-height: 1.4;
   }
+}
 
+@media (min-width: 1210px) {
   .offer__action {
     position: relative;
   }
@@ -1839,9 +1849,9 @@ body {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
-    width: 420px;
+    max-width: 420px;
     padding: 10px 0;
-    margin: 0 0 75px 0;
+    margin: 0 0 40px 0;
   }
 
   .offer__title::after {
@@ -1861,8 +1871,8 @@ body {
             align-items: center;
   }
 
-  .mint__slogan {
-    max-width: 300px;
+  .mint__price {
+    font-size: 24px;
   }
 
   .footer__body {
@@ -1888,12 +1898,6 @@ body {
     text-align: center;
   }
 
-  .mint__quantity {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-
   .footer__body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1913,14 +1917,58 @@ body {
   .container {
     max-width: 100%;
   }
-}
 
-@media (max-width: 479.98px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .offer__title::after {
+    bottom: 0px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 339px;
+    height: 90px;
+    background-image: url(./../img/content/offer/title-bg-s.svg);
+  }
+
   .offer__preview {
     -ms-grid-rows: 157px 16px 157px;
     -ms-grid-columns: 157px 16px 157px;
         grid-template: 157px 157px/157px 157px;
     gap: 16px;
+  }
+
+  .offer__img-box {
+    border-right: 18px;
+  }
+
+  .mint__text {
+    margin-bottom: 16px;
+  }
+
+  .mint__slogan {
+    max-width: 280px;
+    margin-bottom: 20px;
+  }
+
+  .mint__price {
+    font-size: 20px;
+  }
+
+  .mint__action {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .mint__quantity {
+    margin: 0 0 20px 0;
   }
 }
 
