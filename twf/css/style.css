@@ -1410,10 +1410,10 @@ body {
 
 .roadmap__title::after {
   bottom: -2px;
-  left: -44px;
-  width: 343px;
-  height: 72px;
-  background-image: url(./../img/content/roadmap/title-bg.svg);
+  left: -36px;
+  width: 298px;
+  height: 67px;
+  background-image: url(./../img/content/roadmap/title-bg-l.svg);
 }
 
 .roadmap__suptext {
@@ -1430,13 +1430,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 572px;
   margin: 0 auto;
 }
 
 .roadmap__item {
   border-left: 3px solid #4A3674;
-  padding-left: 35px;
+  padding-left: 34px;
 }
 
 .roadmap__item:not(:last-child) {
@@ -1454,7 +1453,7 @@ body {
   content: "";
   position: absolute;
   top: 50%;
-  left: -43px;
+  left: -42px;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -1766,6 +1765,12 @@ body {
   color: #4A3674;
 }
 
+@media (min-width: 575.98px) {
+  .roadmap__list {
+    max-width: 572px;
+  }
+}
+
 @media (min-width: 767.98px) {
   .header__btns {
     -webkit-box-align: center;
@@ -1905,6 +1910,10 @@ body {
 
   .comic__item {
     height: 174px;
+  }
+
+  .comic__item {
+    border-width: 3px;
   }
 
   .faq__item {
@@ -2047,7 +2056,24 @@ body {
   }
 
   .roadmap__title::after {
+    bottom: 0;
+    left: -34px;
+    width: 267px;
+    height: 59px;
     background-image: url(./../img/content/roadmap/title-bg-m.svg);
+  }
+
+  .roadmap__suptext {
+    margin-bottom: 40px;
+  }
+
+  .roadmap__item:not(:last-child) {
+    padding-bottom: 30px;
+  }
+
+  .roadmap__name {
+    margin-bottom: 16px;
+    font-size: 20px;
   }
 
   .comic__title {
@@ -2166,14 +2192,13 @@ body {
   }
 
   .welcome__title::after {
-    display: none;
-    left: -23px;
-    bottom: -3px;
-    -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
-            transform: translateX(0);
-    width: 291px;
-    height: 79px;
+    left: 50%;
+    bottom: 4px;
+    -webkit-transform: translateX(calc(-50% - 13px));
+        -ms-transform: translateX(calc(-50% - 13px));
+            transform: translateX(calc(-50% - 13px));
+    width: 332px;
+    height: 70px;
     background-image: url(./../img/content/welcome/title-bg-s.svg);
   }
 
@@ -2211,7 +2236,34 @@ body {
   }
 
   .roadmap__title::after {
+    left: -20px;
+    width: 180px;
+    height: 39px;
     background-image: url(./../img/content/roadmap/title-bg-s.svg);
+  }
+
+  .roadmap__suptext {
+    margin-bottom: 30px;
+  }
+
+  .roadmap__item {
+    padding-left: 24px;
+    border-width: 2px;
+  }
+
+  .roadmap__item:not(:last-child) {
+    padding-bottom: 20px;
+  }
+
+  .roadmap__name {
+    margin-bottom: 14px;
+    font-size: 18px;
+  }
+
+  .roadmap__name::before {
+    left: -30px;
+    width: 10px;
+    height: 10px;
   }
 
   .comic__content {
@@ -2241,6 +2293,10 @@ body {
   .comic__items {
     -ms-grid-columns: 142px 142px;
     grid-template-columns: 142px 142px;
+  }
+
+  .comic__item {
+    border-width: 2px;
   }
 
   .team__title::after {
