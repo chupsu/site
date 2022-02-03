@@ -551,6 +551,7 @@ body {
 }
 
 .title {
+  text-transform: uppercase;
   text-align: center;
   font-size: 38px;
   letter-spacing: 0.1em;
