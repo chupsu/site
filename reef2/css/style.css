@@ -482,6 +482,21 @@ body {
   overflow-x: hidden;
 }
 
+.bubbles {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bubbles .bubble {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
 .page {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -496,7 +511,7 @@ body {
 
 .section {
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 
 .title {
@@ -694,8 +709,15 @@ body {
   width: 318px;
   height: 92px;
   background: url(./../img/content/offer/fish.svg) center/contain no-repeat;
-  -webkit-animation: fishOffer 5s linear 3s forwards;
-          animation: fishOffer 5s linear 3s forwards;
+  -webkit-animation: fishOffer 5s linear 2s forwards;
+          animation: fishOffer 5s linear 2s forwards;
+}
+
+.offer::before {
+  content: "";
+  position: absolute;
+  width: 855px;
+  height: 425px;
 }
 
 .offer__body {
@@ -770,9 +792,20 @@ body {
 }
 
 .offer__btn {
+  position: relative;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+
+.offer__btn::after {
+  content: "";
+  position: absolute;
+  top: -8px;
+  right: 0;
+  width: 63px;
+  height: 54px;
+  background: url(./../img/content/crab.svg) center/contain no-repeat;
 }
 
 .offer__btn:focus-visible {
@@ -791,6 +824,9 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  -webkit-transition-timing-function: linear;
+       -o-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 
 .slider-offer__item {
@@ -878,16 +914,46 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-radius: 20px;
   background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  overflow: hidden;
+}
+
+.slider-lore__item:first-child {
+  position: relative;
+}
+
+.slider-lore__item:first-child::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  right: -32px;
+  width: 63px;
+  height: 54px;
+  background: url(./../img/content/crab.svg) center/contain no-repeat;
+}
+
+.slider-lore__item:first-child::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 90px;
+  left: 40px;
+  -webkit-transform: translateX(-100%) rotate(4deg);
+      -ms-transform: translateX(-100%) rotate(4deg);
+          transform: translateX(-100%) rotate(4deg);
+  width: 188px;
+  height: 373px;
+  background: url(./../img/content/lore/agla.svg) center/contain no-repeat;
 }
 
 .slider-lore__img-box {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   height: 310px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
 }
 
 .slider-lore__img {
@@ -1183,6 +1249,10 @@ body {
   padding-top: 20px;
 }
 
+.footer {
+  background-color: #0E2349;
+}
+
 .footer__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1192,7 +1262,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
-  padding-bottom: 65px;
+  padding: 62px 0;
 }
 
 .footer__logo {
@@ -1213,68 +1283,68 @@ body {
 
 @-webkit-keyframes fishOffer {
   0% {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+            transform: translate3d(0, 0, 0) scale(1);
     opacity: 1;
   }
 
   20% {
-    -webkit-transform: translate3d(30px, 10px, 0);
-            transform: translate3d(30px, 10px, 0);
+    -webkit-transform: translate3d(30px, 10px, 0) scale(0.95);
+            transform: translate3d(30px, 10px, 0) scale(0.95);
   }
 
   40% {
-    -webkit-transform: translate3d(60px, 10px, 0) rotate(5deg);
-            transform: translate3d(60px, 10px, 0) rotate(5deg);
+    -webkit-transform: translate3d(60px, 10px, 0) scale(0.9);
+            transform: translate3d(60px, 10px, 0) scale(0.9);
   }
 
   50% {
-    -webkit-transform: translate3d(110px, -20px, 0) rotate(-5deg);
-            transform: translate3d(110px, -20px, 0) rotate(-5deg);
+    -webkit-transform: translate3d(110px, -20px, 0) scale(0.85);
+            transform: translate3d(110px, -20px, 0) scale(0.85);
   }
 
   70% {
-    -webkit-transform: translate3d(200px, -10px, 0) rotate(0deg);
-            transform: translate3d(200px, -10px, 0) rotate(0deg);
+    -webkit-transform: translate3d(200px, -10px, 0) scale(0.8);
+            transform: translate3d(200px, -10px, 0) scale(0.8);
   }
 
   100% {
-    -webkit-transform: translate3d(300px, 20px, 0) rotate(5deg);
-            transform: translate3d(300px, 20px, 0) rotate(5deg);
+    -webkit-transform: translate3d(300px, 20px, 0) scale(0.75);
+            transform: translate3d(300px, 20px, 0) scale(0.75);
     opacity: 0;
   }
 }
 
 @keyframes fishOffer {
   0% {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+            transform: translate3d(0, 0, 0) scale(1);
     opacity: 1;
   }
 
   20% {
-    -webkit-transform: translate3d(30px, 10px, 0);
-            transform: translate3d(30px, 10px, 0);
+    -webkit-transform: translate3d(30px, 10px, 0) scale(0.95);
+            transform: translate3d(30px, 10px, 0) scale(0.95);
   }
 
   40% {
-    -webkit-transform: translate3d(60px, 10px, 0) rotate(5deg);
-            transform: translate3d(60px, 10px, 0) rotate(5deg);
+    -webkit-transform: translate3d(60px, 10px, 0) scale(0.9);
+            transform: translate3d(60px, 10px, 0) scale(0.9);
   }
 
   50% {
-    -webkit-transform: translate3d(110px, -20px, 0) rotate(-5deg);
-            transform: translate3d(110px, -20px, 0) rotate(-5deg);
+    -webkit-transform: translate3d(110px, -20px, 0) scale(0.85);
+            transform: translate3d(110px, -20px, 0) scale(0.85);
   }
 
   70% {
-    -webkit-transform: translate3d(200px, -10px, 0) rotate(0deg);
-            transform: translate3d(200px, -10px, 0) rotate(0deg);
+    -webkit-transform: translate3d(200px, -10px, 0) scale(0.8);
+            transform: translate3d(200px, -10px, 0) scale(0.8);
   }
 
   100% {
-    -webkit-transform: translate3d(300px, 20px, 0) rotate(5deg);
-            transform: translate3d(300px, 20px, 0) rotate(5deg);
+    -webkit-transform: translate3d(300px, 20px, 0) scale(0.75);
+            transform: translate3d(300px, 20px, 0) scale(0.75);
     opacity: 0;
   }
 }
@@ -1331,7 +1401,6 @@ body {
     padding: 0 43px;
     margin-right: -43px;
     margin-left: -43px;
-    overflow: hidden;
   }
 
   .roadmap__body {
@@ -1350,6 +1419,13 @@ body {
 
   .offer {
     background-size: 1480px;
+  }
+
+  .slider-lore__item:first-child::before {
+    top: 100px;
+    bottom: auto;
+    width: 120px;
+    height: 240px;
   }
 
   .team__bg {
@@ -1448,6 +1524,15 @@ body {
     margin-top: 40px;
   }
 
+  .slider-lore__item:first-child::after {
+    display: none;
+  }
+
+  .slider-lore__item:first-child::before {
+    top: 70px;
+    left: 30px;
+  }
+
   .slider-lore__img-box {
     height: 256px;
   }
@@ -1470,7 +1555,7 @@ body {
   }
 
   .footer__body {
-    padding-bottom: 40px;
+    padding: 44px 0;
   }
 
   .footer__desc {
@@ -1569,6 +1654,16 @@ body {
   .lore__subtext {
     margin-top: 30px;
     font-size: 20px;
+  }
+
+  .slider-lore__item:first-child::before {
+    top: 20px;
+    left: 40px;
+    width: 96px;
+    height: 190px;
+    -webkit-transform: translateX(-100%) rotate(10deg);
+        -ms-transform: translateX(-100%) rotate(10deg);
+            transform: translateX(-100%) rotate(10deg);
   }
 
   .slider-lore__img-box {
@@ -1671,7 +1766,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-bottom: 16px;
+    padding: 22px 0;
     gap: 16px;
   }
 
@@ -1716,6 +1811,10 @@ body {
   }
 
   .offer::after {
+    left: 20px;
+  }
+
+  .offer::before {
     left: 20px;
   }
 
