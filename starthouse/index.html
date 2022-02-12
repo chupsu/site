@@ -15,7 +15,8 @@
   <div class="container">
     <div class="header__body">
       <div class="logo">
-        <img class="logo__img" src="./img/content/logo.svg" alt="СТАРТДОМ Строительная фирма">
+        <div class="logo__name">Стартдом</div>
+        <div class="logo__desc">Строительная фирма</div>
       </div>
       <nav class="menu">
         <button class="menu__btn">
@@ -63,7 +64,7 @@
             </a>
           </li>
           <li class="contacts-header__item">
-            <a class="contacts-header__link" href="https://t.me/starthouse" target="_blank">
+            <a class="contacts-header__link" href="https://t.me/StartDom2018" target="_blank">
               <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M1.38859 11.1104L6.45783 12.9872L8.41994 19.2463C8.54549 19.6472 9.03968 19.7954 9.3677 19.5293L12.1934 17.2444C12.4896 17.005 12.9115 16.9931 13.221 17.216L18.3175 20.8863C18.6684 21.1393 19.1656 20.9485 19.2536 20.5279L22.987 2.71428C23.0831 2.25485 22.628 1.87157 22.187 2.04077L1.38265 10.0016C0.869238 10.198 0.873711 10.919 1.38859 11.1104ZM8.10373 11.9881L18.0109 5.93555C18.189 5.82709 18.3722 6.0659 18.2193 6.20658L10.043 13.7455C9.75556 14.0108 9.57018 14.366 9.51767 14.7514L9.23915 16.7988C9.20226 17.0722 8.81513 17.0993 8.73909 16.8347L7.66791 13.1013C7.54522 12.6755 7.72401 12.2206 8.10373 11.9881Z" />
@@ -81,11 +82,14 @@
           <div class="offer__body">
             <div class="offer__content">
               <h1 class="offer__title">
-                Строительство домов под ключ
+                Строительство<br>
+                домов под ключ
               </h1>
               <p class="offer__text">
-                Дома, гаражи, беседки из любых материалов. Обустройство и ограждение территории. Поможем с выбором,
-                индивидуальный подход. Соблюдаем сроки и качество.
+                Дома, гаражи, беседки из любых материалов.<br>
+                Обустройство и ограждение территории.<br>
+                Поможем с выбором, индивидуальный подход.<br>
+                Соблюдаем сроки и качество.
               </p>
               <a class="offer__btn btn" href="#">
                 Заказать услугу
@@ -140,7 +144,7 @@
           </div>
         </div>
       </section>
-      <section class="services">
+      <!-- <section class="services">
         <div class="container">
           <div class="services__body">
             <h2 class="services__title title">
@@ -260,7 +264,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <section class='projects'>
         <div class='container'>
           <div class='projects__body'>
@@ -284,133 +288,121 @@
             </div>
             <div class='projects-slider'>
               <div class='projects-slider__items'>
-                <div class="projects-slider__item">
-                  <div class="projects-slider__img-box">
+                <div class="projects-slider__item" data-gallery>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/1-0.jpg">
                     <picture><source srcset="./img/content/projects/1-0.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/1-0.jpg" alt="фото проекта"></picture>
                   </div>
-                  <div class="projects-slider__thumbs">
-                    <div class="projects-slider__thumb">
-                      <picture><source srcset="./img/content/projects/1-1.webp" type="image/webp"><img class="projects-slider__thumb-img" src="./img/content/projects/1-1.jpg" alt="фото проекта"></picture>
-                    </div>
-                    <div class="projects-slider__thumb">
-                      <picture><source srcset="./img/content/projects/1-2.webp" type="image/webp"><img class="projects-slider__thumb-img" src="./img/content/projects/1-2.jpg" alt="фото проекта"></picture>
-                    </div>
-                    <div class="projects-slider__thumb">
-                      <picture><source srcset="./img/content/projects/1-3.webp" type="image/webp"><img class="projects-slider__thumb-img" src="./img/content/projects/1-3.jpg" alt="фото проекта"></picture>
-                    </div>
-                    <div class="projects-slider__thumb">
-                      <picture><source srcset="./img/content/projects/1-4.webp" type="image/webp"><img class="projects-slider__thumb-img" src="./img/content/projects/1-4.jpg" alt="фото проекта"></picture>
-                    </div>
-                    <div class="projects-slider__thumb">
-                      <picture><source srcset="./img/content/projects/1-5.webp" type="image/webp"><img class="projects-slider__thumb-img" src="./img/content/projects/1-5.jpg" alt="фото проекта"></picture>
-                    </div>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/1-1.jpg">
+                    <picture><source srcset="./img/content/projects/1-1.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/1-1.jpg" alt="фото проекта"></picture>
+                  </div>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/1-2.jpg">
+                    <picture><source srcset="./img/content/projects/1-2.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/1-2.jpg" alt="фото проекта"></picture>
+                  </div>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/1-3.jpg">
+                    <picture><source srcset="./img/content/projects/1-3.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/1-3.jpg" alt="фото проекта"></picture>
+                  </div>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/1-4.jpg">
+                    <picture><source srcset="./img/content/projects/1-4.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/1-4.jpg" alt="фото проекта"></picture>
+                  </div>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/1-5.jpg">
+                    <picture><source srcset="./img/content/projects/1-5.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/1-5.jpg" alt="фото проекта"></picture>
                   </div>
                 </div>
-                <div class="projects-slider__item">
-                  <div class="projects-slider__img-box">
+                <div class="projects-slider__item" data-gallery>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/2-0.jpg">
                     <picture><source srcset="./img/content/projects/2-0.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/2-0.jpg" alt="фото проекта"></picture>
                   </div>
-                  <div class="projects-slider__thumbs">
-                    <div class="projects-slider__thumb">
-                      <picture><source srcset="./img/content/projects/2-1.webp" type="image/webp"><img class="projects-slider__thumb-img" src="./img/content/projects/2-1.jpg" alt="фото проекта"></picture>
-                    </div>
-                    <div class="projects-slider__thumb">
-                      <picture><source srcset="./img/content/projects/2-2.webp" type="image/webp"><img class="projects-slider__thumb-img" src="./img/content/projects/2-2.jpg" alt="фото проекта"></picture>
-                    </div>
-                    <div class="projects-slider__thumb">
-                      <picture><source srcset="./img/content/projects/2-3.webp" type="image/webp"><img class="projects-slider__thumb-img" src="./img/content/projects/2-3.jpg" alt="фото проекта"></picture>
-                    </div>
-                    <div class="projects-slider__thumb">
-                      <picture><source srcset="./img/content/projects/2-4.webp" type="image/webp"><img class="projects-slider__thumb-img" src="./img/content/projects/2-4.jpg" alt="фото проекта"></picture>
-                    </div>
-                    <div class="projects-slider__thumb">
-                      <picture><source srcset="./img/content/projects/2-5.webp" type="image/webp"><img class="projects-slider__thumb-img" src="./img/content/projects/2-5.jpg" alt="фото проекта"></picture>
-                    </div>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/2-1.jpg">
+                    <picture><source srcset="./img/content/projects/2-1.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/2-1.jpg" alt="фото проекта"></picture>
+                  </div>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/2-2.jpg">
+                    <picture><source srcset="./img/content/projects/2-2.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/2-2.jpg" alt="фото проекта"></picture>
+                  </div>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/2-3.jpg">
+                    <picture><source srcset="./img/content/projects/2-3.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/2-3.jpg" alt="фото проекта"></picture>
+                  </div>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/2-4.jpg">
+                    <picture><source srcset="./img/content/projects/2-4.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/2-4.jpg" alt="фото проекта"></picture>
+                  </div>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/2-5.jpg">
+                    <picture><source srcset="./img/content/projects/2-5.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/2-5.jpg" alt="фото проекта"></picture>
                   </div>
                 </div>
-                <div class="projects-slider__item">
-                  <div class="projects-slider__img-box">
+                <div class="projects-slider__item" data-gallery>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/3-0.jpg">
                     <picture><source srcset="./img/content/projects/3-0.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/3-0.jpg" alt="фото проекта"></picture>
                   </div>
-                  <div class="projects-slider__thumbs">
-                    <div class="projects-slider__thumb">
-                      <picture><source srcset="./img/content/projects/3-1.webp" type="image/webp"><img class="projects-slider__thumb-img" src="./img/content/projects/3-1.jpg" alt="фото проекта"></picture>
-                    </div>
-                    <div class="projects-slider__thumb">
-                      <picture><source srcset="./img/content/projects/3-2.webp" type="image/webp"><img class="projects-slider__thumb-img" src="./img/content/projects/3-2.jpg" alt="фото проекта"></picture>
-                    </div>
-                    <div class="projects-slider__thumb">
-                      <picture><source srcset="./img/content/projects/3-3.webp" type="image/webp"><img class="projects-slider__thumb-img" src="./img/content/projects/3-3.jpg" alt="фото проекта"></picture>
-                    </div>
-                    <div class="projects-slider__thumb">
-                      <picture><source srcset="./img/content/projects/3-4.webp" type="image/webp"><img class="projects-slider__thumb-img" src="./img/content/projects/3-4.jpg" alt="фото проекта"></picture>
-                    </div>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/3-1.jpg">
+                    <picture><source srcset="./img/content/projects/3-1.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/3-1.jpg" alt="фото проекта"></picture>
+                  </div>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/3-2.jpg">
+                    <picture><source srcset="./img/content/projects/3-2.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/3-2.jpg" alt="фото проекта"></picture>
+                  </div>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/3-3.jpg">
+                    <picture><source srcset="./img/content/projects/3-3.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/3-3.jpg" alt="фото проекта"></picture>
+                  </div>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/3-4.jpg">
+                    <picture><source srcset="./img/content/projects/3-4.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/3-4.jpg" alt="фото проекта"></picture>
                   </div>
                 </div>
-                <div class="projects-slider__item">
-                  <div class="projects-slider__img-box">
+                <div class="projects-slider__item" data-gallery>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/4-0.jpg">
                     <picture><source srcset="./img/content/projects/4-0.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/4-0.jpg" alt="фото проекта"></picture>
                   </div>
-                  <div class="projects-slider__thumbs">
-                    <div class="projects-slider__thumb">
-                      <picture><source srcset="./img/content/projects/4-1.webp" type="image/webp"><img class="projects-slider__thumb-img" src="./img/content/projects/4-1.jpg" alt="фото проекта"></picture>
-                    </div>
-                    <div class="projects-slider__thumb">
-                      <picture><source srcset="./img/content/projects/4-2.webp" type="image/webp"><img class="projects-slider__thumb-img" src="./img/content/projects/4-2.jpg" alt="фото проекта"></picture>
-                    </div>
-                    <div class="projects-slider__thumb">
-                      <picture><source srcset="./img/content/projects/4-3.webp" type="image/webp"><img class="projects-slider__thumb-img" src="./img/content/projects/4-3.jpg" alt="фото проекта"></picture>
-                    </div>
-                    <div class="projects-slider__thumb">
-                      <picture><source srcset="./img/content/projects/4-4.webp" type="image/webp"><img class="projects-slider__thumb-img" src="./img/content/projects/4-4.jpg" alt="фото проекта"></picture>
-                    </div>
-                    <div class="projects-slider__thumb">
-                      <picture><source srcset="./img/content/projects/4-5.webp" type="image/webp"><img class="projects-slider__thumb-img" src="./img/content/projects/4-5.jpg" alt="фото проекта"></picture>
-                    </div>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/4-1.jpg">
+                    <picture><source srcset="./img/content/projects/4-1.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/4-1.jpg" alt="фото проекта"></picture>
+                  </div>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/4-2.jpg">
+                    <picture><source srcset="./img/content/projects/4-2.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/4-2.jpg" alt="фото проекта"></picture>
+                  </div>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/4-3.jpg">
+                    <picture><source srcset="./img/content/projects/4-3.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/4-3.jpg" alt="фото проекта"></picture>
+                  </div>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/4-4.jpg">
+                    <picture><source srcset="./img/content/projects/4-4.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/4-4.jpg" alt="фото проекта"></picture>
+                  </div>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/4-5.jpg">
+                    <picture><source srcset="./img/content/projects/4-5.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/4-5.jpg" alt="фото проекта"></picture>
                   </div>
                 </div>
-                <div class="projects-slider__item">
-                  <div class="projects-slider__img-box">
+                <div class="projects-slider__item" data-gallery>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/5-0.jpg">
                     <picture><source srcset="./img/content/projects/5-0.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/5-0.jpg" alt="фото проекта"></picture>
                   </div>
-                  <div class="projects-slider__thumbs">
-                    <div class="projects-slider__thumb">
-                      <picture><source srcset="./img/content/projects/5-1.webp" type="image/webp"><img class="projects-slider__thumb-img" src="./img/content/projects/5-1.jpg" alt="фото проекта"></picture>
-                    </div>
-                    <div class="projects-slider__thumb">
-                      <picture><source srcset="./img/content/projects/5-2.webp" type="image/webp"><img class="projects-slider__thumb-img" src="./img/content/projects/5-2.jpg" alt="фото проекта"></picture>
-                    </div>
-                    <div class="projects-slider__thumb">
-                      <picture><source srcset="./img/content/projects/5-3.webp" type="image/webp"><img class="projects-slider__thumb-img" src="./img/content/projects/5-3.jpg" alt="фото проекта"></picture>
-                    </div>
-                    <div class="projects-slider__thumb">
-                      <picture><source srcset="./img/content/projects/5-4.webp" type="image/webp"><img class="projects-slider__thumb-img" src="./img/content/projects/5-4.jpg" alt="фото проекта"></picture>
-                    </div>
-                    <div class="projects-slider__thumb">
-                      <picture><source srcset="./img/content/projects/5-5.webp" type="image/webp"><img class="projects-slider__thumb-img" src="./img/content/projects/5-5.jpg" alt="фото проекта"></picture>
-                    </div>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/5-1.jpg">
+                    <picture><source srcset="./img/content/projects/5-1.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/5-1.jpg" alt="фото проекта"></picture>
+                  </div>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/5-2.jpg">
+                    <picture><source srcset="./img/content/projects/5-2.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/5-2.jpg" alt="фото проекта"></picture>
+                  </div>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/5-3.jpg">
+                    <picture><source srcset="./img/content/projects/5-3.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/5-3.jpg" alt="фото проекта"></picture>
+                  </div>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/5-4.jpg">
+                    <picture><source srcset="./img/content/projects/5-4.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/5-4.jpg" alt="фото проекта"></picture>
+                  </div>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/5-5.jpg">
+                    <picture><source srcset="./img/content/projects/5-5.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/5-5.jpg" alt="фото проекта"></picture>
                   </div>
                 </div>
-                <div class="projects-slider__item">
-                  <div class="projects-slider__img-box">
+                <div class="projects-slider__item" data-gallery>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/6-0.jpg">
                     <picture><source srcset="./img/content/projects/6-0.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/6-0.jpg" alt="фото проекта"></picture>
                   </div>
-                  <div class="projects-slider__thumbs">
-                    <div class="projects-slider__thumb">
-                      <picture><source srcset="./img/content/projects/6-1.webp" type="image/webp"><img class="projects-slider__thumb-img" src="./img/content/projects/6-1.jpg" alt="фото проекта"></picture>
-                    </div>
-                    <div class="projects-slider__thumb">
-                      <picture><source srcset="./img/content/projects/6-2.webp" type="image/webp"><img class="projects-slider__thumb-img" src="./img/content/projects/6-2.jpg" alt="фото проекта"></picture>
-                    </div>
-                    <div class="projects-slider__thumb">
-                      <picture><source srcset="./img/content/projects/6-3.webp" type="image/webp"><img class="projects-slider__thumb-img" src="./img/content/projects/6-3.jpg" alt="фото проекта"></picture>
-                    </div>
-                    <div class="projects-slider__thumb">
-                      <picture><source srcset="./img/content/projects/6-4.webp" type="image/webp"><img class="projects-slider__thumb-img" src="./img/content/projects/6-4.jpg" alt="фото проекта"></picture>
-                    </div>
-                    <div class="projects-slider__thumb">
-                      <picture><source srcset="./img/content/projects/6-5.webp" type="image/webp"><img class="projects-slider__thumb-img" src="./img/content/projects/6-5.jpg" alt="фото проекта"></picture>
-                    </div>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/6-1.jpg">
+                    <picture><source srcset="./img/content/projects/6-1.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/6-1.jpg" alt="фото проекта"></picture>
+                  </div>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/6-2.jpg">
+                    <picture><source srcset="./img/content/projects/6-2.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/6-2.jpg" alt="фото проекта"></picture>
+                  </div>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/6-3.jpg">
+                    <picture><source srcset="./img/content/projects/6-3.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/6-3.jpg" alt="фото проекта"></picture>
+                  </div>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/6-4.jpg">
+                    <picture><source srcset="./img/content/projects/6-4.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/6-4.jpg" alt="фото проекта"></picture>
+                  </div>
+                  <div class="projects-slider__img-box" data-src="./img/content/projects/6-5.jpg">
+                    <picture><source srcset="./img/content/projects/6-5.webp" type="image/webp"><img class="projects-slider__img" src="./img/content/projects/6-5.jpg" alt="фото проекта"></picture>
                   </div>
                 </div>
               </div>
@@ -418,7 +410,7 @@
           </div>
         </div>
       </section>
-      <section class='about'>
+      <!-- <section class='about'>
         <div class='container'>
           <div class='about__body'>
             <h2 class="about__title title">
@@ -642,11 +634,10 @@
                 <p class="form__title">
                   Заказать звонок
                 </p>
-                <input class="form__input" type="text" placeholder="Ваше имя" required>
-                <input class="form__input" type="tel" placeholder="Телефон" required>
+                <input class="form__input" type="text" name="name" placeholder="Ваше имя" required>
+                <input class="form__input" type="tel" name="phone" placeholder="Телефон" required>
                 <textarea class="form__textarea"
-                  placeholder="Добавьте комментарий (не обязательно), это поможет нам заранее сформировать предложение индивидуально под вашу ситуацию">
-                </textarea>
+                  placeholder="Добавьте комментарий (не обязательно), это поможет нам заранее сформировать предложение индивидуально под вашу ситуацию"></textarea>
                 <label class='form__agree agree'>
                   <input class='agree__checkbox-f' type='checkbox'>
                   <span class='agree__checkbox'></span>
@@ -661,14 +652,15 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
     <footer class="footer">
   <div class="container">
     <div class="footer__body">
       <div class="footer__top">
         <div class="logo">
-          <img class="logo__img" src="./img/content/logo-f.svg" alt="СТАРТДОМ Строительная фирма">
+          <div class="logo__name">Стартдом</div>
+          <div class="logo__desc">Строительная фирма</div>
         </div>
         <ul class="footer__menu">
           <li class="footer__item">
