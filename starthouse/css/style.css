@@ -2856,8 +2856,15 @@ body {
   }
 
   .agree__checkbox {
+    width: 30px;
+    height: 30px;
     -webkit-box-shadow: inset 0px 0px 5px rgba(209, 178, 128, 0.6);
             box-shadow: inset 0px 0px 5px rgba(209, 178, 128, 0.6);
+  }
+
+  .agree__checkbox::after {
+    width: 20px;
+    height: 15px;
   }
 
   .footer {
