@@ -2855,6 +2855,11 @@ body {
     margin-bottom: 25px;
   }
 
+  .agree__checkbox {
+    -webkit-box-shadow: inset 0px 0px 5px rgba(209, 178, 128, 0.6);
+            box-shadow: inset 0px 0px 5px rgba(209, 178, 128, 0.6);
+  }
+
   .footer {
     padding: 20px 0;
   }
