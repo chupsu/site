@@ -1873,12 +1873,15 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 40px;
 }
 
 .content-services__item:not(.swiper-slide-active) {
   visibility: hidden;
   pointer-events: none;
+}
+
+.content-services__text {
+  margin-bottom: 40px;
 }
 
 .content-services__list {
@@ -1893,6 +1896,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 22px;
+  margin-bottom: 40px;
 }
 
 .content-services__list-item {
@@ -2509,8 +2513,8 @@ body {
     font-size: 22px;
   }
 
-  .content-services__item {
-    gap: 30px;
+  .content-services__text {
+    margin-bottom: 30px;
   }
 
   .content-services__list {
@@ -2829,11 +2833,15 @@ body {
   }
 
   .content-services__item {
-    gap: 24px;
     padding-right: 0;
   }
 
+  .content-services__text {
+    margin-bottom: 24px;
+  }
+
   .content-services__list {
+    margin-bottom: 30px;
     gap: 15px;
   }
 
