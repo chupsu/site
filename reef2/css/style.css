@@ -1208,6 +1208,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 84px;
+  padding-bottom: 30px;
 }
 
 .roadmap__title {
@@ -1576,7 +1577,7 @@ body {
   }
 
   .team__body {
-    padding-top: 120px;
+    padding-top: 100px;
   }
 
   .team__title {
@@ -1785,6 +1786,8 @@ body {
   .offer__person {
     width: 208px;
     height: 210px;
+    -webkit-filter: drop-shadow(9px 9px 4px rgba(0, 0, 0, 0.65));
+            filter: drop-shadow(9px 9px 4px rgba(0, 0, 0, 0.65));
   }
 
   .slider-offer__item {
@@ -1891,7 +1894,7 @@ body {
   }
 
   .team__body {
-    padding-top: 80px;
+    padding-top: 70px;
   }
 
   .team__title {
@@ -1902,6 +1905,8 @@ body {
     width: 150px;
     height: 150px;
     margin-bottom: 16px;
+    -webkit-filter: drop-shadow(6px 6px 0px rgba(0, 0, 0, 0.35));
+            filter: drop-shadow(6px 6px 0px rgba(0, 0, 0, 0.35));
   }
 
   .slider-team__name {
@@ -1997,7 +2002,7 @@ body {
   }
 
   .team__body {
-    padding-top: 60px;
+    padding-top: 50px;
   }
 
   .team__title {
