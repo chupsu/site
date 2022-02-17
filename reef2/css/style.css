@@ -577,6 +577,40 @@ body {
           animation: fish 4s linear forwards;
 }
 
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  display: block;
+  -webkit-animation: fadeInUp 1s linear forwards;
+          animation: fadeInUp 1s linear forwards;
+}
+
 body {
   font-size: 18px;
   line-height: 1.55;
@@ -691,6 +725,9 @@ body {
 .slider__next svg {
   width: 32px;
   height: 32px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .slider__prev .arrow,
@@ -1315,9 +1352,25 @@ body {
 }
 
 .slider-team__img-box {
+  position: relative;
   width: 198px;
   height: 198px;
   margin-bottom: 28px;
+  border-radius: 50%;
+  -webkit-filter: drop-shadow(10px 14px 0px rgba(0, 0, 0, 0.35));
+          filter: drop-shadow(10px 14px 0px rgba(0, 0, 0, 0.35));
+}
+
+.slider-team__img-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  -webkit-box-shadow: inset 10px 10px 0px rgba(255, 255, 255, 0.25);
+          box-shadow: inset 10px 10px 0px rgba(255, 255, 255, 0.25);
 }
 
 .slider-team__img {
@@ -1325,6 +1378,8 @@ body {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .slider-team__name {
