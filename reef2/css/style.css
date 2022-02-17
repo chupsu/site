@@ -730,8 +730,20 @@ body {
           transform: rotate(-180deg);
 }
 
+.slider__prev:focus-visible svg {
+  -webkit-transform: rotate(-220deg);
+      -ms-transform: rotate(-220deg);
+          transform: rotate(-220deg);
+}
+
 .slider__next {
   right: -12px;
+}
+
+.slider__next:focus-visible svg {
+  -webkit-transform: rotate(40deg);
+      -ms-transform: rotate(40deg);
+          transform: rotate(40deg);
 }
 
 .header {
@@ -1970,6 +1982,18 @@ body {
   .slider__prev:hover:not(.swiper-button-disabled) .arrow,
   .slider__next:hover:not(.swiper-button-disabled) .arrow {
     fill: #fff;
+  }
+
+  .slider__prev:hover svg {
+    -webkit-transform: rotate(-220deg);
+        -ms-transform: rotate(-220deg);
+            transform: rotate(-220deg);
+  }
+
+  .slider__next:hover svg {
+    -webkit-transform: rotate(40deg);
+        -ms-transform: rotate(40deg);
+            transform: rotate(40deg);
   }
 
   .menu__link:hover::after {
