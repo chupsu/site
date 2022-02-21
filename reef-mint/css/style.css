@@ -787,7 +787,9 @@ body {
   .footer__body {
     background-size: 100% 100%;
   }
+}
 
+@media (min-width: 1921px) {
   .footer__body::before {
     height: 400px;
   }
