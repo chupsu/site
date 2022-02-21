@@ -499,8 +499,8 @@ body {
           align-items: center;
   min-width: 100%;
   min-height: 100vh;
-  padding-top: 220px;
-  padding-bottom: 380px;
+  padding-top: 260px;
+  padding-bottom: 420px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -523,7 +523,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px 95px 84px;
+  padding: 30px 95px 110px;
   background-color: #E2FCFF;
   border: 6px solid #FFFFFF;
   border-radius: 30px;
@@ -551,7 +551,7 @@ body {
 .mint__title {
   margin-bottom: 30px;
   text-align: center;
-  font-size: 72px;
+  font-size: 56px;
   color: #1F239F;
   -webkit-text-stroke: 9px #fff;
   -webkit-text-fill-color: #1F239F;
@@ -602,18 +602,54 @@ body {
   -webkit-text-stroke: 1px #D00A31;
 }
 
-.mint__btn {
+.mint__action {
   position: absolute;
   z-index: 1;
   left: 50%;
-  bottom: 0;
-  -webkit-transform: translate(-50%, 50%);
-      -ms-transform: translate(-50%, 50%);
-          transform: translate(-50%, 50%);
-  min-width: 274px;
+  bottom: -40px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mint__action-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.mint__quantity {
+  margin-right: 20px;
+}
+
+.mint__desc {
+  min-width: 100%;
+  padding-bottom: 8px;
+  margin: 0 -15px;
+  text-align: center;
+  font-size: 16px;
+  color: #112245;
+}
+
+.mint__btn {
+  min-width: 260px;
   padding: 22px 44px;
   text-transform: uppercase;
   text-align: center;
+  line-height: 1;
   font-size: 24px;
   color: #112245;
   background-color: #FFF500;
@@ -627,6 +663,57 @@ body {
 .mint__btn:focus-visible {
   outline: none;
   background-color: #f0e402;
+}
+
+.quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+}
+
+.quantity__button {
+  width: 70px;
+  height: 100%;
+  font-size: 32px;
+  color: #112245;
+  background-color: #FFF500;
+  border-style: solid;
+  border-color: #fff;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.quantity__button:focus-visible {
+  outline: none;
+  background-color: #f0e402;
+}
+
+.quantity__button_plus {
+  padding-right: 3px;
+  border-width: 6px 6px 6px 0;
+  border-top-right-radius: 39px;
+  border-bottom-right-radius: 39px;
+}
+
+.quantity__button_minus {
+  padding-left: 3px;
+  border-width: 6px 0 6px 6px;
+  border-top-left-radius: 39px;
+  border-bottom-left-radius: 39px;
+}
+
+.quantity__input {
+  width: 80px;
+  height: 100%;
+  text-align: center;
+  font-size: 26px;
+  color: #112245;
+  border-width: 6px 0 6px 0;
+  border-style: solid;
+  border-color: #fff;
+  outline: none;
 }
 
 .footer {
@@ -800,8 +887,8 @@ body {
     font-size: 18px;
   }
 
-  .mint__title {
-    font-size: 56px;
+  .mint__btn {
+    min-width: 220px;
   }
 
   .footer__body::before {
@@ -828,7 +915,7 @@ body {
 
   .mint__content {
     width: 100%;
-    padding: 40px 30px 80px;
+    padding: 40px 30px 90px;
     border-width: 4px;
   }
 
@@ -841,26 +928,57 @@ body {
     -webkit-text-stroke: 7px #fff;
   }
 
+  .mint__action {
+    bottom: -29px;
+  }
+
+  .mint__quantity {
+    margin-right: 14px;
+  }
+
   .mint__btn {
-    min-width: 220px;
+    min-width: 150px;
     padding: 16px 30px;
     font-size: 18px;
     border-width: 4px;
+  }
+
+  .quantity {
+    height: 58px;
+  }
+
+  .quantity__button {
+    width: 50px;
+    font-size: 24px;
+  }
+
+  .quantity__button_plus {
+    border-width: 4px 4px 4px 0;
+  }
+
+  .quantity__button_minus {
+    border-width: 4px 0 4px 4px;
+  }
+
+  .quantity__input {
+    width: 60px;
+    font-size: 20px;
+    border-width: 4px 0 4px 0;
   }
 }
 
 @media (max-width: 479.98px) {
   .mint__content {
-    padding: 40px 16px 70px;
-  }
-
-  .mint__btn {
-    min-width: 200px;
+    padding: 40px 16px 90px;
   }
 }
 
 @media (any-hover: hover) {
   .mint__btn:hover {
+    background-color: #f0e402;
+  }
+
+  .quantity__button:hover {
     background-color: #f0e402;
   }
 

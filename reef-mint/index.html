@@ -20,14 +20,14 @@
       <div class="bubbles"></div>
       <div class="mint__body">
         <div class="mint__content">
-          <h1 class="mint__title outline" data-text="Title">Title</h1>
+          <h1 class="mint__title outline" data-text="Mint">Mint</h1>
           <ul class="mint__list">
             <li class="mint__item">
               <span class="mint__name outline" data-text="Mint price:">
                 Mint price:
               </span>
-              <span class="mint__info outline" data-text="0.06 Ethereum">
-                0.06 Ethereum
+              <span class="mint__info outline" data-text="0,06 Ethereum">
+                0,06 Ethereum
               </span>
             </li>
             <li class="mint__item">
@@ -45,7 +45,22 @@
               </span>
             </li>
           </ul>
-          <a class="mint__btn" href="#">Mint</a>
+          <form class="mint__action">
+            <!-- <p class="mint__desc">Presale: 2 Max per Wallet</p> -->
+            <p class="mint__desc">Public: 10 Max per Transaction</p>
+            <div class="mint__action-inner">
+              <div class="mint__quantity">
+                <div class="quantity">
+                  <button class="quantity__button quantity__button_minus" type="button">–</button>
+                  <div class="quantity__input-box">
+                    <input class="quantity__input" type="text" value="1">
+                  </div>
+                  <button class="quantity__button quantity__button_plus" type="button">+</button>
+                </div>
+              </div>
+              <button class="mint__btn" type="submit">Mint</button>
+            </div>
+          </form>
         </div>
       </div>
     </main>
