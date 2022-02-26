@@ -1891,6 +1891,7 @@ body {
 
   .offer__text {
     max-width: 400px;
+    margin-bottom: 50px;
   }
 
   .offer-slider__item {
@@ -1919,6 +1920,10 @@ body {
 
   .container {
     max-width: 100%;
+  }
+
+  .btn {
+    padding: 17px 60px;
   }
 
   .offer::after {
