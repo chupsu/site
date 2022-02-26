@@ -14,7 +14,7 @@
     <header class="header">
   <div class="container">
     <div class="header__body">
-      <div class="logo">
+      <div class="logo logo--header">
         <img class="logo__img" src="./img/content/logo.svg" alt="logo">
       </div>
       <nav class="menu">
@@ -28,7 +28,7 @@
         <div class="menu__body">
           <ul class="menu__list">
             <li class="menu__item">
-              <a class="menu__link" href="#" data-goto=".whowe">Who We Are</a>
+              <a class="menu__link" href="#" data-goto=".about">Who We Are</a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#" data-goto=".story">Our Story</a>
@@ -48,7 +48,7 @@
           </ul>
         </div>
       </nav>
-      <a class="header__btn" href="#" data-goto=".contacts">
+      <a class="header__btn" href="#" data-goto=".contacts" data-da=".menu__body,991,2">
         Contact us
       </a>
     </div>
@@ -60,7 +60,7 @@
           <div class="offer__body">
             <div class="offer__content">
               <h1 class="offer__title">
-                The Investing <span>Revolution</span> in Crypto
+                The Investing <span>Revolution</span> in Crypto
               </h1>
               <p class="offer__text">
                 More than $300 Million invested in more than 11 assets. We are going to change the way investments work
@@ -119,7 +119,7 @@
           </div>
         </div>
       </section>
-      <section class="about section">
+      <!-- <section class="about section">
         <div class="container">
           <div class="about__body">
             <div class="about__content col">
@@ -512,7 +512,7 @@
                 <input class="contacts__checkbox-f" type="checkbox">
                 <span class="contacts__checkbox"></span>
                 <span class="contacts__agree-desc">
-                  I agree to the <a href="#">Privacy Policy</a>
+                  I agree to the <a class="popup-link" href="#thx">Privacy Policy</a>
                 </span>
               </label>
               <button class="contacts__btn btn" type="submit">
@@ -521,7 +521,7 @@
             </form>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
     <footer class="footer">
   <div class="container">
@@ -533,7 +533,7 @@
         <nav class="footer-menu">
           <ul class="footer-menu__list">
             <li class="footer-menu__item">
-              <a class="footer-menu__link" href="#" data-goto=".whowe">Who We Are</a>
+              <a class="footer-menu__link" href="#" data-goto=".about">Who We Are</a>
             </li>
             <li class="footer-menu__item">
               <a class="footer-menu__link" href="#" data-goto=".story">Our Story</a>
@@ -578,6 +578,23 @@
     </div>
   </div>
 </footer>
+    <div id="thx" class="popup">
+      <div class="popup__body">
+        <a class="popup__close popup-close" href="#">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z"
+              fill="#1765FF" />
+          </svg>
+        </a>
+        <h5 class="popup__title">
+          Thank you
+        </h5>
+        <p class="popup__text">
+          Your information has been successfully sent. We will contact you shortly.
+        </p>
+      </div>
+    </div>
   </div>
 </body>
 
