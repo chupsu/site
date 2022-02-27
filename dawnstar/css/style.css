@@ -1835,7 +1835,7 @@ body {
   }
 
   .footer__links {
-    gap: 0 45px;
+    gap: 0 40px;
   }
 
   .footer__bottom {
@@ -1878,6 +1878,24 @@ body {
     display: none;
   }
 
+  .popup__body {
+    padding: 90px 110px;
+  }
+
+  .popup__close {
+    width: 40px;
+    height: 40px;
+  }
+
+  .popup__title {
+    margin-bottom: 25px;
+    font-size: 40px;
+  }
+
+  .popup__text {
+    max-width: 350px;
+  }
+
   .header {
     padding: 22px 0;
   }
@@ -1887,6 +1905,8 @@ body {
   }
 
   .menu__btn {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1896,8 +1916,6 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
   }
 
   .menu__body {
@@ -2142,6 +2160,21 @@ body {
     gap: 0 30px;
   }
 
+  .footer__link {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer__link--social svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .footer__link--up svg {
+    width: 14px;
+    height: 14px;
+  }
+
   .footer-menu {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
@@ -2182,6 +2215,10 @@ body {
     margin-top: 15px;
   }
 
+  .popup__body {
+    padding: 85px 80px;
+  }
+
   .header {
     padding: 15px 0;
   }
@@ -2192,6 +2229,7 @@ body {
   }
 
   .offer-slider__item {
+    height: 39px;
     padding: 5px 11px;
   }
 
@@ -2262,21 +2300,6 @@ body {
     gap: 0 20px;
   }
 
-  .footer__link {
-    width: 40px;
-    height: 40px;
-  }
-
-  .footer__link--social svg {
-    width: 16px;
-    height: 16px;
-  }
-
-  .footer__link--up svg {
-    width: 14px;
-    height: 14px;
-  }
-
   .footer__bottom {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2319,6 +2342,24 @@ body {
 
   .slider__scrollbar {
     margin-top: 10px;
+  }
+
+  .popup__body {
+    padding: 80px 60px;
+  }
+
+  .popup__close {
+    top: 20px;
+    right: 20px;
+  }
+
+  .popup__title {
+    margin-bottom: 20px;
+    font-size: 32px;
+  }
+
+  .popup__text {
+    max-width: 210px;
   }
 
   .offer::after {
