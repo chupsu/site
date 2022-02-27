@@ -603,6 +603,29 @@ body {
           transform: rotate(90deg);
 }
 
+.slider__scrollbar {
+  position: relative;
+  height: 12px;
+  margin-top: 20px;
+}
+
+.slider__scrollbar::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #C3CFE0;
+}
+
+.slider__scrollbar .swiper-scrollbar-drag {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  border-bottom: 2px solid #031625;
+}
+
 .popup {
   position: fixed;
   z-index: 100;
@@ -1173,16 +1196,11 @@ body {
 }
 
 .invest__items-title {
-  margin-bottom: 50px;
   font-size: 40px;
 }
 
 .invest__items-title span {
   color: #1765FF;
-}
-
-.invest__text + .invest__text {
-  margin-top: 30px;
 }
 
 .market {
@@ -1222,11 +1240,7 @@ body {
 }
 
 .clients {
-  padding-bottom: 0;
-}
-
-.clients__title-box {
-  margin-bottom: 50px;
+  padding-bottom: 0 !important;
 }
 
 .clients__title {
@@ -1235,7 +1249,6 @@ body {
 
 .clients__slider {
   width: 100%;
-  overflow: hidden;
 }
 
 .clients__items {
@@ -1264,10 +1277,6 @@ body {
      object-position: center;
 }
 
-.partners__title-box {
-  margin-bottom: 50px;
-}
-
 .partners__title {
   color: #1765FF;
 }
@@ -1275,7 +1284,6 @@ body {
 .partners__slider {
   position: relative;
   width: 100%;
-  overflow: hidden;
 }
 
 .partners__slider::before,
@@ -1294,23 +1302,25 @@ body {
 }
 
 .partners__slider::after {
-  top: 261px;
+  top: 268px;
 }
 
 .partners__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  height: 387px;
+  height: 391px;
 }
 
 .partners__item {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  height: 109px;
+  height: 103px;
   padding: 25px 10px;
 }
 
@@ -1448,10 +1458,6 @@ body {
   padding: 0 25px;
 }
 
-.contacts__input--name {
-  width: 47.8%;
-}
-
 .contacts__textarea {
   height: 148px;
   padding: 23px 25px;
@@ -1459,6 +1465,9 @@ body {
 }
 
 .contacts__agree {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1689,6 +1698,26 @@ body {
   width: 100%;
 }
 
+@media (min-width: 991.98px) {
+  .slider__scrollbar {
+    display: none;
+  }
+
+  .clients__slider {
+    overflow: hidden;
+  }
+
+  .partners__slider {
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contacts__input--name {
+    width: 47.8%;
+  }
+}
+
 @media (max-width: 1200px) {
   .col {
     width: 450px;
@@ -1780,6 +1809,19 @@ body {
     padding: 55px 32px;
   }
 
+  .invest::after {
+    top: -95px;
+    left: calc(50% - 1220px);
+  }
+
+  .invest__title {
+    margin-bottom: 70px;
+  }
+
+  .invest__items-title {
+    font-size: 36px;
+  }
+
   .market__img-box {
     height: 350px;
   }
@@ -1830,6 +1872,10 @@ body {
   .title {
     text-align: center;
     font-size: 36px;
+  }
+
+  .slider__arrows {
+    display: none;
   }
 
   .header {
@@ -1972,6 +2018,30 @@ body {
     gap: 50px;
   }
 
+  .invest::after {
+    top: 10px;
+    width: 1080px;
+    height: 928px;
+    left: calc(50% - 860px);
+  }
+
+  .invest__title {
+    margin-bottom: 60px;
+  }
+
+  .invest__items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 50px 0;
+  }
+
+  .invest__items-title {
+    text-align: center;
+    font-size: 30px;
+  }
+
   .market__body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1987,6 +2057,76 @@ body {
   .market__img {
     -o-object-position: center;
        object-position: center;
+  }
+
+  .clients {
+    overflow: hidden;
+  }
+
+  .clients__items {
+    height: 200px;
+  }
+
+  .clients__item {
+    width: 175px;
+    height: 90px;
+    padding: 28px 19px;
+  }
+
+  .partners {
+    overflow: hidden;
+  }
+
+  .partners__slider::before {
+    top: 120px;
+  }
+
+  .partners__slider::after {
+    top: 256px;
+  }
+
+  .partners__items {
+    height: 375px;
+  }
+
+  .partners__item {
+    width: 155px;
+    padding: 22px 5px;
+  }
+
+  .contacts::after {
+    display: none;
+  }
+
+  .contacts__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .contacts__title {
+    margin-bottom: 60px;
+  }
+
+  .contacts__form {
+    gap: 20px 0;
+  }
+
+  .contacts__input {
+    height: 60px;
+  }
+
+  .contacts__textarea {
+    height: 130px;
+  }
+
+  .contacts__agree-desc {
+    font-size: 14px;
+  }
+
+  .contacts__btn {
+    margin: 24px auto 0;
   }
 
   .footer__body {
@@ -2036,6 +2176,10 @@ body {
 
   .title {
     font-size: 30px;
+  }
+
+  .slider__scrollbar {
+    margin-top: 15px;
   }
 
   .header {
@@ -2093,16 +2237,44 @@ body {
     padding: 48px 26px;
   }
 
+  .invest::after {
+    top: -80px;
+    left: calc(50% - 760px);
+  }
+
+  .invest__title {
+    margin-bottom: 50px;
+  }
+
+  .invest__items-title {
+    font-size: 24px;
+  }
+
   .market__img-box {
     height: 260px;
   }
 
-  .market__title {
-    text-align: left;
+  .contacts__title {
+    margin-bottom: 50px;
   }
 
   .footer__links {
     gap: 0 20px;
+  }
+
+  .footer__link {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer__link--social svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .footer__link--up svg {
+    width: 14px;
+    height: 14px;
   }
 
   .footer__bottom {
@@ -2143,6 +2315,10 @@ body {
 
   .btn {
     padding: 17px 60px;
+  }
+
+  .slider__scrollbar {
+    margin-top: 10px;
   }
 
   .offer::after {
@@ -2203,9 +2379,71 @@ body {
     margin-top: 40px;
   }
 
+  .invest::after {
+    top: -20px;
+    left: calc(50% - 580px);
+    width: 740px;
+    height: 634px;
+  }
+
+  .invest__title {
+    margin-bottom: 40px;
+  }
+
+  .invest__items {
+    gap: 40px 0;
+  }
+
+  .invest__items-title {
+    font-size: 20px;
+  }
+
   .market__img-box {
     height: 228px;
     margin-bottom: 40px;
+  }
+
+  .clients__items {
+    height: 176px;
+  }
+
+  .clients__item {
+    width: 155px;
+    height: 78px;
+    padding: 24px 17px;
+  }
+
+  .contacts__title {
+    margin-bottom: 40px;
+  }
+
+  .contacts__form {
+    gap: 16px 0;
+  }
+
+  .contacts__input {
+    height: 52px;
+    padding: 0 20px;
+  }
+
+  .contacts__textarea {
+    height: 102px;
+    padding: 17px 20px;
+  }
+
+  .contacts__checkbox {
+    width: 30px;
+    height: 30px;
+    margin-right: 16px;
+    background-size: 12px 10px;
+  }
+
+  .contacts__agree-desc {
+    font-size: 12px;
+  }
+
+  .contacts__btn {
+    margin-top: 14px;
   }
 }
 
@@ -2221,6 +2459,11 @@ body {
 
   .story__item {
     padding: 40px 20px;
+  }
+
+  .invest::after {
+    top: 30px;
+    left: calc(50% - 500px);
   }
 }
 
