@@ -770,6 +770,10 @@ body {
   background-color: #031625;
 }
 
+.policy__text strong {
+  text-transform: uppercase;
+}
+
 .header {
   position: fixed;
   z-index: 10;
