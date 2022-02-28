@@ -658,10 +658,24 @@ body {
 .popup__body {
   position: relative;
   max-height: 100vh;
-  padding: 110px 140px;
-  text-align: center;
   background-color: #FAFCFF;
   border-radius: 14px;
+  overflow: auto;
+  scrollbar-color: #031625 #C3CFE0;
+  scrollbar-width: thin;
+}
+
+.popup__body::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+.popup__body::-webkit-scrollbar-track {
+  background-color: #C3CFE0;
+}
+
+.popup__body::-webkit-scrollbar-thumb {
+  background-color: #031625;
 }
 
 .popup__close {
@@ -715,8 +729,45 @@ body {
   color: #1765FF;
 }
 
-.popup__text {
+.thx {
+  padding: 110px 140px;
+  text-align: center;
+}
+
+.thx__title,
+.thx__text {
   max-width: 412px;
+}
+
+.policy {
+  max-width: 800px;
+  max-height: 90vh;
+  padding: 70px 60px;
+}
+
+.policy__title {
+  padding-right: 40px;
+}
+
+.policy__text {
+  padding-right: 30px;
+  max-height: calc(90vh - 140px - 58px - 30px);
+  overflow: auto;
+  scrollbar-color: #031625 #C3CFE0;
+  scrollbar-width: thin;
+}
+
+.policy__text::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+.policy__text::-webkit-scrollbar-track {
+  background-color: #C3CFE0;
+}
+
+.policy__text::-webkit-scrollbar-thumb {
+  background-color: #031625;
 }
 
 .header {
@@ -1878,10 +1929,6 @@ body {
     display: none;
   }
 
-  .popup__body {
-    padding: 90px 110px;
-  }
-
   .popup__close {
     width: 40px;
     height: 40px;
@@ -1892,8 +1939,23 @@ body {
     font-size: 40px;
   }
 
-  .popup__text {
+  .thx {
+    padding: 90px 110px;
+  }
+
+  .thx__title,
+  .thx__text {
     max-width: 350px;
+  }
+
+  .policy {
+    max-width: 90%;
+    padding: 50px 40px;
+  }
+
+  .policy__text {
+    padding-right: 20px;
+    max-height: calc(90vh - 100px - 48px - 25px);
   }
 
   .header {
@@ -2215,7 +2277,7 @@ body {
     margin-top: 15px;
   }
 
-  .popup__body {
+  .thx {
     padding: 85px 80px;
   }
 
@@ -2344,10 +2406,6 @@ body {
     margin-top: 10px;
   }
 
-  .popup__body {
-    padding: 80px 60px;
-  }
-
   .popup__close {
     top: 20px;
     right: 20px;
@@ -2358,8 +2416,24 @@ body {
     font-size: 32px;
   }
 
-  .popup__text {
+  .thx {
+    padding: 80px 60px;
+  }
+
+  .thx__title,
+  .thx__text {
     max-width: 210px;
+  }
+
+  .policy {
+    width: 100%;
+    max-width: 96%;
+    padding: 30px 20px;
+  }
+
+  .policy__text {
+    padding-right: 10px;
+    max-height: calc(90vh - 60px - 39px - 20px);
   }
 
   .offer::after {

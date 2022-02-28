@@ -179,7 +179,7 @@
                     10
                   </div>
                   <p class="about-num__desc">
-                    Team Member
+                    Team Members
                   </p>
                 </li>
               </ul>
@@ -512,7 +512,7 @@
                 <input class="contacts__checkbox-f" type="checkbox">
                 <span class="contacts__checkbox"></span>
                 <span class="contacts__agree-desc">
-                  I agree to the <a href="#">Privacy Policy</a>
+                  I agree to the <a class="popup-link" href="#policy">Privacy Policy</a>
                 </span>
               </label>
               <button class="contacts__btn btn" type="submit">
@@ -553,7 +553,7 @@
           </ul>
         </nav>
         <div class="footer__links">
-          <a class="footer__link footer__link--social" href="#" target='_blank'>
+          <a class="footer__link footer__link--social" href="https://twitter.com/DawnstarCapital" target='_blank'>
             <svg viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M9.71114 4.25625L9.75449 4.9483L9.03194 4.86356C6.40184 4.53872 4.10411 3.4371 2.15321 1.58693L1.19944 0.668915L0.953773 1.34684C0.433533 2.85804 0.765908 4.45398 1.84974 5.52735C2.42779 6.12054 2.29773 6.20528 1.3006 5.85219C0.953773 5.7392 0.6503 5.65446 0.621397 5.69683C0.52024 5.7957 0.867066 7.08092 1.14164 7.58937C1.51737 8.29553 2.28327 8.98758 3.12144 9.39716L3.82954 9.72199L2.99138 9.73612C2.18212 9.73612 2.15321 9.75024 2.23992 10.0468C2.52894 10.9649 3.67058 11.9394 4.94228 12.3631L5.83825 12.6597L5.05789 13.1116C3.9018 13.7613 2.54339 14.1285 1.18499 14.1567C0.534691 14.1709 0 14.2273 0 14.2697C0 14.411 1.76303 15.2019 2.78906 15.5126C5.86715 16.4306 9.52328 16.0351 12.269 14.4674C14.2199 13.3517 16.1708 11.1343 17.0812 8.98758C17.5725 7.84359 18.0639 5.75333 18.0639 4.75057C18.0639 4.10089 18.1072 4.01615 18.9165 3.23937C19.3934 2.78742 19.8414 2.2931 19.9281 2.15187C20.0726 1.88352 20.0581 1.88352 19.3211 2.12362C18.0928 2.54732 17.9194 2.49083 18.5263 1.85528C18.9743 1.40333 19.509 0.584174 19.509 0.344077C19.509 0.301707 19.2922 0.372324 19.0466 0.499434C18.7864 0.640668 18.2084 0.852518 17.7749 0.979629L16.9945 1.21973L16.2864 0.753655C15.8962 0.499434 15.3471 0.216967 15.058 0.132227C14.321 -0.0655006 13.1939 -0.0372539 12.5291 0.18872C10.7227 0.824272 9.58108 2.46258 9.71114 4.25625Z" />
@@ -571,27 +571,192 @@
         <p class="footer__copy">
           © 2022 All rights reserved
         </p>
-        <a class="footer__privacy" href="#" target="_blank">
+        <a class="footer__privacy popup-link" href="#policy" target="_blank">
           Privacy Policy
         </a>
       </div>
     </div>
   </div>
 </footer>
-    <div id="thx" class="popup open">
-      <div class="popup__body">
+    <div id="thx" class="popup">
+      <div class="popup__body thx">
         <a class="popup__close popup-close" href="#">
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
-              d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z"
-              fill="#1765FF" />
+              d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z" />
           </svg>
         </a>
-        <h5 class="popup__title">
+        <h5 class="popup__title thx__title">
           Thank you
         </h5>
-        <p class="popup__text">
+        <p class="thx__text">
           Your information has been successfully sent. We will contact you shortly.
+        </p>
+      </div>
+    </div>
+    <div id="policy" class="popup">
+      <div class="popup__body policy">
+        <a class="popup__close popup-close" href="#">
+          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z" />
+          </svg>
+        </a>
+        <h5 class="popup__title policy__title">
+          Privacy policy
+        </h5>
+        <p class="policy__text">
+          Effective Date: August 14, 2015
+          <br><br>
+          This Privacy Policy or “Policy” explains how Digital Currency Group Inc. and its subsidiaries and affiliates,
+          including Grayscale and Genesis (collectively, “DCG”, “Grayscale”, “Genesis”, “we”, “our”, and “us”) collect
+          and protect Personal Information (as defined below). If you have any questions that this Policy does not
+          address, please contact us at <a href="mailto:info@dcg.co">info@dcg.co</a>. By creating an account on any DCG
+          site (a “DCG Site”) or by
+          otherwise submitting Personal Information to us through a DCG Site, you give your consent to the collection
+          and use of your Personal Information as explained in this Policy. This Policy is part of our Terms of Service.
+          and all capitalized terms used but not defined in this Policy have the meaning given to them in the Terms of
+          Service.
+          <br><br>
+          DCG’s Policy applies to current and former DCG clients and any other users of any DCG Site. The term “Personal
+          Information” refers to non-public information that personally relates to or identifies you as an individual or
+          entity.
+          <br><br><br>
+          <strong>Updates and Changes to Our Privacy Policy</strong>
+          <br><br>
+          Please note that, in the event of a change in policy, a revised Policy will promptly be posted to the DCG
+          Site. You agree to accept posting of a revised Policy electronically on the DCG Site as actual notice to you.
+          Any dispute over our Policy is subject to this notice.
+          <br><br><br>
+          <strong>How and Why We Gather Information</strong>
+          <br><br>
+          When you sign up to participate on a DCG Site, you may be asked to provide information such as your full legal
+          name, address and date of birth, along with other personal information that is required to verify your
+          identity and fulfill our legal and regulatory requirements. This information will also be used to transact
+          your business and communicate with you. From time to time, we may request additional information to help us
+          further assess your needs and preferences.
+          <br><br><br>
+          <strong>How We Protect Your Information</strong>
+          <br><br>
+          Keeping Information Safe
+          <br><br>
+          We limit access to the Personal Information you provide us to those employees who need access to that
+          information. In keeping with industry standards and practices, we maintain appropriate physical, electronic
+          and procedural safeguards, and controls designed to protect your Personal Information.
+          <br><br>
+          We have invested in software, systems and procedures aimed at offering you a safe and secure transaction
+          environment and protect your personal, financial and historical transaction information. While no security
+          system is absolutely impenetrable, we plan to constantly review, refine and upgrade our security technology as
+          new tools become available.
+          <br><br><br>
+          <strong>The Importance of Being Accurate</strong>
+          <br><br>
+          We have security standards and procedures in place designed to prevent unauthorized access to your Personal
+          Information. A key part of this process helps ensure that the Personal Information we have about you is
+          accurate and up-to-date. If you ever discover inaccuracies in our data or if your Personal Information
+          changes, we urge you to notify us immediately. We only use your Personal Information as appropriate to provide
+          you with quality services and to ensure security. For example, we may use the information collected from you
+          to verify your identity and contact information.
+          <br><br><br>
+          <strong>An Ongoing Commitment to Your Privacy</strong>
+          <br><br>
+          We are committed to protecting your privacy. If you choose to stop receiving updates and messages from DCG,
+          your Personal Information will continue to be protected by the privacy policies and principles described in
+          the then-current version of this Policy.
+          <br><br><br>
+          <strong>We Limit the Sharing of Information</strong>
+          <br><br>
+          To protect your privacy, we limit the sharing of your Personal Information outside of DCG and our direct
+          subsidiaries. We conduct our business with great respect for the confidential nature of the information being
+          provided. We will not share Personal Information about you except as outlined below:
+          <br><br>
+          To help us provide our services to you and/or to improve our services, we engage qualified and reputable third
+          parties to help us to carry out certain functions such as account processing, client services and/or data
+          collection relevant to our business.
+          <br><br>
+          DCG may share information with our affiliates if the information is required to provide the services you
+          request. An affiliate is a company that we own or control, or with which there is common ownership with us.
+          <br><br>
+          DCG also reserves the right to disclose your personal information where required by law to regulatory, law
+          enforcement or other government authorities, including during routine regulatory examinations. We may also
+          disclose your information as necessary to credit reporting or collection agencies, or when necessary to
+          protect our rights or property.
+          <br><br><br>
+          <strong>Reviewing, Changing or Correcting Information</strong>
+          <br><br>
+          You are responsible for helping us to maintain the accuracy and completeness of your Personal Information and
+          other data. We urge you to review your information regularly to ensure that it is correct and complete. If you
+          would like to review your Personal Information or if you believe that any of your Personal Information is
+          incorrect, or if you have any questions regarding your Personal Information, or this Privacy Policy, please
+          contact us at <a href="mailto:info@dcg.co">info@dcg.co</a>.
+          <br><br><br>
+          <strong>Third Party Sites</strong>
+          <br><br>
+          If at any time you choose to purchase a product or service offered by another company, any Personal
+          Information you share with that company will be subject to the privacy policies of the applicable third party
+          companies and will not be controlled by our Privacy Policy. Other than as described above, we are not
+          responsible for the privacy policies or the content of third party sites and/or services (each, a “Third Party
+          Service”) we link to, and have no control of the use or protection of information provided by you or collected
+          by those Third Party Services. Whenever you elect to hyperlink to a Third Party Service, you may be asked to
+          provide registration or other information. Please note that the information you are providing is going to a
+          third-party, and you should familiarize yourself with the privacy policy provided by that party.
+          <br><br><br>
+          <strong>Privacy and the Internet</strong>
+          <br><br>
+          The following additional information will be of interest to you if you access a DCG Site and/or one of its
+          affiliates’ products or services through one or more of our websites:
+          <br><br>
+          The DCG Sites are built upon an infrastructure with multiple layers of protection, including physical security
+          of our equipment to system intrusion detection capabilities. Within such our sites, we use industry standard
+          encryption technologies to help safeguard your information.
+          <br><br>
+          Security is a cooperative effort between us and the users of the DCG Sites. Please remember that your user
+          identification and password are personal to you and should not be made available to any other person. Also,
+          you should discontinue their use and notify us if you have any reason to suspect that someone else may be
+          using them.
+          <br><br>
+          “Cookies” are small text files that may be placed on your web browser when you visit our websites. Cookies
+          make it easier for you to navigate our website by, among other things, “remembering” your identity so that you
+          do not have to input your password multiple times as you navigate between our website pages and/or access our
+          services. Authentication (i.e., verifying that you are who you say you are) is an essential component of site
+          security. You can set your web browser to inform you when cookies are set, or to prevent cookies from being
+          set. Please note that if you decline to use cookies, you may experience reduced functionality, slower site
+          response times, and declining to use our authentication-related cookies may prevent you from using our website
+          altogether.
+          <br><br>
+          Web surfing data (e.g., information regarding which of our web pages you access, the frequency of such access,
+          and your product and service preferences) may be collected by DCG, or by our service providers. This may be
+          accomplished by using cookies, Web beacons, page tags or similar tools that are set when you visit our
+          website. Web surfing data and similar information may be shared internally within DCG and used: for
+          administrative purposes; to assess the usage, value and performance of our online products and services; to
+          improve your experience with our websites; and as otherwise permitted by applicable law or regulation. If you
+          are a DCG client, this information helps us suggest products or service offerings that may be of interest to
+          you. This information may be processed by us for the purposes described above, or on our behalf by Third Party
+          Services, solely in accordance with our instructions.
+          <br><br>
+          DCG Sites may include social media features (“Features”), such as the Facebook Like button and widgets, such
+          as the “Share This” button or interactive mini-programs that run on this Site (“Widgets”). These Features and
+          Widgets may collect your IP address, which page you are visiting on a DCG Site, and may set a cookie to enable
+          the Feature or Widget to function properly. Social media Features and Widgets are either hosted by a third
+          party or hosted directly on a DCG Site. Your interactions with these Features and Widgets are governed by the
+          privacy policy of the company providing it.
+          <br><br><br>
+          <strong>CalOPPA Disclosures</strong>
+          <br><br>
+          Do Not Track Signals
+          <br><br>
+          We do not currently respond to web browsers’ “Do Not Track” signals that provide a method to opt out of the
+          collection information about visitors’ activities on the DCG Sites, and across other websites. If we do so in
+          the future, we will provide all relevant information in this Privacy Policy.
+          <br><br><br>
+          <strong>Third Party Data Collection</strong>
+          <br><br>
+          We may authorize certain third parties, including, without limitation, Google Analytics, Chartbeat and
+          Mixpanel, to track usage and collect information about users and their activities on the DCG Sites.
+          <br><br><br>
+          <strong>Contact Us</strong>
+          <br><br>
+          Email: <a href="mailto:info@dcg.co">info@dcg.co</a>
         </p>
       </div>
     </div>
