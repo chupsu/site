@@ -1767,12 +1767,6 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
-  .contacts__input--name {
-    width: 47.8%;
-  }
-}
-
 @media (max-width: 1200px) {
   .col {
     width: 450px;
