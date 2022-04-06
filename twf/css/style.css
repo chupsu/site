@@ -793,13 +793,26 @@ body {
   transition: all 0.3s ease 0s;
 }
 
-.social__link:focus-visible {
+.social__link:not(.social__link--nosvg):focus-visible {
   outline: none;
   background-color: #6A4331;
 }
 
-.social__link:focus-visible path {
+.social__link:not(.social__link--nosvg):focus-visible path {
   fill: #fff;
+}
+
+.social__link--nosvg {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+
+.social__link img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .offer {
@@ -1046,12 +1059,8 @@ body {
 }
 
 .video {
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 650px;
+  width: 100%;
+  height: 700px;
 }
 
 .video video {
@@ -1783,6 +1792,11 @@ body {
     background: url(./../img/content/offer/arrow.svg) center/contain no-repeat;
   }
 
+  .video {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
   .welcome__text {
     max-width: 632px;
   }
@@ -1982,6 +1996,10 @@ body {
 
   .timer__name {
     font-size: 12px;
+  }
+
+  .video {
+    height: 500px;
   }
 
   .welcome__content {
@@ -2221,6 +2239,10 @@ body {
 
   .timer__num {
     font-size: 36px;
+  }
+
+  .video {
+    height: 400px;
   }
 
   .welcome__content {
@@ -2525,6 +2547,10 @@ body {
   .mint__quantity {
     margin: 0 0 20px 0;
   }
+
+  .video {
+    height: 300px;
+  }
 }
 
 @media (any-hover: hover) {
@@ -2549,11 +2575,11 @@ body {
     padding-left: 10px;
   }
 
-  .social__link:hover {
+  .social__link:not(.social__link--nosvg):hover {
     background-color: #6A4331;
   }
 
-  .social__link:hover path {
+  .social__link:not(.social__link--nosvg):hover path {
     fill: #fff;
   }
 
