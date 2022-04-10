@@ -722,6 +722,21 @@ body {
   opacity: 1;
 }
 
+.projects__item.active .info-project {
+  bottom: 0px !important;
+}
+
+.projects__item.active .info-project__btn::before {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.projects__item:not(.active) .info-project__item a {
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .projects__img-box {
   width: 100%;
   height: 100%;
@@ -748,21 +763,6 @@ body {
   -webkit-transition-duration: 0.3s;
        -o-transition-duration: 0.3s;
           transition-duration: 0.3s;
-}
-
-.info-project.active {
-  bottom: 0px !important;
-}
-
-.info-project.active .info-project__btn::before {
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-.info-project:not(.active) a {
-  visibility: hidden;
-  pointer-events: none;
 }
 
 .info-project__btn {
@@ -1291,13 +1291,13 @@ body {
     bottom: 0px !important;
   }
 
-  .projects__item:hover .info-project .info-project__btn::before {
+  .projects__item:hover .info-project__btn::before {
     -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
             transform: rotate(90deg);
   }
 
-  .projects__item:hover .info-project a {
+  .projects__item:hover .info-project__item a {
     visibility: visible;
     pointer-events: auto;
   }
