@@ -582,12 +582,6 @@ hr {
   background-color: #fff;
 }
 
-.menu__link._active._active {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
 .menu__link:not(._active):focus-visible {
   background-color: #3d3d3d;
 }
@@ -634,11 +628,11 @@ hr {
 
 .offer__scroll {
   position: absolute;
+  bottom: 32px;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -715,10 +709,10 @@ hr {
 }
 
 .info__preview {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   width: 45.88%;
   height: 600px;
 }
@@ -951,18 +945,27 @@ hr {
   }
 
   .benefits__body {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    gap: 50px 54px;
     padding: 80px 0;
   }
 
   .benefits__title {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    padding-top: 0;
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+    font-size: 40px;
+  }
+
+  .benefits__item {
+    font-size: 28px;
+  }
+
+  .benefits__item::after {
+    top: 7px;
+  }
+
+  .benefits__desc {
+    -ms-flex-preferred-size: 400px;
+        flex-basis: 400px;
   }
 }
 
@@ -1031,7 +1034,18 @@ hr {
   }
 
   .benefits__body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 66px 0;
+  }
+
+  .benefits__title {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-top: 0;
   }
 
   .benefits__list {
@@ -1095,8 +1109,9 @@ hr {
     gap: 40px 0;
   }
 
-  .benefits__title {
-    font-size: 40px;
+  .benefits__list {
+    -ms-flex-preferred-size: 540px;
+        flex-basis: 540px;
   }
 
   .action__body {
@@ -1174,9 +1189,9 @@ hr {
   }
 
   .menu__link {
-    font-size: 26px;
-    padding: 2px 20px;
     min-width: 110px;
+    padding: 2px 20px;
+    font-size: 26px;
   }
 
   .offer__body {
@@ -1262,12 +1277,23 @@ hr {
     padding-bottom: 40px;
   }
 
+  .action__code {
+    width: 70px;
+    height: 70px;
+  }
+
   .action__title {
     margin-bottom: 4px;
   }
 
   .action__text {
     font-size: 13px;
+  }
+
+  .action__btn {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
   }
 }
 
