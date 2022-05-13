@@ -435,11 +435,533 @@ body {
   height: 100%;
 }
 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeInUp4 {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 40%, 0);
+            transform: translate3d(0, 40%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp4 {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 40%, 0);
+            transform: translate3d(0, 40%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp4 {
+  -webkit-animation-name: fadeInUp4;
+          animation-name: fadeInUp4;
+}
+
+@-webkit-keyframes fadeInUp2 {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20%, 0);
+            transform: translate3d(0, 20%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp2 {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20%, 0);
+            transform: translate3d(0, 20%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp2 {
+  -webkit-animation-name: fadeInUp2;
+          animation-name: fadeInUp2;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+          animation-name: fadeInUp;
+}
+
+@-webkit-keyframes story1 {
+  from {
+    -webkit-transform: translate3d(60%, -10%, 0) rotate(-20deg);
+            transform: translate3d(60%, -10%, 0) rotate(-20deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0) rotate(-3deg);
+            transform: translate3d(0, 0, 0) rotate(-3deg);
+  }
+}
+
+@keyframes story1 {
+  from {
+    -webkit-transform: translate3d(60%, -10%, 0) rotate(-20deg);
+            transform: translate3d(60%, -10%, 0) rotate(-20deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0) rotate(-3deg);
+            transform: translate3d(0, 0, 0) rotate(-3deg);
+  }
+}
+
+@-webkit-keyframes story2 {
+  from {
+    -webkit-transform: translate3d(30%, 30%, 0) rotate(-20deg);
+            transform: translate3d(30%, 30%, 0) rotate(-20deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(-40px, 0, 0) rotate(-7deg);
+            transform: translate3d(-40px, 0, 0) rotate(-7deg);
+  }
+}
+
+@keyframes story2 {
+  from {
+    -webkit-transform: translate3d(30%, 30%, 0) rotate(-20deg);
+            transform: translate3d(30%, 30%, 0) rotate(-20deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(-40px, 0, 0) rotate(-7deg);
+            transform: translate3d(-40px, 0, 0) rotate(-7deg);
+  }
+}
+
+@-webkit-keyframes story3 {
+  from {
+    -webkit-transform: translate3d(-50%, 20%, 0) rotate(20deg);
+            transform: translate3d(-50%, 20%, 0) rotate(20deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(-20px, 0, 0) rotate(12deg);
+            transform: translate3d(-20px, 0, 0) rotate(12deg);
+  }
+}
+
+@keyframes story3 {
+  from {
+    -webkit-transform: translate3d(-50%, 20%, 0) rotate(20deg);
+            transform: translate3d(-50%, 20%, 0) rotate(20deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(-20px, 0, 0) rotate(12deg);
+            transform: translate3d(-20px, 0, 0) rotate(12deg);
+  }
+}
+
+@-webkit-keyframes story1-mob {
+  from {
+    -webkit-transform: translate3d(80%, 30%, 0) rotate(6deg);
+            transform: translate3d(80%, 30%, 0) rotate(6deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0) rotate(-3deg);
+            transform: translate3d(0, 0, 0) rotate(-3deg);
+  }
+}
+
+@keyframes story1-mob {
+  from {
+    -webkit-transform: translate3d(80%, 30%, 0) rotate(6deg);
+            transform: translate3d(80%, 30%, 0) rotate(6deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0) rotate(-3deg);
+            transform: translate3d(0, 0, 0) rotate(-3deg);
+  }
+}
+
+@-webkit-keyframes story2-mob {
+  from {
+    -webkit-transform: translate3d(0%, 30%, 0) rotate(0deg);
+            transform: translate3d(0%, 30%, 0) rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, -30px, 0) rotate(-7deg);
+            transform: translate3d(0, -30px, 0) rotate(-7deg);
+  }
+}
+
+@keyframes story2-mob {
+  from {
+    -webkit-transform: translate3d(0%, 30%, 0) rotate(0deg);
+            transform: translate3d(0%, 30%, 0) rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, -30px, 0) rotate(-7deg);
+            transform: translate3d(0, -30px, 0) rotate(-7deg);
+  }
+}
+
+@-webkit-keyframes story3-mob {
+  from {
+    -webkit-transform: translate3d(-50%, 30%, 0) rotate(0deg);
+            transform: translate3d(-50%, 30%, 0) rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, -10px, 0) rotate(12deg);
+            transform: translate3d(0, -10px, 0) rotate(12deg);
+  }
+}
+
+@keyframes story3-mob {
+  from {
+    -webkit-transform: translate3d(-50%, 30%, 0) rotate(0deg);
+            transform: translate3d(-50%, 30%, 0) rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, -10px, 0) rotate(12deg);
+            transform: translate3d(0, -10px, 0) rotate(12deg);
+  }
+}
+
+@-webkit-keyframes mission1 {
+  from {
+    -webkit-transform: translate3d(100%, 100%, 0) rotate(0deg);
+            transform: translate3d(100%, 100%, 0) rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(14px, 0, 0) rotate(-7deg);
+            transform: translate3d(14px, 0, 0) rotate(-7deg);
+  }
+}
+
+@keyframes mission1 {
+  from {
+    -webkit-transform: translate3d(100%, 100%, 0) rotate(0deg);
+            transform: translate3d(100%, 100%, 0) rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(14px, 0, 0) rotate(-7deg);
+            transform: translate3d(14px, 0, 0) rotate(-7deg);
+  }
+}
+
+@-webkit-keyframes mission2 {
+  from {
+    -webkit-transform: translate3d(100%, 50%, 0) rotate(0deg);
+            transform: translate3d(100%, 50%, 0) rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(94%, 0, 0) rotate(4deg);
+            transform: translate3d(94%, 0, 0) rotate(4deg);
+  }
+}
+
+@keyframes mission2 {
+  from {
+    -webkit-transform: translate3d(100%, 50%, 0) rotate(0deg);
+            transform: translate3d(100%, 50%, 0) rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(94%, 0, 0) rotate(4deg);
+            transform: translate3d(94%, 0, 0) rotate(4deg);
+  }
+}
+
+@-webkit-keyframes mission3 {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) rotate(0deg);
+            transform: translate3d(100%, 0, 0) rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(10px, 0, 0) rotate(4deg);
+            transform: translate3d(10px, 0, 0) rotate(4deg);
+  }
+}
+
+@keyframes mission3 {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) rotate(0deg);
+            transform: translate3d(100%, 0, 0) rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(10px, 0, 0) rotate(4deg);
+            transform: translate3d(10px, 0, 0) rotate(4deg);
+  }
+}
+
+@-webkit-keyframes mission4 {
+  from {
+    -webkit-transform: translate3d(100%, -50%, 0) rotate(0deg);
+            transform: translate3d(100%, -50%, 0) rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(-10px 5, 0) rotate(-11deg);
+            transform: translate3d(-10px 5, 0) rotate(-11deg);
+  }
+}
+
+@keyframes mission4 {
+  from {
+    -webkit-transform: translate3d(100%, -50%, 0) rotate(0deg);
+            transform: translate3d(100%, -50%, 0) rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(-10px 5, 0) rotate(-11deg);
+            transform: translate3d(-10px 5, 0) rotate(-11deg);
+  }
+}
+
+@-webkit-keyframes mission1-mob {
+  from {
+    -webkit-transform: translate3d(50%, 70%, 0) rotate(0deg);
+            transform: translate3d(50%, 70%, 0) rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(14px, 0, 0) rotate(-7deg);
+            transform: translate3d(14px, 0, 0) rotate(-7deg);
+  }
+}
+
+@keyframes mission1-mob {
+  from {
+    -webkit-transform: translate3d(50%, 70%, 0) rotate(0deg);
+            transform: translate3d(50%, 70%, 0) rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(14px, 0, 0) rotate(-7deg);
+            transform: translate3d(14px, 0, 0) rotate(-7deg);
+  }
+}
+
+@-webkit-keyframes mission2-mob {
+  from {
+    -webkit-transform: translate3d(-50%, 70%, 0) rotate(0deg);
+            transform: translate3d(-50%, 70%, 0) rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(5px, 16px, 0) rotate(4deg);
+            transform: translate3d(5px, 16px, 0) rotate(4deg);
+  }
+}
+
+@keyframes mission2-mob {
+  from {
+    -webkit-transform: translate3d(-50%, 70%, 0) rotate(0deg);
+            transform: translate3d(-50%, 70%, 0) rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(5px, 16px, 0) rotate(4deg);
+            transform: translate3d(5px, 16px, 0) rotate(4deg);
+  }
+}
+
+@-webkit-keyframes mission3-mob {
+  from {
+    -webkit-transform: translate3d(50%, -30%, 0) rotate(0deg);
+            transform: translate3d(50%, -30%, 0) rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(14px, -14px, 0) rotate(4deg);
+            transform: translate3d(14px, -14px, 0) rotate(4deg);
+  }
+}
+
+@keyframes mission3-mob {
+  from {
+    -webkit-transform: translate3d(50%, -30%, 0) rotate(0deg);
+            transform: translate3d(50%, -30%, 0) rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(14px, -14px, 0) rotate(4deg);
+            transform: translate3d(14px, -14px, 0) rotate(4deg);
+  }
+}
+
+@-webkit-keyframes mission4-mob {
+  from {
+    -webkit-transform: translate3d(-50%, -30%, 0) rotate(0deg);
+            transform: translate3d(-50%, -30%, 0) rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(-10px, 5px, 0) rotate(-11deg);
+            transform: translate3d(-10px, 5px, 0) rotate(-11deg);
+  }
+}
+
+@keyframes mission4-mob {
+  from {
+    -webkit-transform: translate3d(-50%, -30%, 0) rotate(0deg);
+            transform: translate3d(-50%, -30%, 0) rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(-10px, 5px, 0) rotate(-11deg);
+            transform: translate3d(-10px, 5px, 0) rotate(-11deg);
+  }
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    -webkit-transform: translate3d(15%, 0, 0);
+            transform: translate3d(15%, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    -webkit-transform: translate3d(15%, 0, 0);
+            transform: translate3d(15%, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+          animation-name: fadeInRight;
+}
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    -webkit-transform: translate3d(-25%, 0, 0);
+            transform: translate3d(-25%, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    -webkit-transform: translate3d(-25%, 0, 0);
+            transform: translate3d(-25%, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft;
+}
+
 body {
   font-size: 34px;
   line-height: 1.2;
   color: #fff;
   background-color: #EE941A;
+}
+
+body._lock {
+  overflow: hidden;
 }
 
 body._lock::after {
@@ -485,6 +1007,8 @@ body._lock::after {
   color: #DE320E;
   -webkit-text-stroke: 12px #fff;
   -webkit-text-fill-color: #DE320E;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
 }
 
 .title::after {
@@ -515,6 +1039,15 @@ body._lock::after {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+.btn:disabled::before {
+  background-color: #8E8E8E;
+}
+
+.btn:disabled::after {
+  content: "";
+  border-color: #8E8E8E;
 }
 
 .btn::after,
@@ -600,6 +1133,12 @@ body._lock::after {
   -webkit-transition-duration: 0.3s;
        -o-transition-duration: 0.3s;
           transition-duration: 0.3s;
+}
+
+.header__btn:disabled {
+  color: #fff;
+  background-color: #8E8E8E;
+  border-color: transparent;
 }
 
 .header__btn:focus-visible {
@@ -853,6 +1392,11 @@ body._lock::after {
   stroke-width: 12;
 }
 
+.welcome__btn {
+  background-color: transparent;
+  border: none;
+}
+
 .welcome__btn.mint {
   padding: 37px 114px;
 }
@@ -941,6 +1485,8 @@ body._lock::after {
   -webkit-transform: rotate(-3deg);
       -ms-transform: rotate(-3deg);
           transform: rotate(-3deg);
+  -webkit-animation-name: story1;
+          animation-name: story1;
 }
 
 .story__item:nth-child(2) {
@@ -949,6 +1495,8 @@ body._lock::after {
   -webkit-transform: translateX(-40px) rotate(-7deg);
       -ms-transform: translateX(-40px) rotate(-7deg);
           transform: translateX(-40px) rotate(-7deg);
+  -webkit-animation-name: story2;
+          animation-name: story2;
 }
 
 .story__item:nth-child(3) {
@@ -957,6 +1505,8 @@ body._lock::after {
   -webkit-transform: translateX(-20px) rotate(12deg);
       -ms-transform: translateX(-20px) rotate(12deg);
           transform: translateX(-20px) rotate(12deg);
+  -webkit-animation-name: story3;
+          animation-name: story3;
 }
 
 .story__img {
@@ -1068,6 +1618,8 @@ body._lock::after {
   -webkit-transform: translateX(14px) rotate(-7deg);
       -ms-transform: translateX(14px) rotate(-7deg);
           transform: translateX(14px) rotate(-7deg);
+  -webkit-animation-name: mission1;
+          animation-name: mission1;
 }
 
 .mission__item:nth-child(2) {
@@ -1076,6 +1628,8 @@ body._lock::after {
   -webkit-transform: translateX(94%) rotate(4deg);
       -ms-transform: translateX(94%) rotate(4deg);
           transform: translateX(94%) rotate(4deg);
+  -webkit-animation-name: mission2;
+          animation-name: mission2;
 }
 
 .mission__item:nth-child(3) {
@@ -1084,6 +1638,8 @@ body._lock::after {
   -webkit-transform: translateX(10px) rotate(4deg);
       -ms-transform: translateX(10px) rotate(4deg);
           transform: translateX(10px) rotate(4deg);
+  -webkit-animation-name: mission3;
+          animation-name: mission3;
 }
 
 .mission__item:nth-child(4) {
@@ -1092,6 +1648,8 @@ body._lock::after {
   -webkit-transform: translateX(86%) rotate(-11deg);
       -ms-transform: translateX(86%) rotate(-11deg);
           transform: translateX(86%) rotate(-11deg);
+  -webkit-animation-name: mission4;
+          animation-name: mission4;
 }
 
 .mission__img {
@@ -1144,10 +1702,6 @@ body._lock::after {
   background-image: url("./../img/content/roadmap/wave-bottom.svg");
 }
 
-.roadmap__body {
-  position: relative;
-}
-
 .roadmap__tabs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1166,7 +1720,7 @@ body._lock::after {
   position: relative;
   padding-bottom: 12px;
   font-size: 64px;
-  color: #DE320E;
+  color: #fff;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #fff;
@@ -1191,6 +1745,7 @@ body._lock::after {
 }
 
 .roadmap__tab._active {
+  color: #DE320E;
   outline: none;
   cursor: default;
 }
@@ -1201,7 +1756,6 @@ body._lock::after {
 
 .roadmap__tab:not(._active):focus-visible {
   outline: none;
-  color: #fff;
 }
 
 .roadmap__tab:not(._active):focus-visible::after {
@@ -1221,8 +1775,12 @@ body._lock::after {
 .roadmap__img {
   -o-object-fit: contain;
      object-fit: contain;
-  -o-object-position: center;
-     object-position: center;
+  -o-object-position: center left;
+     object-position: center left;
+}
+
+.roadmap-list {
+  max-width: 840px;
 }
 
 .roadmap-list:not(._active) {
@@ -1246,7 +1804,6 @@ body._lock::after {
 }
 
 .roadmap-list--one .roadmap-list__item {
-  width: 770px;
   padding: 30px;
   margin-left: 70px;
 }
@@ -1260,18 +1817,22 @@ body._lock::after {
   content: "";
   position: absolute;
   background-color: #FFBD64;
+  opacity: 1;
 }
 
 .roadmap-list--one .roadmap-list__item::before {
-  top: 80px;
+  top: 82px;
   left: -51px;
   width: 2px;
   height: calc(100% - 40px);
+  -webkit-transition-duration: 1s;
+       -o-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .roadmap-list--one .roadmap-list__item::after {
   z-index: 2;
-  top: 30px;
+  top: 32px;
   left: -70px;
   width: 40px;
   height: 40px;
@@ -1280,6 +1841,24 @@ body._lock::after {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 12px 12px;
+  -webkit-transition-duration: 0.6s;
+       -o-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+}
+
+.roadmap-list--one .roadmap-list__item.animated::before {
+  height: 0;
+  opacity: 0;
+  -webkit-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+.roadmap-list--one .roadmap-list__item.animated::after {
+  opacity: 0;
+  -webkit-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
 }
 
 .roadmap-list--one .roadmap-list__item.roadmap-list__item--done::before {
@@ -1300,7 +1879,6 @@ body._lock::after {
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
-  width: 850px;
   padding: 30px 50px;
 }
 
@@ -1325,10 +1903,11 @@ body._lock::after {
 
 .roadmap-list__status {
   position: absolute;
-  padding: 3px 12px;
+  padding: 4px 12px 3px;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 20px;
+  line-height: 1;
   background-color: #BA411B;
   border-radius: 10px;
 }
@@ -1349,7 +1928,9 @@ body._lock::after {
 
 .roadmap-list__percent {
   position: relative;
+  white-space: nowrap;
   font-size: 64px;
+  line-height: 1;
   color: #DE320E;
   -webkit-text-stroke: 4px #fff;
   -webkit-text-fill-color: #DE320E;
@@ -1566,6 +2147,21 @@ body._lock::after {
   }
 }
 
+@media (min-width: 1921px) {
+  .roadmap__decor {
+    left: auto;
+    right: 0;
+    width: 37%;
+  }
+
+  .roadmap__img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center right;
+       object-position: center right;
+  }
+}
+
 @media (max-width: 1699.98px) {
   body {
     font-size: 30px;
@@ -1660,12 +2256,11 @@ body._lock::after {
   }
 
   .roadmap__decor {
-    left: calc(50% + 260px);
-    width: 740px;
+    width: 760px;
   }
 
   .roadmap-list__percent {
-    font-size: 56px;
+    font-size: 54px;
   }
 
   .contacts__box {
@@ -1818,8 +2413,55 @@ body._lock::after {
     margin: 0;
   }
 
+  .roadmap {
+    padding: 84px 0;
+  }
+
   .roadmap::before {
     height: 110px;
+  }
+
+  .roadmap__tabs {
+    margin-bottom: 40px;
+  }
+
+  .roadmap__tab {
+    padding-bottom: 8px;
+    font-size: 40px;
+  }
+
+  .roadmap__decor {
+    width: 600px;
+  }
+
+  .roadmap-list {
+    max-width: 740px;
+  }
+
+  .roadmap-list--one .roadmap-list__item {
+    padding: 25px;
+  }
+
+  .roadmap-list--one .roadmap-list__item::before {
+    top: 75px;
+  }
+
+  .roadmap-list--one .roadmap-list__item::after {
+    top: 25px;
+  }
+
+  .roadmap-list--two .roadmap-list__item {
+    -ms-grid-columns: auto 475px;
+    grid-template-columns: auto 475px;
+    padding: 26px 36px;
+  }
+
+  .roadmap-list__title {
+    font-size: 34px;
+  }
+
+  .roadmap-list__status {
+    font-size: 18px;
   }
 
   .faq__body {
@@ -1915,12 +2557,71 @@ body._lock::after {
     display: none;
   }
 
+  .roadmap {
+    padding: 60px 0;
+  }
+
   .roadmap::before {
     height: 80px;
   }
 
   .roadmap::after {
     height: 70px;
+  }
+
+  .roadmap__tabs {
+    margin-bottom: 30px;
+  }
+
+  .roadmap__decor {
+    display: none;
+  }
+
+  .roadmap-list__item {
+    border-radius: 6px;
+  }
+
+  .roadmap-list--one .roadmap-list__item {
+    padding: 20px;
+    margin-left: 60px;
+  }
+
+  .roadmap-list--one .roadmap-list__item::before {
+    top: 68px;
+    left: -41px;
+  }
+
+  .roadmap-list--one .roadmap-list__item::after {
+    top: 18px;
+    left: -60px;
+  }
+
+  .roadmap-list--two .roadmap-list__item {
+    padding: 26px 30px;
+  }
+
+  .roadmap-list--two .roadmap-list__item + .roadmap-list__item {
+    margin-top: 24px;
+  }
+
+  .roadmap-list__title {
+    padding-right: 150px;
+    font-size: 30px;
+  }
+
+  .roadmap-list__status {
+    font-size: 16px;
+    border-radius: 7px;
+  }
+
+  .roadmap-list--one .roadmap-list__status {
+    top: 25px;
+    right: 16px;
+  }
+
+  .roadmap-list--two .roadmap-list__status {
+    top: -6px;
+    right: -6px;
   }
 
   .faq__body {
@@ -2026,11 +2727,18 @@ body._lock::after {
             justify-content: center;
   }
 
+  .story__item:nth-child(1) {
+    -webkit-animation-name: story1-mob;
+            animation-name: story1-mob;
+  }
+
   .story__item:nth-child(2) {
     margin: 0 0 0 -26px;
     -webkit-transform: translate(0, -30px) rotate(-7deg);
         -ms-transform: translate(0, -30px) rotate(-7deg);
             transform: translate(0, -30px) rotate(-7deg);
+    -webkit-animation-name: story2-mob;
+            animation-name: story2-mob;
   }
 
   .story__item:nth-child(3) {
@@ -2038,6 +2746,8 @@ body._lock::after {
     -webkit-transform: translate(0, -10px) rotate(12deg);
         -ms-transform: translate(0, -10px) rotate(12deg);
             transform: translate(0, -10px) rotate(12deg);
+    -webkit-animation-name: story3-mob;
+            animation-name: story3-mob;
   }
 
   .mission__body {
@@ -2055,11 +2765,18 @@ body._lock::after {
         grid-template: auto auto/auto auto;
   }
 
+  .mission__item:nth-child(1) {
+    -webkit-animation: mission1-mob;
+            animation: mission1-mob;
+  }
+
   .mission__item:nth-child(2) {
     margin: 0;
     -webkit-transform: translate(5px, 16px) rotate(4deg);
         -ms-transform: translate(5px, 16px) rotate(4deg);
             transform: translate(5px, 16px) rotate(4deg);
+    -webkit-animation: mission2-mob;
+            animation: mission2-mob;
   }
 
   .mission__item:nth-child(3) {
@@ -2067,6 +2784,8 @@ body._lock::after {
     -webkit-transform: translate(14px, -14px) rotate(4deg);
         -ms-transform: translate(14px, -14px) rotate(4deg);
             transform: translate(14px, -14px) rotate(4deg);
+    -webkit-animation: mission3-mob;
+            animation: mission3-mob;
   }
 
   .mission__item:nth-child(4) {
@@ -2074,6 +2793,8 @@ body._lock::after {
     -webkit-transform: translate(-10px, 5px) rotate(-11deg);
         -ms-transform: translate(-10px, 5px) rotate(-11deg);
             transform: translate(-10px, 5px) rotate(-11deg);
+    -webkit-animation: mission4-mob;
+            animation: mission4-mob;
   }
 
   .mission__content {
@@ -2090,6 +2811,40 @@ body._lock::after {
   .roadmap::after {
     height: 44px;
     background-size: 770px 100%;
+  }
+
+  .roadmap__tabs span {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+
+  .roadmap__tab::after {
+    bottom: -3px;
+    height: 5px;
+  }
+
+  .roadmap-list--two .roadmap-list__item {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    padding: 20px;
+  }
+
+  .roadmap-list--two .roadmap-list__item + .roadmap-list__item {
+    margin-top: 20px;
+  }
+
+  .roadmap-list__title {
+    padding-right: 108px;
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+
+  .roadmap-list__status {
+    padding: 4px 5px 3px;
+    font-size: 14px;
+    border-radius: 4px;
   }
 
   .faq__body {
@@ -2212,6 +2967,81 @@ body._lock::after {
     border-width: 2px;
   }
 
+  .roadmap {
+    padding: 40px 0;
+  }
+
+  .roadmap__tabs {
+    margin-bottom: 20px;
+  }
+
+  .roadmap__tabs span {
+    border-width: 1px;
+  }
+
+  .roadmap__tab {
+    font-size: 36px;
+    border-width: 1px;
+  }
+
+  .roadmap-list--one .roadmap-list__item {
+    margin-left: 36px;
+  }
+
+  .roadmap-list--one .roadmap-list__item {
+    padding: 12px;
+  }
+
+  .roadmap-list--one .roadmap-list__item + .roadmap-list__item {
+    margin-top: 12px;
+  }
+
+  .roadmap-list--one .roadmap-list__item::before {
+    top: 42px;
+    left: -24px;
+    height: calc(100% - 26px);
+  }
+
+  .roadmap-list--one .roadmap-list__item::after {
+    top: 10px;
+    left: -36px;
+    width: 26px;
+    height: 26px;
+    background-size: 8px 8px;
+  }
+
+  .roadmap-list--one .roadmap-list__item.roadmap-list__item--done::after {
+    background-size: 11px 9px;
+  }
+
+  .roadmap-list--two .roadmap-list__item {
+    padding: 12px;
+  }
+
+  .roadmap-list--two .roadmap-list__item + .roadmap-list__item {
+    margin-top: 16px;
+  }
+
+  .roadmap-list__title {
+    padding-right: 78px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .roadmap-list__status {
+    font-size: 10px;
+  }
+
+  .roadmap-list--one .roadmap-list__status {
+    top: 12px;
+    right: 10px;
+  }
+
+  .roadmap-list__percent {
+    font-size: 40px;
+    -webkit-text-stroke: 2px #fff;
+  }
+
   .faq__body {
     padding-top: 90px;
   }
@@ -2235,6 +3065,10 @@ body._lock::after {
 }
 
 @media (max-width: 479.98px) {
+  .roadmap__tab {
+    font-size: 28px;
+  }
+
   .contacts__img-box {
     height: 360px;
   }
@@ -2265,6 +3099,12 @@ body._lock::after {
   }
 }
 
+@media (max-width: 1699.98px) and (min-width: 1400px) {
+  .roadmap__decor {
+    left: calc(50% + 260px);
+  }
+}
+
 @media (any-hover: hover) {
   .btn:hover::before {
     width: 100%;
@@ -2291,10 +3131,6 @@ body._lock::after {
 
   .social__link:hover svg .icon {
     fill: #fff;
-  }
-
-  .roadmap__tab:not(._active):hover {
-    color: #fff;
   }
 
   .roadmap__tab:not(._active):hover::after {
