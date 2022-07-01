@@ -1182,6 +1182,10 @@ body {
   font-size: 20px;
 }
 
+.w {
+  color: #000;
+}
+
 .reviews__body {
   padding: 100px 0;
 }
