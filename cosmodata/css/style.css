@@ -1233,7 +1233,7 @@ body.is-lock {
 
 .products__item:focus-visible .products__name,
 .products__item:focus-visible .products__desc {
-  color: initial;
+  color: #283160;
 }
 
 .products__item:focus-visible .link {
@@ -1243,7 +1243,7 @@ body.is-lock {
 
 .products__item:active .products__name,
 .products__item:active .products__desc {
-  color: initial;
+  color: #283160;
 }
 
 .products__img-box {
@@ -1322,7 +1322,7 @@ body.is-lock {
 
 .cards__item:focus-visible .cards__title,
 .cards__item:focus-visible .cards__text {
-  color: initial;
+  color: #283160;
 }
 
 .cards__item:focus-visible .link {
@@ -1332,7 +1332,7 @@ body.is-lock {
 
 .cards__item:active .cards__title,
 .cards__item:active .cards__text {
-  color: initial;
+  color: #283160;
 }
 
 .cards__img-box {
@@ -3282,7 +3282,7 @@ body.is-lock {
 
   .products__item:hover .products__name,
   .products__item:hover .products__desc {
-    color: initial;
+    color: #283160;
   }
 
   .products__item:hover .link {
@@ -3301,7 +3301,7 @@ body.is-lock {
 
   .cards__item:hover .cards__title,
   .cards__item:hover .cards__text {
-    color: initial;
+    color: #283160;
   }
 
   .cards__item:hover .link {
