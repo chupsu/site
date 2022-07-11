@@ -1051,6 +1051,10 @@ body {
   background-color: #1584FF;
 }
 
+.footer {
+  background-color: #E8F3FF;
+}
+
 .footer__item + .footer__item {
   border-top: 2px solid #fff;
 }
@@ -1251,6 +1255,11 @@ body {
   -webkit-column-gap: 156px;
      -moz-column-gap: 156px;
           column-gap: 156px;
+}
+
+.sidebar {
+  position: relative;
+  z-index: 1;
 }
 
 .sidebar_faq {
@@ -2745,23 +2754,37 @@ body {
 
 .heading__img-box_question-1 {
   top: 0px;
-  left: -40px;
+  left: -60px;
   width: 235px;
   height: 235px;
 }
 
 .heading__img-box_question-2 {
   top: -300px;
-  left: -124px;
+  left: -144px;
   width: 774px;
   height: 774px;
 }
 
 .heading__img-box_question-3 {
   top: -120px;
-  left: 420px;
+  left: 400px;
   width: 662px;
   height: 715px;
+}
+
+.heading__img-box_mail {
+  top: -30px;
+  left: 10px;
+  width: 446px;
+  height: 444px;
+}
+
+.heading__img-box_flower {
+  top: 40px;
+  left: 400px;
+  width: 354px;
+  height: 454px;
 }
 
 .heading__img {
@@ -3095,10 +3118,14 @@ body {
   }
 
   .heading__img-box_question-3 {
-    top: 0px;
-    left: 220px;
+    top: -70px;
+    left: 300px;
     width: 500px;
     height: 540px;
+  }
+
+  .heading__img-box_flower {
+    left: 350px;
   }
 
   .faq__body {
@@ -3313,11 +3340,6 @@ body {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-  }
-
-  .sidebar {
-    position: relative;
-    z-index: 1;
   }
 
   .sidebar_faq {
@@ -3681,17 +3703,29 @@ body {
   }
 
   .heading__img-box_question-2 {
-    top: -242px;
+    top: -230px;
     left: -60px;
     width: 650px;
     height: 650px;
   }
 
   .heading__img-box_question-3 {
-    top: 50px;
+    top: -20px;
     left: 240px;
     width: 350px;
     height: 378px;
+  }
+
+  .heading__img-box_mail {
+    left: -40px;
+    width: 370px;
+    height: 369px;
+  }
+
+  .heading__img-box_flower {
+    left: 250px;
+    width: 280px;
+    height: 360px;
   }
 
   .heading__body {
@@ -4027,22 +4061,39 @@ body {
 
   .heading__img-box_question-1 {
     left: 40px;
-    width: 220px;
-    height: 220px;
+    width: 150px;
+    height: 150px;
   }
 
   .heading__img-box_question-2 {
-    top: -120px;
-    left: -20px;
-    width: 560px;
-    height: 560px;
-    -webkit-transform: rotate(-30deg);
-        -ms-transform: rotate(-30deg);
-            transform: rotate(-30deg);
+    top: -90px;
+    left: -10px;
+    width: 410px;
+    height: 410px;
+    -webkit-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+            transform: rotate(-20deg);
   }
 
   .heading__img-box_question-3 {
-    display: none;
+    top: 50px;
+    left: 190px;
+    width: 230px;
+    height: 230px;
+  }
+
+  .heading__img-box_mail {
+    top: 56px;
+    left: 22px;
+    width: 290px;
+    height: 289px;
+  }
+
+  .heading__img-box_flower {
+    top: 70px;
+    left: 230px;
+    width: 220px;
+    height: 283px;
   }
 
   .heading__body {
@@ -4201,6 +4252,7 @@ body {
   }
 
   .sidebar_faq {
+    margin-top: -130px;
     padding: 30px 25px;
     border-radius: 20px;
   }
@@ -4574,17 +4626,31 @@ body {
   }
 
   .heading__img-box_question-1 {
-    top: 20px;
-    left: 0px;
-    width: 160px;
-    height: 160px;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 120px;
   }
 
   .heading__img-box_question-2 {
-    top: -70px;
-    left: -70px;
-    width: 460px;
-    height: 460px;
+    top: -65px;
+    left: -30px;
+    width: 330px;
+    height: 330px;
+  }
+
+  .heading__img-box_question-3 {
+    display: none;
+  }
+
+  .heading__img-box_mail {
+    top: 64px;
+    width: 270px;
+    height: 269px;
+  }
+
+  .heading__img-box_flower {
+    left: 180px;
   }
 
   .heading__body {
@@ -4855,6 +4921,32 @@ body {
 
   .article__img-box {
     height: 190px;
+  }
+
+  .heading__img-box_question-1 {
+    left: 34px;
+  }
+
+  .heading__img-box_question-2 {
+    top: -72px;
+    left: 0;
+    -webkit-transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
+
+  .heading__img-box_mail {
+    top: 0px;
+    left: 65px;
+    width: 240px;
+    height: 239px;
+  }
+
+  .heading__img-box_flower {
+    top: 70px;
+    left: 72%;
+    width: 220px;
+    height: 283px;
   }
 }
 
