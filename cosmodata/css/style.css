@@ -2742,6 +2742,7 @@ body {
 
 .pricing-page {
   background-color: #fff;
+  border-radius: 30px 30px 0 0;
 }
 
 .pricing-page__body {
@@ -2788,28 +2789,13 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 32.3%;
           flex: 0 0 32.3%;
-  padding: 44px 24px 40px;
-  margin: 40px 0 95px;
   border: 2px solid #E8F3FF;
-}
-
-.pricing-cards__item:first-child {
-  border-right: 0;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.pricing-cards__item:last-child {
-  border-left: 0;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
 }
 
 .pricing-cards__item_accent {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 35.4%;
           flex: 0 0 35.4%;
-  padding: 84px 50px 74px;
   background: -o-linear-gradient(142.23deg, #3EFCC9 -32.36%, #38EDFF 7.07%, #2595FF 75.84%);
   background: linear-gradient(307.77deg, #3EFCC9 -32.36%, #38EDFF 7.07%, #2595FF 75.84%);
 }
@@ -2818,12 +2804,16 @@ body {
   color: #fff;
 }
 
+.pricing-cards__item_accent .pricing-cards__cost-box {
+  background: #fff;
+}
+
 .pricing-cards__item_accent .pricing-cards__cost {
   color: #2595FF;
 }
 
 .pricing-cards__item_accent .pricing-cards__cost-desc {
-  color: #40FFC6;
+  color: #39F0F8;
 }
 
 .pricing-cards__item_accent .pricing-cards__list-item {
@@ -2866,10 +2856,6 @@ body {
   border-radius: 30px;
 }
 
-.pricing-cards__item_accent .pricing-cards__cost-box {
-  background: #fff;
-}
-
 .pricing-cards__cost {
   margin-bottom: 5px;
   font-weight: 700;
@@ -2890,7 +2876,6 @@ body {
 .pricing-cards__list-item {
   position: relative;
   padding: 25px 10px 25px 52px;
-  font-size: 18px;
   border-radius: 30px;
 }
 
@@ -2919,6 +2904,14 @@ body {
   margin-top: 38px;
   text-align: center;
   font-size: 16px;
+}
+
+.pricing-cards__rate::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("./../img/icons/star.svg") center/contain no-repeat;
 }
 
 .pricing-cards__rate-link {
@@ -3013,7 +3006,6 @@ body {
 }
 
 .heading__text {
-  font-size: 18px;
   color: #fff;
 }
 
@@ -3115,6 +3107,27 @@ body {
   .blog__items .article-thumb:first-child .article-thumb__content {
     min-height: 340px;
   }
+
+  .pricing-cards__item:not(.pricing-cards__item_accent) {
+    padding: 40px 20px;
+    margin: 40px 0 60px;
+  }
+
+  .pricing-cards__item:first-child {
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .pricing-cards__item:last-child {
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .pricing-cards__item_accent {
+    padding: 54px 26px;
+  }
 }
 
 @media (min-width: 1299.98px) {
@@ -3175,6 +3188,23 @@ body {
   .relevant-articles__slider {
     overflow: hidden;
   }
+
+  .pricing-cards__item:not(.pricing-cards__item_accent) {
+    padding: 44px 24px 40px;
+    margin: 40px 0 95px;
+  }
+
+  .pricing-cards__item_accent {
+    padding: 60px 30px;
+  }
+
+  .pricing-cards__list-item {
+    font-size: 18px;
+  }
+
+  .heading__text {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 1630px) {
@@ -3188,6 +3218,10 @@ body {
 
   .blog__items .article-thumb:first-child .article-thumb__content {
     padding: 54px 72px;
+  }
+
+  .pricing-cards__item_accent {
+    padding: 84px 50px 74px;
   }
 
   .partnership__body {
@@ -3321,10 +3355,6 @@ body {
 
   .article__action {
     margin-top: 80px;
-  }
-
-  .pricing-cards__item_accent {
-    padding: 60px 30px;
   }
 
   .pricing-cards__cost-box {
@@ -3912,6 +3942,31 @@ body {
     font-size: 18px;
   }
 
+  .pricing-page__body {
+    padding-top: 38px;
+  }
+
+  .pricing-page__body .pricing-cards {
+    padding: 48px 0 100px;
+  }
+
+  .pricing-cards__name {
+    font-size: 28px;
+  }
+
+  .pricing-cards__cost-box {
+    padding: 20px 26px;
+  }
+
+  .pricing-cards__cost {
+    margin-bottom: 0;
+    font-size: 24px;
+  }
+
+  .pricing-cards__rate-box {
+    margin-top: 28px;
+  }
+
   .heading {
     min-height: 300px;
     padding: 40px 0 64px;
@@ -3955,10 +4010,6 @@ body {
 
   .heading__title {
     margin-bottom: 22px;
-  }
-
-  .heading__text {
-    font-size: 16px;
   }
 
   .faq__body {
@@ -4278,6 +4329,45 @@ body {
 
   .article__img-box {
     height: 250px;
+  }
+
+  .pricing-page__title {
+    margin-top: 36px;
+  }
+
+  .pricing-page__title + .pricing-page__desc {
+    margin-top: 8px;
+  }
+
+  .pricing-page__desc {
+    font-size: 18px;
+  }
+
+  .pricing-page__body .pricing-cards {
+    padding: 40px 0 70px;
+  }
+
+  .pricing-cards__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .pricing-cards__item {
+    padding: 50px;
+  }
+
+  .pricing-cards__item:not(.pricing-cards__item_accent) {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+
+  .pricing-cards__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .pricing-cards__item_accent {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 
   .heading__img-box_question-1 {
@@ -4769,6 +4859,10 @@ body {
     max-width: 356px;
   }
 
+  .blog__body {
+    padding-bottom: 70px;
+  }
+
   .blog__title {
     margin: 26px 0 15px;
   }
@@ -4840,6 +4934,43 @@ body {
     font-size: 15px;
   }
 
+  .pricing-page {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .pricing-page__body {
+    padding-top: 22px;
+  }
+
+  .pricing-page__desc {
+    font-size: 16px;
+  }
+
+  .pricing-page__body .pricing-cards {
+    padding: 36px 0 40px;
+  }
+
+  .pricing-cards__item {
+    padding: 30px 40px 40px;
+    border-radius: 20px;
+  }
+
+  .pricing-cards__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .pricing-cards__name {
+    font-size: 26px;
+  }
+
+  .pricing-cards__cost-box {
+    padding: 20px;
+  }
+
+  .pricing-cards__cost-desc {
+    font-size: 14px;
+  }
+
   .heading__img-box_question-1 {
     top: 0;
     left: 0;
@@ -4874,10 +5005,6 @@ body {
 
   .heading__title {
     margin-bottom: 11px;
-  }
-
-  .heading__text {
-    font-size: 15px;
   }
 
   .faq__body {
@@ -5088,6 +5215,14 @@ body {
 
   .article-tags_thumb {
     margin-bottom: 6px;
+  }
+
+  .pricing-cards__item {
+    padding: 22px 11px 28px;
+  }
+
+  .pricing-cards__name {
+    font-size: 24px;
   }
 
   .partnership__body {
