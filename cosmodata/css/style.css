@@ -1318,7 +1318,12 @@ body {
   font-size: 30px;
 }
 
+.filters {
+  width: 100%;
+}
+
 .filters__list {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1328,6 +1333,8 @@ body {
 }
 
 .filters__item {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2472,6 +2479,10 @@ body {
 .proceed__btns .btn_main {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.blog {
+  overflow: hidden;
 }
 
 .blog__body {
@@ -5044,6 +5055,7 @@ body {
   .sidebar_faq {
     padding: 30px 15px 55px;
     margin: -126px -15px 0;
+    overflow: hidden;
   }
 
   .sidebar_partnership {
