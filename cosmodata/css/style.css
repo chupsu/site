@@ -516,6 +516,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-top: 128px;
   min-height: 100%;
   overflow: hidden;
 }
@@ -3402,6 +3403,10 @@ body {
 }
 
 @media (max-width: 1299.98px) {
+  .wrapper {
+    padding-top: 104px;
+  }
+
   .container {
     max-width: 960px;
   }
@@ -4038,6 +4043,10 @@ body {
 }
 
 @media (max-width: 991.98px) {
+  .wrapper {
+    padding-top: 94px;
+  }
+
   .container {
     max-width: 720px;
   }
@@ -4435,6 +4444,10 @@ body {
   body {
     font-size: 15px;
     background-color: #ECF3FA;
+  }
+
+  .wrapper {
+    padding-top: 76px;
   }
 
   .container {
