@@ -709,7 +709,7 @@ body {
     opacity: 1;
   }
 
-  70% {
+  60% {
     -webkit-transform: scale(1.1) rotate(5deg);
             transform: scale(1.1) rotate(5deg);
   }
@@ -725,7 +725,7 @@ body {
     opacity: 1;
   }
 
-  70% {
+  60% {
     -webkit-transform: scale(1.1) rotate(5deg);
             transform: scale(1.1) rotate(5deg);
   }
@@ -733,6 +733,40 @@ body {
   100% {
     -webkit-transform: scale(1) rotate(0);
             transform: scale(1) rotate(0);
+  }
+}
+
+@-webkit-keyframes orbit {
+  0% {
+    opacity: 1;
+  }
+
+  60% {
+    -webkit-transform: scale(1.02) translateY(-1px);
+            transform: scale(1.02) translateY(-1px);
+  }
+
+  100% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes orbit {
+  0% {
+    opacity: 1;
+  }
+
+  60% {
+    -webkit-transform: scale(1.02) translateY(-1px);
+            transform: scale(1.02) translateY(-1px);
+  }
+
+  100% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    opacity: 1;
   }
 }
 
@@ -761,7 +795,7 @@ body {
 }
 
 @-webkit-keyframes rotateEnd {
-  70% {
+  60% {
     -webkit-transform: rotate(5deg);
             transform: rotate(5deg);
   }
@@ -773,7 +807,7 @@ body {
 }
 
 @keyframes rotateEnd {
-  70% {
+  60% {
     -webkit-transform: rotate(5deg);
             transform: rotate(5deg);
   }
@@ -2249,6 +2283,24 @@ body {
           animation-fill-mode: forwards;
 }
 
+.welcome__img-box_pc .w_orbit {
+  -webkit-transform-origin: center center;
+      -ms-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transform: scale(0.98) translateY(2px);
+      -ms-transform: scale(0.98) translateY(2px);
+          transform: scale(0.98) translateY(2px);
+  opacity: 0;
+  -webkit-animation-name: orbit;
+          animation-name: orbit;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 .welcome__img-box_pc .w_left,
 .welcome__img-box_pc .w_right {
   -webkit-transform: scale(0.1);
@@ -2259,8 +2311,8 @@ body {
           animation-name: scaleUp;
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
