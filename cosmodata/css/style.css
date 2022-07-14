@@ -4086,8 +4086,12 @@ body {
     border-radius: 20px;
   }
 
-  .lang__btn_choice {
+  .lang__btn {
     padding: 17px 40px;
+  }
+
+  .lang__dropdown {
+    border-radius: 27px;
   }
 
   .benefits__item {
