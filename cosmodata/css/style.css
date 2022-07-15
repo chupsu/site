@@ -2777,18 +2777,18 @@ body {
           animation-name: fadeDownRight;
   -webkit-animation-delay: 1.6s;
           animation-delay: 1.6s;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
 }
 
 .presentation .p-2_right {
-  -webkit-animation-delay: 2.6s;
-          animation-delay: 2.6s;
+  -webkit-animation-delay: 2.1s;
+          animation-delay: 2.1s;
 }
 
 .presentation .p-2_left {
-  -webkit-animation-delay: 2.6s;
-          animation-delay: 2.6s;
+  -webkit-animation-delay: 2.1s;
+          animation-delay: 2.1s;
 }
 
 .presentation .p-3_board,
