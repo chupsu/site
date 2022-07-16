@@ -1292,6 +1292,11 @@ body {
   color: #1584FF;
 }
 
+.user-action__btn_exit {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .footer {
   background-color: #E8F3FF;
 }
@@ -1541,12 +1546,12 @@ body {
 .lang__btn_choice:focus-visible {
   outline: none;
   color: #fff;
-  background-color: #2595FF;
+  background-color: #283160;
 }
 
 .lang__btn_choice:active {
   color: #fff;
-  background-color: #1584FF;
+  background-color: #455298;
 }
 
 .lang__btn_seleсted {
@@ -1764,6 +1769,40 @@ body {
 .share__link:focus-visible {
   outline: none;
   color: #1584FF;
+}
+
+.rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.rating__item {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  background: #ECF6FF url("./../img/icons/rating-none.svg") center/contain no-repeat;
+}
+
+.rating__item:not(:first-child) {
+  margin-right: 10px;
+}
+
+[data-rating="1"] .rating__item:nth-child(n+5),
+[data-rating="2"] .rating__item:nth-child(n+4),
+[data-rating="3"] .rating__item:nth-child(n+3),
+[data-rating="4"] .rating__item:nth-child(n+2) {
+  background: #FFF6E0 url("./../img/icons/rating-check.svg") center/contain no-repeat;
+}
+
+[data-rating="5"] .rating__item:nth-child(n+1) {
+  background: rgba(35, 251, 178, 0.14) url("./../img/icons/rating-full.svg") center/contain no-repeat;
 }
 
 .sidebar-box {
@@ -2808,10 +2847,8 @@ body {
 .presentation .p-3_mes-1,
 .presentation .p-3_mes-2,
 .presentation .p-3_mes-3 {
-  -webkit-animation-name: fade;
-          animation-name: fade;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-name: fadeUp;
+          animation-name: fadeUp;
 }
 
 .presentation .p-3_board {
@@ -5210,6 +5247,16 @@ body {
     margin-right: 14px;
   }
 
+  .rating__item {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+  }
+
+  .rating__item:not(:first-child) {
+    margin-right: 5px;
+  }
+
   .sidebar_faq {
     margin-top: -130px;
     padding: 30px 25px;
@@ -5469,7 +5516,7 @@ body {
   }
 
   .reviews__stars {
-    margin: 15px 26px;
+    margin: 15px 0 26px;
   }
 
   .proceed__title {
@@ -6062,7 +6109,7 @@ body {
 
   .lang__btn_choice:not(:active):hover {
     color: #fff;
-    background-color: #2595FF;
+    background-color: #283160;
   }
 
   .lang__dropdown .lang__btn:not(:active):hover {
