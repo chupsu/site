@@ -4415,6 +4415,12 @@ body {
     width: 792px;
     height: 655px;
   }
+
+  .offer__content_large .offer__img-box {
+    top: 106px;
+    width: 535px;
+    height: 436px;
+  }
 }
 
 @media (max-width: 1630px) {
@@ -4607,6 +4613,10 @@ body {
 
   .offer__content_medium {
     max-width: 580px;
+  }
+
+  .offer__content_large {
+    max-width: 752px;
   }
 
   .offer__rate-box {
@@ -5384,6 +5394,10 @@ body {
 
   .offer__content_medium {
     max-width: 520px;
+  }
+
+  .offer__content_large {
+    max-width: 606px;
   }
 
   .offer__title {
@@ -7107,6 +7121,13 @@ body {
     width: 600px;
     height: 497px;
   }
+
+  .offer__content_large .offer__img-box {
+    top: 130px;
+    right: -170px;
+    width: 440px;
+    height: 359px;
+  }
 }
 
 @media (max-width: 1630px) and (min-width: 1299.98px) {
@@ -7124,6 +7145,12 @@ body {
     top: 25px;
     width: 660px;
     height: 546px;
+  }
+
+  .offer__content_large .offer__img-box {
+    top: 150px;
+    width: 470px;
+    height: 383px;
   }
 }
 
