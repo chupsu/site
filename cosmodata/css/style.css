@@ -19,23 +19,23 @@
   background-color: #2595FF;
 }
 
-.presentation .p-3_board,
-.presentation .p-3_panel,
-.presentation .p-3_mes-1,
-.presentation .p-3_mes-2,
-.presentation .p-3_mes-3,
-.presentation .p-2_board,
-.presentation .p-2_button,
-.presentation .p-2_panel,
-.presentation .p-2_right,
-.presentation .p-2_left,
-.presentation .p-1_board,
-.presentation .p-1_chart,
-.presentation .p-1_button,
-.presentation .p-1_right,
-.presentation .p-1_left,
-.presentation .p-1_alert,
-.presentation .p-1_panel,
+.presentation__img-box .p-3_board,
+.presentation__img-box .p-3_panel,
+.presentation__img-box .p-3_mes-1,
+.presentation__img-box .p-3_mes-2,
+.presentation__img-box .p-3_mes-3,
+.presentation__img-box .p-2_board,
+.presentation__img-box .p-2_button,
+.presentation__img-box .p-2_panel,
+.presentation__img-box .p-2_right,
+.presentation__img-box .p-2_left,
+.presentation__img-box .p-1_board,
+.presentation__img-box .p-1_chart,
+.presentation__img-box .p-1_button,
+.presentation__img-box .p-1_right,
+.presentation__img-box .p-1_left,
+.presentation__img-box .p-1_alert,
+.presentation__img-box .p-1_panel,
 .welcome__img-box_pc .w_world,
 .welcome__img-box_pc .w_orbit,
 .welcome__img-box_pc .w_right,
@@ -2857,7 +2857,7 @@ body {
   left: 0;
   width: 9px;
   height: 9px;
-  background: url("./../img/content/presentation/star.svg") center/contain no-repeat;
+  background: url("./../img/icons/star-list.svg") center/contain no-repeat;
 }
 
 .presentation__btn {
@@ -2870,39 +2870,39 @@ body {
   height: 769px;
 }
 
-.presentation svg {
+.presentation__img-box svg {
   width: 100%;
   height: 100%;
 }
 
-.presentation .p-1_board,
-.presentation .p-1_chart,
-.presentation .p-1_button,
-.presentation .p-1_right,
-.presentation .p-1_left,
-.presentation .p-1_alert,
-.presentation .p-1_panel {
+.presentation__img-box .p-1_board,
+.presentation__img-box .p-1_chart,
+.presentation__img-box .p-1_button,
+.presentation__img-box .p-1_right,
+.presentation__img-box .p-1_left,
+.presentation__img-box .p-1_alert,
+.presentation__img-box .p-1_panel {
   opacity: 0;
 }
 
-.presentation .p-1_board,
-.presentation .p-1_chart,
-.presentation .p-1_button,
-.presentation .p-1_right,
-.presentation .p-1_left,
-.presentation .p-1_panel {
+.presentation__img-box .p-1_board,
+.presentation__img-box .p-1_chart,
+.presentation__img-box .p-1_button,
+.presentation__img-box .p-1_right,
+.presentation__img-box .p-1_left,
+.presentation__img-box .p-1_panel {
   -webkit-animation-name: fadeUp;
           animation-name: fadeUp;
   -webkit-animation-duration: 0.6s;
           animation-duration: 0.6s;
 }
 
-.presentation .p-1_board {
+.presentation__img-box .p-1_board {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
 
-.presentation .p-1_alert {
+.presentation__img-box .p-1_alert {
   -webkit-animation-name: fade;
           animation-name: fade;
   -webkit-animation-delay: 1s;
@@ -2911,62 +2911,62 @@ body {
           animation-duration: 1s;
 }
 
-.presentation .p-1_panel {
+.presentation__img-box .p-1_panel {
   -webkit-animation-delay: 1.3s;
           animation-delay: 1.3s;
 }
 
-.presentation .p-1_button {
+.presentation__img-box .p-1_button {
   -webkit-animation-delay: 1.7s;
           animation-delay: 1.7s;
 }
 
-.presentation .p-1_chart {
+.presentation__img-box .p-1_chart {
   -webkit-animation-delay: 2.1s;
           animation-delay: 2.1s;
 }
 
-.presentation .p-1_left {
+.presentation__img-box .p-1_left {
   -webkit-animation-delay: 2.5s;
           animation-delay: 2.5s;
 }
 
-.presentation .p-1_right {
+.presentation__img-box .p-1_right {
   -webkit-animation-delay: 2.5s;
           animation-delay: 2.5s;
 }
 
-.presentation .p-2_board,
-.presentation .p-2_button,
-.presentation .p-2_panel,
-.presentation .p-2_right,
-.presentation .p-2_left {
+.presentation__img-box .p-2_board,
+.presentation__img-box .p-2_button,
+.presentation__img-box .p-2_panel,
+.presentation__img-box .p-2_right,
+.presentation__img-box .p-2_left {
   opacity: 0;
 }
 
-.presentation .p-2_board,
-.presentation .p-2_button,
-.presentation .p-2_right,
-.presentation .p-2_left {
+.presentation__img-box .p-2_board,
+.presentation__img-box .p-2_button,
+.presentation__img-box .p-2_right,
+.presentation__img-box .p-2_left {
   -webkit-animation-name: fadeUp;
           animation-name: fadeUp;
   -webkit-animation-duration: 0.6s;
           animation-duration: 0.6s;
 }
 
-.presentation .p-2_board {
+.presentation__img-box .p-2_board {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
 
-.presentation .p-2_button {
+.presentation__img-box .p-2_button {
   -webkit-animation-name: fade;
           animation-name: fade;
   -webkit-animation-delay: 1.1s;
           animation-delay: 1.1s;
 }
 
-.presentation .p-2_panel {
+.presentation__img-box .p-2_panel {
   -webkit-animation-name: fadeDownRight;
           animation-name: fadeDownRight;
   -webkit-animation-delay: 1.6s;
@@ -2975,58 +2975,58 @@ body {
           animation-duration: 0.8s;
 }
 
-.presentation .p-2_right {
+.presentation__img-box .p-2_right {
   -webkit-animation-delay: 2.1s;
           animation-delay: 2.1s;
 }
 
-.presentation .p-2_left {
+.presentation__img-box .p-2_left {
   -webkit-animation-delay: 2.1s;
           animation-delay: 2.1s;
 }
 
-.presentation .p-3_board,
-.presentation .p-3_panel,
-.presentation .p-3_mes-1,
-.presentation .p-3_mes-2,
-.presentation .p-3_mes-3 {
+.presentation__img-box .p-3_board,
+.presentation__img-box .p-3_panel,
+.presentation__img-box .p-3_mes-1,
+.presentation__img-box .p-3_mes-2,
+.presentation__img-box .p-3_mes-3 {
   opacity: 0;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
 }
 
-.presentation .p-3_mes-1,
-.presentation .p-3_mes-2,
-.presentation .p-3_mes-3 {
+.presentation__img-box .p-3_mes-1,
+.presentation__img-box .p-3_mes-2,
+.presentation__img-box .p-3_mes-3 {
   -webkit-animation-name: fadeUp;
           animation-name: fadeUp;
 }
 
-.presentation .p-3_board {
+.presentation__img-box .p-3_board {
   -webkit-animation-name: fadeUp;
           animation-name: fadeUp;
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
 
-.presentation .p-3_panel {
+.presentation__img-box .p-3_panel {
   -webkit-animation-name: fadeUpLeft;
           animation-name: fadeUpLeft;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 
-.presentation .p-3_mes-1 {
+.presentation__img-box .p-3_mes-1 {
   -webkit-animation-delay: 1.4s;
           animation-delay: 1.4s;
 }
 
-.presentation .p-3_mes-2 {
+.presentation__img-box .p-3_mes-2 {
   -webkit-animation-delay: 1.8s;
           animation-delay: 1.8s;
 }
 
-.presentation .p-3_mes-3 {
+.presentation__img-box .p-3_mes-3 {
   -webkit-animation-delay: 2.2s;
           animation-delay: 2.2s;
 }
