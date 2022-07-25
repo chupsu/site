@@ -2626,7 +2626,7 @@ body {
   margin-bottom: 20px;
   text-align: center;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   background-color: #F2F9FF;
   border-radius: 30px;
 }
@@ -5073,7 +5073,6 @@ body {
 
   .category__benefits {
     margin-bottom: 15px;
-    font-size: 18px;
   }
 
   .category_main .category__link {
@@ -6328,10 +6327,6 @@ body {
   .category_main .category__desc {
     max-width: 292px;
     min-height: 90px;
-  }
-
-  .category__benefits {
-    font-size: 16px;
   }
 
   .cards-box__body {
