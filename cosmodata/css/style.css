@@ -1602,11 +1602,6 @@ body {
 }
 
 .lang__dropdown {
-  position: absolute;
-  z-index: 1;
-  top: -1px;
-  right: -1px;
-  left: -1px;
   width: 100%;
   background: #fff;
   border: 1px solid #fff;
@@ -1618,13 +1613,6 @@ body {
   -o-transition-property: border-color;
   transition-property: border-color;
   overflow: hidden;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.lang__dropdown.is-langs-open {
-  visibility: visible;
-  pointer-events: auto;
 }
 
 .lang__dropdown .lang__btn:focus-visible {
@@ -4402,6 +4390,21 @@ body {
     border-color: #E8F3FF;
   }
 
+  .lang__dropdown {
+    position: absolute;
+    z-index: 1;
+    top: -1px;
+    right: -1px;
+    left: -1px;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .lang__dropdown.is-langs-open {
+    visibility: visible;
+    pointer-events: auto;
+  }
+
   .is-sticky .lang__dropdown,
   .is-sub-menu-open .lang__dropdown {
     border-color: #E8F3FF;
@@ -5998,6 +6001,18 @@ body {
 
   .lang__btn_choice {
     border: 2px solid #E8F3FF;
+  }
+
+  .lang__btn_choice.is-langs-open {
+    display: none;
+  }
+
+  .lang__dropdown {
+    display: none;
+  }
+
+  .lang__dropdown.is-langs-open {
+    display: block;
   }
 
   .lang__dropdown {
