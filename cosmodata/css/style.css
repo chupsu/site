@@ -1080,14 +1080,6 @@ body {
   background-color: #fff;
 }
 
-.menu__btn:active {
-  background-color: #1584FF;
-}
-
-.menu__btn:active span {
-  background-color: #fff;
-}
-
 .menu__icon {
   position: relative;
   width: 18px;
