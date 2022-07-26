@@ -826,7 +826,12 @@ body {
   font-size: 12px;
 }
 
-.info-project__btn--lend {
+.info-project__btn--service {
+  color: #4B827E;
+  background-color: #4B827E;
+}
+
+.info-project__btn--lending {
   color: #4B8261;
   background-color: #4B8261;
 }
