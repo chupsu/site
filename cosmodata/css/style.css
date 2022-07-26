@@ -2341,6 +2341,41 @@ body {
   text-decoration: none;
 }
 
+.cookies {
+  position: fixed;
+  z-index: 21;
+  right: calc(50% - 780px);
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 756px;
+  padding: 30px 40px;
+  -webkit-box-shadow: 0 11px 25px rgba(58, 152, 255, 0.18);
+          box-shadow: 0 11px 25px rgba(58, 152, 255, 0.18);
+}
+
+.cookies__text {
+  margin-right: 40px;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.cookies__text a {
+  color: #0368FF;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.cookies__text a:focus-visible {
+  outline: none;
+  text-decoration: underline;
+}
+
 .welcome__body {
   position: relative;
   padding: 66px 105px 58px;
@@ -4772,6 +4807,10 @@ body {
     margin-bottom: 80px;
   }
 
+  .cookies {
+    right: calc(50% - 635px);
+  }
+
   .welcome__body {
     padding: 60px 50px;
   }
@@ -5283,6 +5322,15 @@ body {
     height: 70px;
     margin-bottom: 60px;
     border-radius: 20px;
+  }
+
+  .cookies {
+    right: calc(50% - 465px);
+    max-width: 584px;
+  }
+
+  .cookies__text {
+    font-size: 20px;
   }
 
   .welcome__img-box_pc {
@@ -6046,6 +6094,10 @@ body {
     padding: 36px 0;
   }
 
+  .cookies {
+    right: calc(50% - 345px);
+  }
+
   .welcome__img-box_pc {
     display: none;
   }
@@ -6682,6 +6734,17 @@ body {
     border-radius: 15px;
   }
 
+  .cookies {
+    right: calc(50% - 255px);
+    max-width: 510px;
+    padding: 24px 30px;
+  }
+
+  .cookies__text {
+    margin-right: 80px;
+    font-size: 18px;
+  }
+
   .welcome__body {
     padding: 44px 28px;
   }
@@ -7315,6 +7378,17 @@ body {
     height: 50px;
   }
 
+  .cookies {
+    right: 0;
+    left: 0;
+    max-width: none;
+    border-radius: 0;
+  }
+
+  .cookies__text {
+    margin-right: 30px;
+  }
+
   .welcome__body {
     padding: 35px 15px 65px;
     margin: 0 -15px;
@@ -7554,6 +7628,24 @@ body {
 
   .user-action {
     margin: 0 -15px;
+  }
+
+  .cookies {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    padding: 30px 15px;
+  }
+
+  .cookies__text {
+    padding: 0 14px;
+    margin: 0 0 20px 0;
+    text-align: center;
+    font-size: 22px;
   }
 
   .welcome__btn {
@@ -7883,6 +7975,10 @@ body {
 
   .pricing-cards__rate-box .our-rating__link:not(:active):hover {
     text-decoration: none;
+  }
+
+  .cookies__text a:not(:active):hover {
+    text-decoration: underline;
   }
 
   .category__item:hover {
