@@ -4489,7 +4489,7 @@ body {
 }
 
 .form__input:focus {
-  border-color: #2595FF;
+  border-color: #283160;
 }
 
 .form__input:focus ~ .form__input-icon {
@@ -8433,11 +8433,11 @@ body {
     color: #1584FF;
   }
 
-  .form__input:not(:active):hover {
+  .form__input:not(:active):not(:focus):hover {
     border-color: #2595FF;
   }
 
-  .form__input:not(:active):hover ~ .form__input-icon {
+  .form__input:not(:active):not(:focus):hover ~ .form__input-icon {
     color: #2595FF;
   }
 
