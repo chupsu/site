@@ -1693,6 +1693,78 @@ body {
           transition-duration: 0.3s;
 }
 
+.checkbox {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.checkbox:focus-visible .checkbox__icon {
+  border-color: #2595FF;
+}
+
+.checkbox + .checkbox {
+  margin-top: 12px;
+}
+
+.checkbox__hide {
+  position: absolute;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.checkbox__hide:checked + .checkbox__icon {
+  background-image: url("./../img/icons/check.svg");
+  background-color: #2595FF;
+  border-color: #2595FF;
+}
+
+.checkbox__hide:focus + .checkbox__icon {
+  border-color: #2595FF;
+}
+
+.checkbox__icon {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 2px solid #CFE8FF;
+  border-radius: 2px;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.checkbox__text {
+  font-size: 14px;
+  color: #455298;
+}
+
+.checkbox__link {
+  font-weight: 700;
+  color: #2595FF;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.checkbox__link:focus-visible {
+  outline: none;
+  color: #1584FF;
+}
+
 .share {
   position: relative;
 }
@@ -4471,7 +4543,7 @@ body {
 
 .form__input-icon {
   position: absolute;
-  top: 19px;
+  top: 18px;
   left: 30px;
   width: 21px;
   text-align: center;
@@ -4537,78 +4609,6 @@ body {
   height: 20px;
   margin: -1px 10px -1px 0;
   background: url("./../img/icons/google-color.svg") center/contain no-repeat;
-}
-
-.checkbox {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-}
-
-.checkbox:focus-visible .checkbox__icon {
-  border-color: #2595FF;
-}
-
-.checkbox + .checkbox {
-  margin-top: 12px;
-}
-
-.checkbox__hide {
-  position: absolute;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-
-.checkbox__hide:checked + .checkbox__icon {
-  background-image: url("./../img/icons/check.svg");
-  background-color: #2595FF;
-  border-color: #2595FF;
-}
-
-.checkbox__hide:focus + .checkbox__icon {
-  border-color: #2595FF;
-}
-
-.checkbox__icon {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  width: 20px;
-  height: 20px;
-  margin-right: 15px;
-  background-color: #fff;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border: 2px solid #CFE8FF;
-  border-radius: 2px;
-  -webkit-transition-duration: 0.3s;
-       -o-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-}
-
-.checkbox__text {
-  font-size: 14px;
-  color: #455298;
-}
-
-.checkbox__link {
-  font-weight: 700;
-  color: #2595FF;
-  -webkit-transition-duration: 0.3s;
-       -o-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-}
-
-.checkbox__link:focus-visible {
-  outline: none;
-  color: #1584FF;
 }
 
 @media (min-width: 479.98px) {
@@ -6954,6 +6954,13 @@ body {
     border-radius: 10px;
   }
 
+  .checkbox__icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    border-radius: 4px;
+  }
+
   .share__dropdown {
     bottom: 60px;
     padding: 30px 36px 30px 30px;
@@ -7637,13 +7644,6 @@ body {
     margin: 20px 0;
     font-size: 20px;
   }
-
-  .checkbox__icon {
-    width: 30px;
-    height: 30px;
-    margin-right: 20px;
-    border-radius: 4px;
-  }
 }
 
 @media (max-width: 767.98px) and (any-hover: hover) {
@@ -7978,7 +7978,6 @@ body {
   }
 
   .form__input-icon {
-    top: 18px;
     left: 25px;
     width: 19px;
     font-size: 19px;
@@ -8327,6 +8326,14 @@ body {
     color: #1584FF;
   }
 
+  .checkbox:hover .checkbox__icon {
+    border-color: #2595FF;
+  }
+
+  .checkbox__link:not(:active):hover {
+    color: #1584FF;
+  }
+
   .share__btn:not(:active):hover {
     background-color: #1584FF;
   }
@@ -8437,13 +8444,5 @@ body {
   .form__btn_google:not(:active):hover {
     background-color: #CFE8FF;
     border-color: transparent;
-  }
-
-  .checkbox:hover .checkbox__icon {
-    border-color: #2595FF;
-  }
-
-  .checkbox__link:not(:active):hover {
-    color: #1584FF;
   }
 }
